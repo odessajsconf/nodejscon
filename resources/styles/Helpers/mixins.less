@@ -1,0 +1,23 @@
+.font-size(@font-size-px)
+{
+	font-size: @font-size-px/14rem;
+}
+
+.line-height(@font-size-px, @line-height-px)
+{
+	font-size: @font-size-px/14rem;
+	line-height: @line-height-px/@font-size-px;
+}
+
+.clearListStyles() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.set-bg-image(@url, @size: contain, @position: center, @repeat: no-repeat) {
+	background-image: url(@url);
+	background-size: @size;
+	background-position: @position;
+	background-repeat: @repeat;
+}

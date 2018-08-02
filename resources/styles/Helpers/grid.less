@@ -1,0 +1,115 @@
+.flex {
+  display: flex !important;
+}
+
+.i-flex {
+  display: inline-flex !important;
+}
+
+/**
+Flex direction
+*/
+
+.f-d-row{
+  flex-direction: row;
+}
+.f-d-column{
+  flex-direction: column;
+}
+
+/**
+Flex wrap
+ */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/**
+Justify content
+ */
+.j-c-space-between {
+  justify-content: space-between;
+}
+.j-c-space-around {
+  justify-content: space-around;
+}
+
+.j-c-flex-end {
+  justify-content: flex-end;
+}
+
+.j-c-center {
+  justify-content: center;
+}
+
+/**
+Align items
+ */
+.a-i-center {
+  align-items: center;
+}
+
+.a-i-flex-end {
+  align-items: flex-end;
+}
+
+.a-i-stretch {
+  align-items: stretch;
+}
+
+/*
+ Flex wrap
+*/
+
+.f-w-w{
+  flex-wrap: wrap;
+}
+.f-w-wr{
+  flex-wrap: wrap-reverse;
+}
+.f-w-nw{
+  flex-wrap: nowrap;
+}
+
+
+/**
+Flex items
+ */
+.flex-greed(@list, @type){
+
+  .flex-greed-loop(@i: length(@list)) when(@i > 0){
+
+    .flex-greed-loop(@i - 1);
+    @size: extract(@list, @i);
+    &-@{size}{ @{type}: @size; }
+
+  }
+
+  .flex-greed-loop();
+
+}
+
+.flex-item {
+  flex: 1 1 auto;;
+  max-width: 100%;
+
+  // Fix for Slick Slider in Mozilla Firefox
+  // target element - parent flex container of slider
+
+  min-height: 0;
+  min-width: 0;
+}
+
+.flex-item {
+  max-width: 100%;
+  @greedList: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+  .flex-greed(@greedList, flex);
+}
+
+@media @mobileLg {
+  // Fix for "flex-direction: column;" in IE
+  // add for child nodes
+  .f-d-column-fix{
+    flex: 1 1 auto;
+  }
+}

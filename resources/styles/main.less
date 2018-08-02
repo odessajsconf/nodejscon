@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+
+  -webkit-font-smoothing: antialiased;
+
+  // fix for Slick slider in Firefox
+  //min-height: 0;
+  //min-width: 0;
+  // fix for Slick slider in Firefox
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &.slider-mode {
+    overflow: hidden;
+  }
+  &.hidden {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: .2s;
+
+  &.wrapper-blured {
+    filter: blur(9px);
+
+    // fix for apple
+    // disable content scroll when popup opened
+    // input caret change position issue in fixed position popup
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 35px;
+  padding-top: 100px;
+}

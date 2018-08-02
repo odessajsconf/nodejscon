@@ -80,11 +80,6 @@ gulp.task('less', function () {
     .pipe(livereload());
 });
 
-gulp.task('html', function () {
-  return gulp.src('./../index.html')
-
-});
-
 gulp.task("hash", function() {
   return gulp.src(["./resources/html/index.html"])
     .pipe(hash_src({
@@ -106,7 +101,7 @@ gulp.task('watch', function() {
   livereload.listen();
 	gulp.watch('resources/js/**/*.js', ['script']);
 	gulp.watch('resources/styles/**/*.less', ['less']);
-	gulp.watch('resources/html/index.html', ['html']);
+	gulp.watch('resources/html/index.html', ['hash']);
 });
 
 gulp.task('default', ['script', 'less', 'fonts', 'img','hash', 'watch']);

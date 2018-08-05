@@ -12,7 +12,7 @@ class App {
     }
 
     _initComponents() {
-        // new HeaderComponent();
+        new HeaderComponent();
     }
 }
 

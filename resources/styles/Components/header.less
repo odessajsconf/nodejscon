@@ -4,79 +4,18 @@
   align-items: stretch;
   width: 100%;
   z-index: 100;
+  background-color: @color_green;
 }
 
-.header-white {
+.header-cont {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0 30px;
-  background-color: #fff;
   transition: .2s;
-
-}
-.header-transp {
-  display: flex;
-  align-items: center;
-  width: 35%;
-  min-width: 550px;
-  transition: .2s;
-}
-
-.header-login {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 235px;
-  height: 100px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
-  .font-size(12);
-  color: #fff;
-  background-color: #1F9988;
-  cursor: pointer;
-  text-align: center;
-  transition: .2s;
-  text-decoration: none;
-
-  &.mobile-show {
-    display: none;
-  }
-
-  span {
-    position: relative;
-    display: inline-block;
-    padding-right: 30px;
-
-    &::after{
-      content: '⟶';
-      position: absolute;
-      right: 0;
-      top: -7px;
-      font-size: 20px;
-      font-weight: 400;
-      transition: .2s;
-    }
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    background: darken(#1F9988, 2%);
-    text-decoration: underline;
-
-    span {
-        text-decoration: none;
-      &::after{
-        transform: translateX(7px);
-      }
-    }
-  }
-
-  &:active{
-    background: darken(#1F9988, 4%);
-  }
 
 }
 
@@ -94,30 +33,35 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
 
   li {
 
     a{
       position: relative;
+      display: inline-block;
       padding: 10px;
-      margin-right: 10px;
+      margin-right: 15px;
       font-weight: 700;
-      .font-size(12);
-      color: #B1B1B1;
+      .font-size(13);
+      color: #fff;
       text-decoration: none;
       transition: .2s;
       white-space: nowrap;
       border-bottom: 3px solid transparent;
+
+      .link {
+
+      }
 
       &.active,
       &:hover
       //&:active,
       //&:focus
       {
-        color: #000;
+        color: #fff;
         text-decoration: none;
-        border-bottom: 3px solid #000;
+        border-bottom: 3px solid #fff;
       }
     }
   }
@@ -145,32 +89,11 @@
 }
 
 
-@media screen and (min-width: 1480px) and (min-height: 650px){
-  .header-white {
-    justify-content: space-between;
-  }
-
-  .header-transp {
-    min-width: 680px;
-    max-width: 680px;
-  }
-
-  .nav {
-    width: 100%;
-  }
-}
-
 @media @laptopLg {
-  .header-transp {
-    width: 30%;
-    min-width: 315px;
-  }
+
 }
 
 @media @laptop {
-  .header-white{
-    justify-content: space-between;
-  }
   .menu {
     display: none;
     position: fixed;

@@ -1,0 +1,71 @@
+.heading {
+  background-color: #fff;
+  //background-image: url("../img/heading_bg.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading-logo {
+  width: 500px;
+}
+
+.heading-date {
+  margin-left: 15px;
+  .font-size(40);
+  font-weight: bold;
+  color: @color_green;
+  letter-spacing: 3px;
+}
+
+.heading-list {
+  padding-left: 45px;
+  .font-size(16);
+  font-weight: bold;
+  color: @color_green;
+  list-style-type: none;
+
+  li {
+    position: relative;
+    margin-bottom: 20px;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -43px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/favicon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &.calendar {
+      &::after {
+        background-image: url("../img/favicon.png");
+      }
+    }
+
+    &.sheet {
+      &::after {
+        background-image: url("../img/favicon.png");
+      }
+    }
+
+    &.format {
+      &::after {
+        background-image: url("../img/favicon.png");
+      }
+    }
+
+    &.sun {
+      &::after {
+        background-image: url("../img/favicon.png");
+      }
+    }
+  }
+}

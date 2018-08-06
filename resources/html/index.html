@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
-  <link rel="icon" href="public/img/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+  <link rel="icon" href="public/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <link rel="stylesheet" href="public/css/app.min.css">
 
@@ -19,43 +18,121 @@
   </script>
 
 
-  <title>Odessa Node.js</title>
+  <title>Node Conference</title>
 </head>
 <body>
   <div class="remodal-bg">
     <header id="header" class="header">
-      <div class="header-white">
-        <div class="logo" style="width: 150px;">
-          <a href="#about" data-slickgoto="0">
-            <img src="public/img/logo.jpg" alt="" style="width: 100%; max-width: 200px; display: inline-block;">
+      <div class="header-cont container">
+        <div class="logo">
+          <a href="#heading">
+            <img src="public/img/logo_white.svg" alt="Node Conference">
           </a>
         </div>
         <nav class="nav">
           <ul class="menu">
-            <li><a href="#about" data-slickgoto="0">anchor **</a></li>
-            <li><a href="#demands" data-slickgoto="1">anchor **</a></li>
-            <li><a href="#solution" data-slickgoto="2">anchor **</a></li>
-            <li><a href="#roadmap" data-slickgoto="3">anchor **</a></li>
-            <li><a href="#" target="_blank">anchor **</a></li>
-            <li><a href="#news" data-slickgoto="4">anchor **</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#" target="_blank" class="link">Tickets</a></li>
           </ul>
         </nav>
 
-        <div class="flex a-i-center">
-          <div class="brgr-menu"></div>
-        </div>
+        <div class="brgr-menu"></div>
 
       </div>
 
     </header>
     <div class="wrapper">
-      <section>
-        <!--<h1 class="text-center">Odessa Node.js</h1>-->
+      <section id="heading" class="heading">
+        <div class="container">
+          <div class="flex j-c-space-between a-i-center m-t-40">
+            <div class="heading-logo">
+              <img src="public/img/logo_green.svg" alt="Node Conference">
+            </div>
+            <div class="heading-date">
+              September 29, 2018
+            </div>
+          </div>
+          <div class="flex">
+            <ul class="heading-list">
+              <li class="calendar">1 день конференции</li>
+              <li class="sheet">2 потока докладов</li>
+              <li class="format">4 формата</li>
+              <li class="sun">Одесса, море солнце</li>
+            </ul>
+          </div>
+      </div>
+      </section>
 
-        <div class="text-center">
-          <img src="public/img/logo.jpg" alt="" style="width: 100%; max-width: 800px; display: inline-block;">
+      <section id="about" class="about">
+        <div class="container">
+            <div class="flex j-c-space-between">
+                <div class="about-tickets-txt ">
+                    <div class="h2">About</div>
+
+                    <div class="h4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur
+                    </div>
+                </div>
+
+                <div class="about-tickets-cont flex-item-1">
+
+                    <div class="h3">
+                        Type of your ticket
+                    </div>
+
+                    <ul class="about-tickets-list">
+                        <li class="about-ticket-item">
+
+                            <a href="#">
+                                <div class="about-ticket-title">
+                                    Early
+                                </div>
+                            </a>
+                            <div class="about-ticket-desc">
+                                Описание вида билета
+                            </div>
+                        </li>
+                        <li class="about-ticket-item">
+
+                            <a href="#">
+                                <div class="about-ticket-title">
+                                    Regular
+                                </div>
+                            </a>
+                            <div class="about-ticket-desc">
+                                Описание вида билета
+                            </div>
+                        </li>
+                        <li class="about-ticket-item">
+
+                            <a href="#">
+                                <div class="about-ticket-title">
+                                    Late
+                                </div>
+                            </a>
+                            <div class="about-ticket-desc">
+                                Описание вида билета
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
       </section>
+
+      <section id="speakers"></section>
+
+      <section id="workshops"></section>
+
+      <section id="schedule"></section>
+
+      <section id="sponsors"></section>
     </div>
   </div>
 

@@ -1,0 +1,101 @@
+.heading {
+  background-color: #fff;
+  background-image: url("../img/heading_bg.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  min-height: 800px;
+}
+
+.heading-logo {
+  width: 100%;
+  max-width: 600px;
+  transition: .2s;
+}
+
+.heading-date {
+  margin-left: 15px;
+  .font-size(40);
+  font-weight: bold;
+  color: @color_green;
+  letter-spacing: 7px;
+  white-space: nowrap;
+  background-color: #fff;
+  transition: .2s;
+}
+
+.heading-list {
+  margin-top: 12vh;
+  padding-left: 60px;
+  .font-size(14);
+  font-weight: bold;
+  color: @color_green;
+  background-color: #fff;
+  list-style-type: none;
+  letter-spacing: 3px;
+
+  li {
+    position: relative;
+    margin-bottom: 30px;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -55px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/favicon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &.calendar {
+      &::after {
+        background-image: url("../img/i1.svg");
+      }
+    }
+
+    &.sheet {
+      &::after {
+        background-image: url("../img/i2.svg");
+      }
+    }
+
+    &.format {
+      &::after {
+        background-image: url("../img/i3.svg");
+      }
+    }
+
+    &.sun {
+      &::after {
+        background-image: url("../img/i4.svg");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .heading {
+    min-height: 700px;
+  }
+  .heading-logo {
+    max-width: 400px;
+  }
+  .heading-date {
+    .font-size(30);
+  }
+
+  .heading-list {
+    margin-top: 10vh;
+    li {
+      margin-bottom: 20px;
+    }
+
+  }
+}

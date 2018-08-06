@@ -33,7 +33,7 @@ gulp.src = function () {
 gulp.task('fonts', function() {
     return gulp.src(path.fonts)
         .pipe(copy())
-        .pipe(gulp.dest(PUBLIC_DIR+'/resources/fonts'));
+        .pipe(gulp.dest(PUBLIC_DIR+'/fonts'));
 });
 
 gulp.task('img', function() {

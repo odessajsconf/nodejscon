@@ -22,7 +22,7 @@ h3, .h3{
   color: @color_green;
 }
 h4, .h4{
-  .font-size(32);
+  .font-size(22);
   font-family: 'stolzl', sans-serif;
   color: @color_gray;
   font-weight: 700;
@@ -111,9 +111,52 @@ h4, .h4, h5, .h5, p, .ul, .ul li,
     .font-size(110);
   }
   h3, .h3 {
-    font-size: 42px;
+    .font-size(42);
   }
   h4, .h4 {
-    font-size: 26px;
+    .font-size(18);
+  }
+}
+@media @laptopMd {
+  h2, .h2{
+    .font-size(100);
+  }
+  h3, .h3 {
+    .font-size(35);
+  }
+  h4, .h4 {
+    .font-size(16);
+  }
+}
+
+@media @laptop {
+  h2, .h2{
+    .font-size(90);
+  }
+  h3, .h3 {
+    .font-size(32);
+  }
+  h4, .h4 {
+    .font-size(15);
+  }
+}
+@media @tablet {
+  h2, .h2{
+    .font-size(80);
+  }
+  h3, .h3 {
+    .font-size(30);
+  }
+}
+
+@media @mobileLg {
+  h2, .h2{
+    .font-size(70);
+  }
+  h3, .h3 {
+    .font-size(28);
+  }
+  h4, .h4 {
+    .font-size(14);
   }
 }

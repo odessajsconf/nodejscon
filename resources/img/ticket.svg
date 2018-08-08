@@ -10,7 +10,7 @@
       }
 
       .cls-3 {
-        stroke: #00ff83;
+        stroke: #689f63;
         stroke-miterlimit: 10;
       }
 

@@ -1,22 +1,30 @@
 import $ from 'jquery';
 import { HeaderComponent } from './Components/Header';
+import { Popup } from './Components/Popup';
+import { RenderSpeakers } from './Modules/RenderSpeakers';
+
+
+
 
 class App {
-    constructor(CONFIG) {
-        this.CONFIG = CONFIG;
+  constructor(CONFIG) {
+    this.CONFIG = CONFIG;
 
-        this._initModules();
-        this._initComponents();
-    }
-    _initModules() {
-    }
+    this._initModules();
+    this._initComponents();
+  }
 
-    _initComponents() {
-        new HeaderComponent();
-    }
+  _initModules() {
+  }
+
+  _initComponents() {
+    new HeaderComponent();
+    new Popup('#speakers-modal');
+    new RenderSpeakers();
+  }
 }
 
 
 $('body').ready(() => {
-	window.App = new App(window.CONFIG || {});
+  window.App = new App(window.CONFIG || {});
 });

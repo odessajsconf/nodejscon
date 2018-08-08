@@ -56,9 +56,54 @@
   font-weight: 700;
 }
 
+// modal
+
+.speakers-modal_img {
+  width: 170px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.speakers-modal_txt {
+  margin-left: 20px;
+  text-align: left;
+
+  .speaker-name {
+    margin-top: 0;
+  }
+}
+
+.speakers-modal_content p,
+.speakers-modal_content div,
+.speakers-modal_content {
+  text-align: left;
+  color: #8a8a8a;
+  font-size: 1.07142857rem;
+  font-weight: 400;
+}
+
+.remodal {
+  border: 3px solid @color_green;
+}
+
+.remodal-close,
+.remodal-close:before {
+  left: auto;
+  right: 0;
+
+}
+
+
 @media @mobileLg {
   .speakers-bg-img {
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .remodal {
+    padding: 20px;
   }
 }

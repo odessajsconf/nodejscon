@@ -1,5 +1,5 @@
 import $ from 'jquery';
-require('../../node_modules/remodal/src/remodal');
+require('../../../node_modules/remodal/src/remodal');
 
 export class Popup {
 

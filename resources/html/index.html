@@ -33,7 +33,7 @@
         <ul class="menu">
           <li><a href="#about">About</a></li>
           <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#workshops">Workshops</a></li>
+          <!--<li><a href="#workshops">Workshops</a></li>-->
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#" target="_blank" class="link">Tickets</a></li>
@@ -146,15 +146,19 @@
       </div>
     </section>
 
-    <section id="workshops">
-      <div class="container">
-        <div class="h2">Workshops</div>
-      </div>
-    </section>
+    <!--<section id="workshops">-->
+      <!--<div class="container">-->
+        <!--<div class="h2">Workshops</div>-->
+      <!--</div>-->
+    <!--</section>-->
 
     <section id="schedule">
       <div class="container">
         <div class="h2">Schedule</div>
+
+        <div class="m-t-40 h4 text-center">
+          Программа конференции будет доступна за 2 недели до мероприятия
+        </div>
       </div>
     </section>
 
@@ -166,7 +170,7 @@
   </div>
 </div>
 
-<div class="remodal speakers-modal" data-remodal-id="speakers-modal">
+<div class="remodal speakers-modal" data-remodal-id="speakers-modal" id="speakers-modal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <div class="flex">
     <div class="speakers-modal_img">
@@ -178,6 +182,8 @@
       </div>
       <div class="speaker-position">
         node.js developer
+        <span class="position"></span>
+        <span class="company"></span>
       </div>
       <div class="speaker-report">
         Node.js vs PHP
@@ -186,7 +192,7 @@
 
   </div>
 
-  <div class="speakers-modal_content m-t-40">
+  <div class="speakers-modal_content m-t-40 m-b-20">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda beatae culpa dolores eum
       excepturi expedita facere, fugiat iusto, maxime modi nemo officia optio perferendis porro quis sit sunt
@@ -196,7 +202,8 @@
 
   <!--<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>-->
   <div class="text-right">
-    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    <button class="remodal-prev">Previous</button>
+    <button class="remodal-next">Next</button>
   </div>
 </div>
 </body>

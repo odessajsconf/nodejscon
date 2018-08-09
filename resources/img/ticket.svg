@@ -10,7 +10,7 @@
       }
 
       .cls-3 {
-        stroke: #689f63;
+        stroke: #a7c7a8;
         stroke-miterlimit: 10;
       }
 
@@ -19,8 +19,8 @@
       }
 
       .cls-5 {
-        fill: #00ff83;
-        opacity: 0.2;
+        fill: #f2f7f3;
+        opacity: 0.6;
       }
     </style>
     <clipPath id="clip-path">

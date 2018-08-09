@@ -19,7 +19,6 @@ class App {
 
   _initComponents() {
     new HeaderComponent();
-    new Popup('#speakers-modal');
     new RenderSpeakers();
   }
 }

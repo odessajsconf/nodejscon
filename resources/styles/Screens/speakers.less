@@ -86,10 +86,25 @@
 .speakers-modal_content div,
 .speakers-modal_content {
   text-align: left;
-  color: #8a8a8a;
-  font-size: 1.07142857rem;
+  color: @color_gray_light;
+  .font-size(15);
   font-weight: 400;
 }
+
+.speakers-modal_content {
+  p {
+    margin-bottom: 15px;
+  }
+  div{
+    margin-bottom: 30px;
+  }
+  .speaker-report {
+    .font-size(18);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
+
 
 @media @mobileLg {
   .speakers-modal_txt {
@@ -98,7 +113,7 @@
     }
 
     .speaker-position {
-      .font-size(12);
+      .font-size(14);
       margin-top: 10px;
     }
 
@@ -107,6 +122,21 @@
       .font-size(16);
     }
   }
+
+
+  .speakers-modal_content p,
+  .speakers-modal_content div,
+  .speakers-modal_content {
+    .font-size(14);
+  }
+
+  .speakers-modal_content{
+    .speaker-report{
+      .font-size(16);
+    }
+  }
+
+
 
   .speaker-item {
     margin: 10px;

@@ -1,0 +1,42 @@
+.schedule-bg-img {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: 155px;
+  margin-top: 100px;
+}
+.schedule-list {
+  margin-top: 100px;
+}
+.schedule-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.schedule-time {
+  white-space: nowrap;
+  color: @color_gray_light;
+  .font-size(30);
+  margin-right: 5%;
+}
+.schedule-text {
+  color: @color_gray;
+  .font-size(30);
+  font-weight: bold;
+}
+
+@media @tablet {
+  .schedule-time {
+    .font-size(18);
+  }
+  .schedule-text {
+    .font-size(18);
+  }
+}
+@media @mobileLg {
+  .schedule-time {
+    .font-size(16);
+  }
+  .schedule-text {
+    .font-size(16);
+  }
+}

@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { Popup } from '../Components/Popup';
+import { Helpers } from '../Helpers';
 window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
@@ -111,6 +112,7 @@ export class RenderSpeakers {
     this.popup = new Popup('#speakers-modal');
     this._init();
     this._events();
+    this.helpers = new Helpers();
   }
 
   _init() {
@@ -166,8 +168,8 @@ export class RenderSpeakers {
 
       $prevButton.unbind('click').click(()=>{
         var prevIndex = speakerIndex == 0 ? (speakers.length-1) : speakerIndex - 1;
-
-        that.popup.close();
+        that.helpers.showLoader($modalBody);
+        // that.popup.close();
           setTimeout(function(){
             loadSpeakerModal($('[data-item-index="'+prevIndex+'"]'));
           },600);
@@ -175,8 +177,8 @@ export class RenderSpeakers {
       //
       $nextButton.unbind('click').click(()=>{
         var nextIndex = speakerIndex == speakers.length-1 ? 0 : speakerIndex + 1;
-
-        that.popup.close();
+        that.helpers.showLoader($modalBody);
+        // that.popup.close();
         setTimeout(function(){
           loadSpeakerModal($('[data-item-index="'+nextIndex+'"]'));
         },600);
@@ -209,7 +211,7 @@ export class RenderSpeakers {
         // $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
 
 
-        that.popup.open();
+        that.helpers.hideLoader($modalBody);
       }
     }
   }

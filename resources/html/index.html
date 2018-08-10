@@ -127,8 +127,9 @@
 
         </div>
       </div>
-
-      <img class="about-bg-img" src="public/img/about_bg.svg" alt="gates">
+      <div class="user-select-none">
+        <img class="about-bg-img" src="public/img/about_bg.svg" alt="gates">
+      </div>
     </section>
 
     <section id="speakers" class="speakers flex f-d-column j-c-space-between">
@@ -141,7 +142,7 @@
         </div>
 
       </div>
-      <div class="flex j-c-flex-end">
+      <div class="flex j-c-flex-end user-select-none">
         <img class="speakers-bg-img" src="public/img/speakers_bg.svg" alt="opera">
       </div>
     </section>
@@ -156,23 +157,53 @@
       <div class="container">
         <div class="h2">Schedule</div>
 
-        <div class="m-t-40 h4 text-center">
+        <div class="m-t-50 p-t-50 h3 text-center text-grey">
           Программа конференции будет доступна за 2 недели до мероприятия
         </div>
+
+        <!--<div class="schedule-list">-->
+          <!--<div class="schedule-item">-->
+            <!--<div class="schedule-time">9.00-10.00</div>-->
+            <!--<div class="schedule-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+      <div class="flex user-select-none">
+        <img class="schedule-bg-img" src="public/img/schedule_bg.svg" alt="colonnade">
       </div>
     </section>
 
-    <section id="sponsors">
+    <section id="sponsors" class="sponsors">
       <div class="container">
         <div class="h2">Sponsors</div>
+
+        <div class="m-t-80 h4 text-center sponsors-text">
+          <p>Мы рады обсудить с Вами дополнительные условия партнерства, которые будут наиболее
+          интересны для Вас, в индивидуальном порядке.</p>
+          <br>
+          <p>Хотите стать спонсором?</p>
+          <p>позвоните нам <a class="text-bold link"  href="tel:380982845165">+38 (098) 284 51 65</a> / Мария</p>
+          <p>напишите нам <a class="text-bold link"  href="mailto:nodejs.uaconf@gmail.com">nodejs.uaconf@gmail.com</a></p>
+          <p>или постучитесь в Telegram - <a  class="text-bold link" href="tg://resolve?domain=380503731465">+38 (050) 373 14 65</a> / Юлия</p>
+
+          <div class="text-center m-t-50">
+            <a href="#" target="_blank" class="btn">
+              Скачать партнерскую программу
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="user-select-none">
+        <img class="sponsors-bg-img" src="public/img/sponsors_bg.svg" alt="colonnade">
       </div>
     </section>
   </div>
 </div>
 
+<!-- Modals -->
 <div class="remodal speakers-modal" data-remodal-id="speakers-modal" id="speakers-modal">
   <button data-remodal-action="close" class="remodal-close"></button>
-  <div class="flex">
+  <div class="flex speakers-modal_heading">
     <div class="speakers-modal_img">
       <img src="public/img/speakers/andrey_grachev.png" alt="">
     </div>
@@ -201,7 +232,7 @@
   </div>
 
   <!--<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>-->
-  <div class="text-right">
+  <div class="flex j-c-space-between">
     <button class="remodal-prev">Previous</button>
     <button class="remodal-next">Next</button>
   </div>

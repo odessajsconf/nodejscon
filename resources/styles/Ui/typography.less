@@ -11,7 +11,7 @@ h2, .h2{
   line-height: 1;
   font-family: 'stolzl', sans-serif;
   font-weight: 700;
-  color: @color_green;
+  color: @color_gray;
 }
 h3, .h3{
   font-size: 57px;
@@ -35,16 +35,16 @@ h5, .h5{
 }
 
 p, .p{
-  .font-size(12);
+  .font-size(14);
   font-weight: 700;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'stolzl', sans-serif;
 }
 
 .ul {
   margin: 0;
   padding: 20px 0 10px;
-  font-family: 'Roboto Mono', monospace;
-  color: #177565;
+  font-family: 'stolzl', sans-serif;
+  color: @color_green;
   list-style-type: none;
 
   li {
@@ -80,26 +80,34 @@ p, .p{
 .sub-title{
   .font-size(14);
   font-family: 'stolzl', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
 }
 .notation{
   .line-height(12, 14);
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'stolzl', sans-serif;
-  color: #7F7F7F;
+  color: @color_gray_light;
 }
 
 .text-bold {
   font-weight: 700;
 }
 
-.link {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
-  .font-size(11);
-  letter-spacing: 0.02em;
-  color: #1F9988;
+.text-grey {
+  color: @color_gray_light;
 }
+
+.link {
+  font-family: 'stolzl', sans-serif;
+  letter-spacing: 0.02em;
+  color: @color_green;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 h1, .h1, h2, .h2, h3, .h3,
 h4, .h4, h5, .h5, p, .ul, .ul li,
 .sub-title, .notation, .link {
@@ -155,6 +163,18 @@ h4, .h4, h5, .h5, p, .ul, .ul li,
   }
   h3, .h3 {
     .font-size(28);
+  }
+  h4, .h4 {
+    .font-size(14);
+  }
+}
+
+@media @mobileLg {
+  h2, .h2{
+    .font-size(50);
+  }
+  h3, .h3 {
+    .font-size(20);
   }
   h4, .h4 {
     .font-size(14);

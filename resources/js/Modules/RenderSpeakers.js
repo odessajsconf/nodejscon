@@ -9,13 +9,28 @@ require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 const speakers = [
   {
+    image : 'public/img/speakers/nikita_galkin.jpg',
+    name : 'Никита Галкин',
+    position : 'System Architect of HighLoad projects',
+    company : '',
+    rept : [
+      {
+        title : 'Node.js and Browser: which protocol to choose',
+        description : ''
+      },
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : []
+  },
+  {
     image : 'public/img/speakers/max_klymyshyn.jpg',
-    name : 'Max Klymyshyn',
+    name : 'Максим Климишин',
     position : 'Tech Lead',
     company : 'Takeoff Technologies',
     rept : [
       {
-        title : 'Workshop: Build blockchain using CRDT and Merkle Trees [Ru]',
+        title : 'Build blockchain using CRDT and Merkle Trees [Ru] [Workshop, Talk]',
         description : ''
       }
     ],
@@ -38,14 +53,18 @@ const speakers = [
   },
   {
     image : 'public/img/speakers/roman_sachenko.jpg',
-    name : 'Roman Sachenko',
+    name : 'Роман Саченко',
     position : 'Software Engineer',
     company : 'DA-14',
     rept : [
       {
-        title : 'NodeJS Microservices + CQRS + Event Sourcing - Why do I do this? [Ru]',
-        description : 'Why do I do this? I kept asking myself this question while working on the next project and building microservices-based architecture with CQRS and Event Sourcing. What does this system do and why is it so complicated? I\'ll tell you about mistakes, which I’ve made, issues, which I\'ve faced with, and solutions, which shouldn’t be applied. I’ll share my own experience and tell about those things, I wish I’d known before I started working on the project.'
-      }
+        title : 'Security in NodeJS [Ru]',
+        description : ''
+      },
+      {
+        title : 'App diagnostics under the hood [Ru]',
+        description : ''
+      },
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -83,16 +102,8 @@ const speakers = [
     company : 'elastic.io',
     rept : [
       {
-        title : 'Theme 1 from Евгений Обрезков',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur corporis culpa ' +
-        'debitis ducimus exercitationem ipsum nulla praesentium quae quisquam. Fugiat iste quod, recusandae tempora ' +
-        'ullam voluptates. Ad, hic recusandae.'
-      },
-      {
-        title : 'Theme 2 from Евгений Обрезков',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur corporis culpa ' +
-        'debitis ducimus exercitationem ipsum nulla praesentium quae quisquam. Fugiat iste quod, recusandae tempora ' +
-        'ullam voluptates. Ad, hic recusandae.'
+        title : '',
+        description : ''
       },
     ],
     aboutSpeaker : '',
@@ -100,26 +111,22 @@ const speakers = [
     socials : []
   },
   {
-    image : 'public/img/speakers/nikita_galkin.jpg',
-    name : 'Никита Галкин',
-    position : 'System Architect of HighLoad projects',
-    company : '',
+    image : 'public/img/speakers/dmitriy_gusev.jpg',
+    name : 'Дмитрий Гусев',
+    position : 'Team Lead / Senior JavaScript developer',
+    company : 'HYS Enterprise',
     rept : [
       {
-        title : 'Theme from Никита Галкин',
-        description : 'Description for Никита Галкин report'
-      },
-      {
-        title : 'Theme 2 from Никита Галкин',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur corporis culpa ' +
-        'debitis ducimus exercitationem ipsum nulla praesentium quae quisquam. Fugiat iste quod, recusandae tempora ' +
-        'ullam voluptates. Ad, hic recusandae.'
-      },
+        title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
+        description : 'В ходе беседы поговорим о некоторых весьма полезных инструментах, для генерации стартового ' +
+        'состояние проекта, автоматической настройки основных компонентов. В общем, как автоматизировать все то, что' +
+        ' каждый раз приходится делать, но не очень хочется'
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
     socials : []
-  }
+  },
 ];
 
 

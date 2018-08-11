@@ -114,7 +114,7 @@ const speakers = [
     image : 'public/img/speakers/dmitriy_gusev.jpg',
     name : 'Дмитрий Гусев',
     position : 'Team Lead / Senior JavaScript developer',
-    company : 'HYS Enterprise',
+    company : '',
     rept : [
       {
         title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',

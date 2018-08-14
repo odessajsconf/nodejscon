@@ -15,12 +15,12 @@ class App {
   }
 
   _initModules() {
+    new RenderSpeakers();
     new LazyLoading();
   }
 
   _initComponents() {
     new HeaderComponent();
-    new RenderSpeakers();
   }
 }
 

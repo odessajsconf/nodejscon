@@ -113,7 +113,7 @@ const speakers = [
   {
     image : 'public/img/speakers/dmitriy_gusev.jpg',
     name : 'Дмитрий Гусев',
-    position : 'Team Lead / Senior JavaScript developer',
+    position : 'Senior frontend developer',
     company : '',
     rept : [
       {

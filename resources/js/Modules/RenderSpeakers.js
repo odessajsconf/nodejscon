@@ -244,7 +244,9 @@ export class RenderSpeakers {
         // $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
 
         that.helpers.hideLoader($modalBody);
-        localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
+        setTimeout(()=>{
+          localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
+        }, 400);
       }
     }
   }

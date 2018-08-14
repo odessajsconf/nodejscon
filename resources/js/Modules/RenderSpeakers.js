@@ -17,7 +17,7 @@ const speakers = [
       {
         title : 'Node.js and Browser: which protocol to choose',
         description : ''
-      },
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -64,7 +64,7 @@ const speakers = [
       {
         title : 'App diagnostics under the hood [Ru]',
         description : ''
-      },
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -104,7 +104,7 @@ const speakers = [
       {
         title : '',
         description : ''
-      },
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -126,7 +126,7 @@ const speakers = [
     aboutSpeaker : '',
     socialsRendered : '',
     socials : []
-  },
+  }
 ];
 
 
@@ -146,7 +146,11 @@ export class RenderSpeakers {
       '<img src="${image}" alt="${name}">' +
       '</div>' +
       '<div class="speaker-name">${name}</div>' +
-      '<div class="speaker-position">${position} @${company}</div>' +
+      '<div class="speaker-position">${position} ' +
+      '{{if company}}' +
+      '@${company}' +
+      '{{/if}}' +
+      '</div>' +
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} </br> </br>{{/each}}' +
       '</div>' +
@@ -229,7 +233,7 @@ export class RenderSpeakers {
         speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
         speakerName && $modalNameElement.text(speakerName);
         speakerPosition && $modalSpeakerPosition.text(speakerPosition);
-        speakerCompany && $modalSpeakerCompany.text(speakerCompany);
+        speakerCompany && $modalSpeakerCompany.text(`@${speakerCompany}`);
 
         reportsContent && $modalreportsContainer.html(reportsContent);
 

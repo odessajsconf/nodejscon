@@ -243,8 +243,8 @@ export class RenderSpeakers {
         // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
         // $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
 
-        localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
         that.helpers.hideLoader($modalBody);
+        localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
       }
     }
   }

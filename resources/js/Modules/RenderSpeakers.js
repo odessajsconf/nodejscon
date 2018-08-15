@@ -1,144 +1,32 @@
 import $ from 'jquery';
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
+import {SpeakersRu} from '../lang/speakers-ru.js'
+import {SpeakersEn} from '../lang/speakers-en.js'
 
 
 
 window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
-const speakers = [
-  {
-    image : 'public/img/speakers/nikita_galkin.jpg',
-    name : 'Никита Галкин',
-    position : 'System Architect of HighLoad projects',
-    company : '',
-    rept : [
-      {
-        title : 'Node.js and Browser: which protocol to choose',
-        description : ''
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : []
-  },
-  {
-    image : 'public/img/speakers/max_klymyshyn.jpg',
-    name : 'Максим Климишин',
-    position : 'Tech Lead',
-    company : 'Takeoff Technologies',
-    rept : [
-      {
-        title : 'Build blockchain using CRDT and Merkle Trees [Ru] [Workshop, Talk]',
-        description : ''
-      }
-    ],
-    aboutSpeaker :
-    'Full-stack software engineer for Clojure/ClojureScript/Python/JavaScript-based projects with 15+ years experience in technical' +
-    ' team leadership and management of distributed teams. Max interested in distributed systems, data replication and consistency algorithms, ' +
-    'information science, functional languages and modern mobile and front-end development. Delivered more than 50 talks within past 5 years ' +
-    'about developments and trends in Python, JavaScript, Databases, Dev Processes, Testing Processes and Project Management.',
-    socialsRendered : '',
-    socials : [
-      {
-        link : 'https://www.linkedin.com/in/klymyshyn',
-        fatype : 'linkedin'
-      },
-      {
-        link : 'https://twitter.com/maxmaxmaxmax',
-        fatype : 'twitter'
-      }
-    ]
-  },
-  {
-    image : 'public/img/speakers/roman_sachenko.jpg',
-    name : 'Роман Саченко',
-    position : 'Software Engineer',
-    company : 'DA-14',
-    rept : [
-      {
-        title : 'Security in NodeJS [Ru]',
-        description : ''
-      },
-      {
-        title : 'App diagnostics under the hood [Ru]',
-        description : ''
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : [
-      {
-        link : 'https://github.com/roman-sachenko',
-        fatype : 'github'
-      },
-      /*{
-       link: 'https://www.linkedin.com/in/rsachenko/',
-       fatype: 'linkedin-square'
-       },
-       {
-       link: 'https://www.facebook.com/rsachenko',
-       fatype: 'facebook'
-       },*/
-      {
-        link : 'https://twitter.com/RSachenko',
-        fatype : 'twitter'
-      },
-      {
-        link : 'https://stackoverflow.com/users/5132363/roman-sachenko',
-        fatype : 'stack-overflow'
-      }/*,
-       {
-       link: 'https://www.instagram.com/rsachenko/',
-       fatype: 'instagram'
-       },*/
-    ]
-  },
-  {
-    image : 'public/img/speakers/evgeniy_obrezkov.jpg',
-    name : 'Евгений Обрезков',
-    position : 'Senior software engineer',
-    company : 'elastic.io',
-    rept : [
-      {
-        title : '',
-        description : ''
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : []
-  },
-  {
-    image : 'public/img/speakers/dmitriy_gusev.jpg',
-    name : 'Дмитрий Гусев',
-    position : 'Senior frontend developer',
-    company : '',
-    rept : [
-      {
-        title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
-        description : 'В ходе беседы поговорим о некоторых весьма полезных инструментах, для генерации стартового ' +
-        'состояние проекта, автоматической настройки основных компонентов. В общем, как автоматизировать все то, что' +
-        ' каждый раз приходится делать, но не очень хочется'
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : []
-  }
-];
-
 
 export class RenderSpeakers {
   constructor() {
     this.popup = new Popup('#speakers-modal');
+    this.CONFIG = window.CONFIG;
+    this.speakers = null;
     this._init();
     this._events();
     this.helpers = new Helpers();
   }
 
   _init() {
+    if(this.CONFIG.LANG === 'ru') {
+      this.speakers = SpeakersRu;
+    } else {
+      this.speakers = SpeakersEn;
+    }
+    
     if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) ) {
       $('#speakers-modal').html( localStorage.speakersModalHtml )
     }
@@ -163,7 +51,7 @@ export class RenderSpeakers {
 
     let spekersHtml = '';
 
-    $.each(speakers, function (i, sp) {
+    $.each(this.speakers, function (i, sp) {
       let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
 
       spekersHtml += item.replace('__ReplaceWithIndex', i);
@@ -176,6 +64,7 @@ export class RenderSpeakers {
 
   _events() {
     let that = this;
+
     $(document).on('click', '[data-remodal-target="speakers-modal"]', function () {
       let $speakerInfoBlock = $(this);
       loadSpeakerModal($speakerInfoBlock);
@@ -197,7 +86,7 @@ export class RenderSpeakers {
         $nextButton = $modalBody.find('button.remodal-next');
 
       $prevButton.unbind('click').click(() => {
-        let prevIndex = speakerIndex == 0 ? (speakers.length - 1) : speakerIndex - 1;
+        let prevIndex = speakerIndex == 0 ? (that.speakers.length - 1) : speakerIndex - 1;
         that.helpers.showLoader($modalBody);
 
         setTimeout(function () {
@@ -206,7 +95,7 @@ export class RenderSpeakers {
       });
 
       $nextButton.unbind('click').click(() => {
-        let nextIndex = speakerIndex == speakers.length - 1 ? 0 : speakerIndex + 1;
+        let nextIndex = speakerIndex == that.speakers.length - 1 ? 0 : speakerIndex + 1;
         that.helpers.showLoader($modalBody);
 
         setTimeout(function () {
@@ -215,7 +104,7 @@ export class RenderSpeakers {
 
       });
 
-      let speakerData = speakers[speakerIndex];
+      let speakerData = that.speakers[speakerIndex];
 
       if(speakerData) {
         let speakerAvatar = speakerData.image,

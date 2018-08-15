@@ -41,6 +41,7 @@
   margin-left: 45px;
 }
 
+.lang,
 .menu {
   display: flex;
   justify-content: space-between;
@@ -51,11 +52,15 @@
 
   li {
 
+    &.lang-mobile {
+      display: none!important;
+    }
+
     a{
       position: relative;
       display: inline-block;
       padding: 7px 10px;
-      margin-right: 20px;
+      margin-right: 10px;
       font-weight: 700;
       .font-size(14);
       color: #fff;
@@ -94,31 +99,25 @@
   }
 }
 
-.header-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 26px;
-  height: 26px;
-  margin-left: 35px;
-  border-radius: 50%;
-  background-color: #1F9988;
-  transition: .1s;
 
-  &:hover,
-  &:active,
-  &:focus {
-    transform: scale(1.1);
+.lang {
+  li{
+    color: #fff;
+  }
+  a{
+    color: #fff;
+
+    &:first-child {
+      margin-right: 0;
+      margin-left: 15px;
+    }
   }
 }
+
 .brgr-menu {
   display: none;
 }
 
-
-@media @laptopLg {
-
-}
 
 @media @laptop {
 
@@ -132,7 +131,8 @@
   .nav {
     margin-left: 0;
   }
-  .menu {
+  .menu,
+  .header ul:not(.lang) {
     display: none;
     position: fixed;
     background-color: #fff;
@@ -180,6 +180,14 @@
     order: 0;
   }
 
+  .lang {
+    a {
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+  }
+
   .brgr-menu {
     display: block;
     position: relative;
@@ -187,7 +195,7 @@
     height: 16px;
     cursor: pointer;
     user-select: none;
-    margin-left: 30px;
+    margin-left: 15px;
     order: 1;
 
     &::before,
@@ -223,6 +231,7 @@
   .brgr-menu.active~.header-contact{
     display: none;
   }
+
 
   .header-login {
 
@@ -269,6 +278,36 @@
   .logo {
     img {
       height: 36px;
+    }
+  }
+}
+
+
+@media @mobileSm {
+
+  .lang {
+    display: none;
+  }
+
+  .menu {
+    li {
+
+      &.lang-mobile {
+        display: flex!important;
+        align-items: center!important;
+
+        a{
+          max-width: none!important;
+          width: auto!important;
+          margin-right: 20px;
+
+          &:last-child {
+            margin-left: 20px!important;
+            margin-right: 0;
+
+          }
+        }
+      }
     }
   }
 }

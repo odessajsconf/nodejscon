@@ -1,11 +1,27 @@
 .heading {
+  position: relative;
   background-color: #fff;
-  background-image: url("../img/heading_bg.svg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 106%;
+  //background-image: url("../img/heading_bg.svg");
+  //background-position: bottom center;
+  //background-repeat: no-repeat;
+  //background-size: 106%;
   height: 100vh;
+  max-height: 1100px;
   min-height: 800px;
+
+  .user-select-none {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.heading-bg-img {
+  display: block;
+  width: 105%;
+  margin-left: -2.3%;
+  //margin-top: -200px;
+  user-select: none;
 }
 
 .heading-logo {
@@ -30,8 +46,11 @@
 }
 
 .heading-list {
-  margin-top: 12vh;
-  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6vh;
+  padding-left: 0;
+  width: 50%;
   .font-size(14);
   font-weight: bold;
   color: @color_green;
@@ -40,16 +59,18 @@
   letter-spacing: 3px;
 
   li {
+    width: 50%;
     position: relative;
-    margin-bottom: 30px;
-
+    margin-bottom: 15px;
+    padding-left: 50px;
 
     &::after {
       content: '';
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -55px;
+      top: -7px;
+      //top: 50%;
+      //transform: translateY(-50%);
+      left: 10px;
       width: 30px;
       height: 30px;
       background-image: url("../img/favicon.png");
@@ -88,9 +109,11 @@
   .heading {
     min-height: 700px;
   }
+
   .heading-logo {
     max-width: 400px;
   }
+
   .heading-date {
     .font-size(30);
   }
@@ -105,28 +128,49 @@
 }
 
 @media @laptop {
-  .heading-title-row {
-    display: block!important;
+
+}
+
+@media @tablet {
+  .heading-logo {
+    max-width: 300px;
   }
+
   .heading-date {
     margin-left: 0;
     margin-top: 20px;
     .font-size(22);
   }
 
-}
-@media @mobileLg {
-  .heading{
-    min-height: 610px;
+  .heading-bg-img {
+    margin-top: -100px;
   }
-  .heading-title-row {
-    margin-top: 20px!important;
-    display: block!important;
+}
+
+@media @mobileLg {
+  .heading {
+    min-height: 610px;
+    height: auto;
+    max-height: none;
+
+    .user-select-none {
+      position: relative;
+    }
   }
 
-  .heading-logo{
+  .heading-bg-img {
+    margin-top: 0;
+  }
+
+  .heading-title-row {
+    margin-top: 20px !important;
+    display: block !important;
+  }
+
+  .heading-logo {
     margin: 0 auto;
   }
+
   .heading-date {
     .font-size(18);
     text-align: center;
@@ -135,7 +179,13 @@
   }
 
   .heading-list {
-    margin-top: 60px;
+    display: block;
+    margin-top: 45px;
+    width: 100%;
+
+    li {
+      width: 100%;
+    }
   }
 
 }

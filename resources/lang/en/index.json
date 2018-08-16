@@ -16,7 +16,7 @@
   "heading_list_3_3": "Master Class",
   "heading_list_3_4": "Workshop",
   "heading_list_4": "Odessa, sea, sun",
-  "about_head": "О конференци",
+  "about_head": "About",
   "about_txt_1": "It’s going to be the first of its kind annual event in Ukraine that will be focused solely on Node.JS technologies.",
   "about_txt_2": "It’s going to be a single-day, two-track conference that will provide web developers of various levels with an opportunity to get in-depth knowledge about Node.JS and offer them great networking possibilities.",
   "about_txt_3": "We are focusing on forming and supporting Ukrainian Node.JS community.",
@@ -33,5 +33,7 @@
   "sponsors_txt_5": "Telegram us",
   "sponsors_mariia": "Mariia",
   "sponsors_julia": "Julia",
-  "sponsors_program": "Download sponsorship proposal"
+  "sponsors_program": "Download sponsorship proposal",
+  "poup_previous": "Previous",
+  "poup_next": "Next"
 }

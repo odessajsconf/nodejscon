@@ -1,13 +1,10 @@
 import $ from 'jquery';
+window.jQuery = $;
+require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
 import {SpeakersRu} from '../lang/speakers-ru.js'
 import {SpeakersEn} from '../lang/speakers-en.js'
-
-
-
-window.jQuery = $;
-require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 
 export class RenderSpeakers {

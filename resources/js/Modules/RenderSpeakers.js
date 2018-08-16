@@ -29,7 +29,8 @@ export class RenderSpeakers {
     }
 
     let speakerItem =
-      '<div class="speaker-item" data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">' +
+      '<div class="speaker-item">' +
+      '<div data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">'+
       '<div class="speaker-img">' +
       '<img src="${image}" alt="${name}">' +
       '</div>' +
@@ -42,15 +43,22 @@ export class RenderSpeakers {
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} </br> </br>{{/each}}' +
       '</div>' +
+      '</div>'+
+      '<div class="speaker-socials">{{html socialsRendered}}</div>' +
       '</div>';
 
     $.template('speakerTemplate', speakerItem);
 
+    var socialsItem = "<a href='${link}' target='_blank'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
+    $.template( "socialsTemplate", socialsItem );
+
+
     let spekersHtml = '';
 
     $.each(this.speakers, function (i, sp) {
-      let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
+      $.each($.tmpl("socialsTemplate", sp.socials ), function(a, i){ sp.socialsRendered += i.outerHTML; });
 
+      let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
       spekersHtml += item.replace('__ReplaceWithIndex', i);
 
     });

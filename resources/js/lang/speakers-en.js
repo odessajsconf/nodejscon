@@ -34,9 +34,9 @@ export const SpeakersEn = [
     company : 'Takeoff Technologies',
     rept : [
       {
-        title : 'Conflict-free replicated data types: распредедленные данные в деталях [RU] [Talk]',
-        description : 'Распределенные системы – как устроены и как можно практически применить ' +
-        'распределенные структуры данных на базе идей из области CRDT'
+        title : 'Conflict-free replicated data types: distributed data in detail [RU] [Talk]',
+        description : 'Distributed systems - how to arrange and how you can practically apply ' +
+        'distributed data structures based on ideas from the field of CRDT'
       },
       {
         title : 'Build blockchain using CRDT and Merkle Trees [Ru] [Workshop]',

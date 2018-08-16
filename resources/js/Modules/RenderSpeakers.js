@@ -136,9 +136,7 @@ export class RenderSpeakers {
         reportsContent && $modalreportsContainer.html(reportsContent);
 
         // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
-        console.log($modalBody)
-        console.log($modalSpeakerLinks)
-        console.log(speakerSocials)
+
         $modalSpeakerLinks.html(speakerSocials);
 
         that.helpers.hideLoader($modalBody);

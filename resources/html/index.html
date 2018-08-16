@@ -381,21 +381,27 @@
     <div class="speakers-modal_img">
       <img data-src="public/img/speakers/andrey_grachev.png" alt="">
     </div>
-    <div class="speakers-modal_txt ">
-      <div class="speaker-name">
-      </div>
+    <div class="speakers-modal_txt">
+      <div class="speaker-name"></div>
+
       <div class="speaker-position">
         <span class="position"></span>
         <span class="company"></span>
       </div>
+
+      <div class="speaker-socials"></div>
     </div>
   </div>
 
   <div class="speakers-modal_content m-t-40 m-b-50"></div>
 
   <div class="flex j-c-space-between">
-    <button class="remodal-prev">Previous</button>
-    <button class="remodal-next">Next</button>
+    <button class="remodal-prev">
+      ${{ index.poup_previous }}$
+    </button>
+    <button class="remodal-next">
+      ${{ index.poup_next }}$
+    </button>
   </div>
 </div>
 

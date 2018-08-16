@@ -24,7 +24,7 @@ export class RenderSpeakers {
       this.speakers = SpeakersEn;
     }
     
-    if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) ) {
+    if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) > -1 ) {
       $('#speakers-modal').html( localStorage.speakersModalHtml )
     }
 
@@ -82,7 +82,7 @@ export class RenderSpeakers {
         $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
         $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
         $modalreportsContainer = $modalBody.find('.speakers-modal_content'),
-        // $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
+        $modalSpeakerLinks = $modalBody.find('.speaker-socials'),
         // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
 
         speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
@@ -116,6 +116,7 @@ export class RenderSpeakers {
           speakerName = speakerData.name,
           speakerPosition = speakerData.position,
           speakerCompany = speakerData.company,
+          speakerSocials = speakerData.socialsRendered,
           reports = speakerData.rept,
           reportsContent = '',
           speakerAboutText = speakerData.aboutSpeaker;
@@ -135,7 +136,10 @@ export class RenderSpeakers {
         reportsContent && $modalreportsContainer.html(reportsContent);
 
         // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
-        // $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
+        console.log($modalBody)
+        console.log($modalSpeakerLinks)
+        console.log(speakerSocials)
+        $modalSpeakerLinks.html(speakerSocials);
 
         that.helpers.hideLoader($modalBody);
         setTimeout(()=>{

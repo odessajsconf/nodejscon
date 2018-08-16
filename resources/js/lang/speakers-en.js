@@ -1,4 +1,4 @@
-export const SpeakersEn =  [
+export const SpeakersEn = [
   {
     image : '../public/img/speakers/nikita_galkin.jpg',
     name : 'Nikita Galkin',
@@ -12,7 +12,20 @@ export const SpeakersEn =  [
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+      {
+        link : 'https://twitter.com/galk_in',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://www.linkedin.com/in/nikitagalkin/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'https://github.com/galkin',
+        fatype : 'github'
+      },
+    ]
   },
   {
     image : '../public/img/speakers/max_klymyshyn.jpg',
@@ -21,8 +34,19 @@ export const SpeakersEn =  [
     company : 'Takeoff Technologies',
     rept : [
       {
-        title : 'Build blockchain using CRDT and Merkle Trees [Ru] [Workshop, Talk]',
-        description : ''
+        title : 'Conflict-free replicated data types: распредедленные данные в деталях [RU] [Talk]',
+        description : 'Распределенные системы – как устроены и как можно практически применить ' +
+        'распределенные структуры данных на базе идей из области CRDT'
+      },
+      {
+        title : 'Build blockchain using CRDT and Merkle Trees [Ru] [Workshop]',
+        description : '<ul>\n' +
+        '  <li>introduction &amp; basic tools installation</li>\n' +
+        '  <li>blockchain basic implementation</li>\n' +
+        '  <li>low-level transport</li>\n' +
+        '  <li>high-level transport &amp; CRDT payload definition</li>\n' +
+        '  <li>adding distributed properties</li>\n' +
+        '</ul>'
       }
     ],
     aboutSpeaker :
@@ -99,7 +123,20 @@ export const SpeakersEn =  [
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+      {
+        link : 'https://twitter.com/ghaiklor',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://www.facebook.com/ghaiklor?ref=br_rs',
+        fatype : 'facebook'
+      },
+      {
+        link : 'https://github.com/ghaiklor"',
+        fatype : 'github'
+      }
+    ]
   },
   {
     image : '../public/img/speakers/dmitriy_gusev.jpg',
@@ -116,6 +153,15 @@ export const SpeakersEn =  [
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+      {
+        link : 'https://www.linkedin.com/in/dmitriy-gusev/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'https://github.com/dogusev"',
+        fatype : 'github'
+      }
+    ]
   }
 ];

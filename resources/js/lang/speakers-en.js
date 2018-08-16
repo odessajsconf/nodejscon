@@ -7,7 +7,7 @@ export const SpeakersEn =  [
     rept : [
       {
         title : 'Node.js and Browser: which protocol to choose [Ru]',
-        description : ''
+        description : 'Доклад начнется с разбора сильных и слабых сторон Node.js. Так же мы вспомним базовые концепции EventEmitter, Stream и EventLoop. Далее будут рассмотрены протоколы, по которым в современном вебе передаются данные: REST, WebSockets, ServerSideEvents, GraphQL. В заключение будет протокол агностик структура приложения.'
       }
     ],
     aboutSpeaker : '',

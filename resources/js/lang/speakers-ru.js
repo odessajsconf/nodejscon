@@ -1,4 +1,4 @@
-export const SpeakersRu =  [
+export const SpeakersRu = [
   {
     image : 'public/img/speakers/nikita_galkin.jpg',
     name : 'Никита Галкин',
@@ -7,7 +7,7 @@ export const SpeakersRu =  [
     rept : [
       {
         title : 'Node.js и браузер: какой протокол выбрать [Ru]',
-        description : ''
+        description : 'Доклад начнется с разбора сильных и слабых сторон Node.js. Так же мы вспомним базовые концепции EventEmitter, Stream и EventLoop. Далее будут рассмотрены протоколы, по которым в современном вебе передаются данные: REST, WebSockets, ServerSideEvents, GraphQL. В заключение будет протокол агностик структура приложения.'
       }
     ],
     aboutSpeaker : '',

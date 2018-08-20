@@ -21,7 +21,7 @@
 
   <title>Node Conference</title>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Event">
 <div class="remodal-bg">
   <header id="header" class="header">
     <div class="header-cont container">
@@ -75,9 +75,9 @@
       <div class="container">
         <div class="heading-title-row flex j-c-space-between a-i-center m-t-40">
           <div class="heading-logo">
-            <img data-src="public/img/logo_green.svg?v1.01" alt="Node Conference">
+            <img src="public/img/logo_green.svg?v1.01" alt="Node Conference" itemprop="image">
           </div>
-          <div class="heading-date">
+          <div class="heading-date" itemprop="startDate" content="2018-09-30">
             ${{ index.heading_date }}$
           </div>
         </div>
@@ -133,30 +133,28 @@
               ${{ index.tickets_head }}$
             </div>
 
-            <ul class="about-tickets-list">
-              <li class="about-ticket-item">
+            <ul class="about-tickets-list" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <li class="about-ticket-item" itemprop="price" content="1500.00">
 
-                <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank">
-                  <div class="about-ticket-title">
+                <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" itemprop="url">
+                  <div class="about-ticket-title" >
                     Early Bird <br>
                     Ticket
                   </div>
                 </a>
                 <div class="about-ticket-desc">
-                  1500 UAH
+                  1500 <span itemprop="priceCurrency" content="UAH">UAH</span>
                 </div>
               </li>
-              <li class="about-ticket-item">
-
-                <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank">
+              <li class="about-ticket-item" itemprop="price" content="1950.00">
+                <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" itemprop="url">
                   <div class="about-ticket-title">
                     Regular <br>
                     Ticket
                   </div>
                 </a>
                 <div class="about-ticket-desc">
-                  1950 UAH
-
+                  1950 <span itemprop="priceCurrency" content="UAH">UAH</span>
                 </div>
               </li>
               <!--<li class="about-ticket-item">-->

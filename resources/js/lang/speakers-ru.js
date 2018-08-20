@@ -2,8 +2,8 @@ export const SpeakersRu = [
   {
     image : 'public/img/speakers/nikita_galkin.jpg',
     name : 'Никита Галкин',
-    position : 'System Architect of HighLoad projects',
-    company : '',
+    position : 'System Architect',
+    company : 'HighLoad projects',
     rept : [
       {
         title : 'Node.js и браузер: какой протокол выбрать [Ru]',
@@ -39,7 +39,7 @@ export const SpeakersRu = [
         'распределенные структуры данных на базе идей из области CRDT'
       },
       {
-        title : 'Построение блокчена, используя CRDT и Merkle Trees [Ru] [Workshop]',
+        title : 'Построение блокчейна, используя CRDT и Merkle Trees [Ru] [Workshop]',
         description : '<ul>\n' +
         '  <li>introduction &amp; basic tools installation</li>\n' +
         '  <li>blockchain basic implementation</li>\n' +
@@ -73,7 +73,7 @@ export const SpeakersRu = [
     company : 'DA-14',
     rept : [
       {
-        title : 'Безопасность в NodeJS [Ru]',
+        title : 'Безопасность в Node.js [Ru]',
         description : ''
       },
       {
@@ -113,7 +113,7 @@ export const SpeakersRu = [
   {
     image : 'public/img/speakers/evgeniy_obrezkov.jpg',
     name : 'Евгений Обрезков',
-    position : 'Senior software engineer',
+    position : 'Senior Software Engineer',
     company : 'elastic.io',
     rept : [
       {
@@ -141,11 +141,11 @@ export const SpeakersRu = [
   {
     image : 'public/img/speakers/dmitriy_gusev.jpg',
     name : 'Дмитрий Гусев',
-    position : 'Senior frontend developer',
+    position : 'Senior Frontend Developer',
     company : '',
     rept : [
       {
-        title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
+        title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js [Ru]',
         description : 'В ходе беседы поговорим о некоторых весьма полезных инструментах, для генерации стартового ' +
         'состояние проекта, автоматической настройки основных компонентов. В общем, как автоматизировать все то, что' +
         ' каждый раз приходится делать, но не очень хочется'

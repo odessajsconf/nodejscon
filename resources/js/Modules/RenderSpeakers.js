@@ -41,7 +41,7 @@ export class RenderSpeakers {
       '{{/if}}' +
       '</div>' +
       '<div class="speaker-report">' +
-      '{{each rept }} {{html $value.title}} </br> </br>{{/each}}' +
+      '{{each rept }} {{html $value.title}} {{if $value.title}}</br> </br>{{/if}}{{/each}}' +
       '</div>' +
       '</div>'+
       '<div class="speaker-socials">{{html socialsRendered}}</div>' +

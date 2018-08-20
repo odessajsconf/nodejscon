@@ -2,8 +2,8 @@ export const SpeakersEn = [
   {
     image : '../public/img/speakers/nikita_galkin.jpg',
     name : 'Nikita Galkin',
-    position : 'System Architect of HighLoad projects',
-    company : '',
+    position : 'System Architect',
+    company : 'HighLoad projects',
     rept : [
       {
         title : 'Node.js and Browser: which protocol to choose [Ru]',
@@ -113,7 +113,7 @@ export const SpeakersEn = [
   {
     image : '../public/img/speakers/evgeniy_obrezkov.jpg',
     name : 'Eugene Obrezkov',
-    position : 'Senior software engineer',
+    position : 'Senior Software Engineer',
     company : 'elastic.io',
     rept : [
       {
@@ -141,7 +141,7 @@ export const SpeakersEn = [
   {
     image : '../public/img/speakers/dmitriy_gusev.jpg',
     name : 'Dmitriy Gusev',
-    position : 'Senior frontend developer',
+    position : 'Senior Frontend Developer',
     company : '',
     rept : [
       {

@@ -58,6 +58,20 @@
               ${{ index.menu_tickets }}$
             </a></li>
 
+            <li class="socials-block-mobile">
+              <div class="flex socials-block">
+                <a href="https://www.facebook.com/NodeUkraine/" target="_blank">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/NodeConference" target="_blank">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/nodeukraine_2018/" target="_blank">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+
             <li class="lang-mobile">
               <a href="${{ index.lang_link_ru }}$">ru</a>
               |
@@ -72,6 +86,19 @@
             <a href="${{ index.lang_link_en }}$">en</a>
           </li>
         </ul>
+
+        <div class="socials-block header-socials-block">
+          <a href="https://www.facebook.com/NodeUkraine/" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/NodeConference" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/nodeukraine_2018/" target="_blank">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </a>
+        </div>
+
         <div class="brgr-menu"></div>
       </div>
 
@@ -89,13 +116,18 @@
             ${{ index.heading_date }}$
           </div>
         </div>
-        <div class="flex">
-          <ul class="heading-list">
 
+        <div class="flex j-c-flex-end">
+          <div class="text-center heading-tickets-btn">
+            <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" class="btn btn-black">Билеты</a>
+          </div>
+        </div>
+
+        <div>
+          <ul class="heading-list">
             <li class="calendar">
               <strong>${{ index.heading_list_1 }}$</strong>
             </li>
-
             <li class="format">
               <strong>${{ index.heading_list_3 }}$</strong> <br>
               <br>
@@ -350,6 +382,13 @@
               <td></td>
               <td></td>
               <td>+</td>
+            </tr>
+            <tr>
+              <td>${{ index.sponsors_option_14 }}$</td>
+              <td></td>
+              <td>5%</td>
+              <td>10%</td>
+              <td>15%</td>
             </tr>
             </thead>
           </table>

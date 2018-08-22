@@ -1,32 +1,32 @@
 export const SpeakersRu = [
-  {
-    image : 'public/img/speakers/nikita_galkin.jpg',
-    name : 'Никита Галкин',
-    position : 'System Architect',
-    company : 'HighLoad projects',
-    rept : [
-      {
-        title : 'Node.js и браузер: какой протокол выбрать [Ru]',
-        description : 'Доклад начнется с разбора сильных и слабых сторон Node.js. Так же мы вспомним базовые концепции EventEmitter, Stream и EventLoop. Далее будут рассмотрены протоколы, по которым в современном вебе передаются данные: REST, WebSockets, ServerSideEvents, GraphQL. В заключение будет протокол агностик структура приложения.'
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : [
-      {
-        link : 'https://twitter.com/galk_in',
-        fatype : 'twitter'
-      },
-      {
-        link : 'https://www.linkedin.com/in/nikitagalkin/',
-        fatype : 'linkedin'
-      },
-      {
-        link : 'https://github.com/galkin',
-        fatype : 'github'
-      },
-    ]
-  },
+  // {
+  //   image : 'public/img/speakers/nikita_galkin.jpg',
+  //   name : 'Никита Галкин',
+  //   position : 'System Architect',
+  //   company : 'HighLoad projects',
+  //   rept : [
+  //     {
+  //       title : 'Node.js и браузер: какой протокол выбрать [Ru]',
+  //       description : 'Доклад начнется с разбора сильных и слабых сторон Node.js. Так же мы вспомним базовые концепции EventEmitter, Stream и EventLoop. Далее будут рассмотрены протоколы, по которым в современном вебе передаются данные: REST, WebSockets, ServerSideEvents, GraphQL. В заключение будет протокол агностик структура приложения.'
+  //     }
+  //   ],
+  //   aboutSpeaker : '',
+  //   socialsRendered : '',
+  //   socials : [
+  //     {
+  //       link : 'https://twitter.com/galk_in',
+  //       fatype : 'twitter'
+  //     },
+  //     {
+  //       link : 'https://www.linkedin.com/in/nikitagalkin/',
+  //       fatype : 'linkedin'
+  //     },
+  //     {
+  //       link : 'https://github.com/galkin',
+  //       fatype : 'github'
+  //     },
+  //   ]
+  // },
   {
     image : 'public/img/speakers/max_klymyshyn.jpg',
     name : 'Максим Климишин',
@@ -110,34 +110,34 @@ export const SpeakersRu = [
        },*/
     ]
   },
-  {
-    image : 'public/img/speakers/evgeniy_obrezkov.jpg',
-    name : 'Евгений Обрезков',
-    position : 'Senior Software Engineer',
-    company : 'elastic.io',
-    rept : [
-      {
-        title : '',
-        description : ''
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : [
-      {
-        link : 'https://twitter.com/ghaiklor',
-        fatype : 'twitter'
-      },
-      {
-        link : 'https://www.facebook.com/ghaiklor?ref=br_rs',
-        fatype : 'facebook'
-      },
-      {
-        link : 'https://github.com/ghaiklor"',
-        fatype : 'github'
-      },
-    ]
-  },
+  // {
+  //   image : 'public/img/speakers/evgeniy_obrezkov.jpg',
+  //   name : 'Евгений Обрезков',
+  //   position : 'Senior Software Engineer',
+  //   company : 'elastic.io',
+  //   rept : [
+  //     {
+  //       title : '',
+  //       description : ''
+  //     }
+  //   ],
+  //   aboutSpeaker : '',
+  //   socialsRendered : '',
+  //   socials : [
+  //     {
+  //       link : 'https://twitter.com/ghaiklor',
+  //       fatype : 'twitter'
+  //     },
+  //     {
+  //       link : 'https://www.facebook.com/ghaiklor?ref=br_rs',
+  //       fatype : 'facebook'
+  //     },
+  //     {
+  //       link : 'https://github.com/ghaiklor"',
+  //       fatype : 'github'
+  //     },
+  //   ]
+  // },
   {
     image : 'public/img/speakers/dmitriy_gusev.jpg',
     name : 'Дмитрий Гусев',

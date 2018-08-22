@@ -163,5 +163,44 @@ export const SpeakersRu = [
         fatype : 'github'
       }
     ]
+  },
+  {
+	image: 'public/img/speakers/alexandra_kalinina.jpg',
+	name : 'Александра Калинина',
+	position : '',
+	company : '',
+	rept : [
+		{
+			title : 'Testing of deployment process to GCP [Ru]',
+			description : ''
+		}
+	],
+	aboutSpeaker : '',
+    socialsRendered : '',
+	socials : []
+  },
+  {
+	image: 'public/img/speakers/dmitry_chirkin.jpg',
+	name : 'Дмитрий Чиркин',
+	position : 'Web Developer',
+	company : 'Nix solutions',
+	rept : [
+		{
+			title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
+			description : ''
+		}
+	],
+	aboutSpeaker : '',
+    socialsRendered : '',
+	socials : [
+		{
+			link : 'https://github.com/josser',
+			fatype : 'github'
+		},
+		{
+          link : 'https://facebook.com/josser',
+          fatype : 'facebook'
+        },
+	]
   }
 ];

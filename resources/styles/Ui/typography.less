@@ -25,7 +25,7 @@ h4, .h4{
   .font-size(22);
   font-family: 'stolzl', sans-serif;
   color: @color_gray_light;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h5, .h5{
@@ -114,6 +114,11 @@ h4, .h4, h5, .h5, p, .ul, .ul li,
   transition: .2s;
 }
 
+strong {
+  font-family: 'stolzl', sans-serif;
+  font-weight: 900;
+}
+
 @media screen and (max-width: 1400px) {
   h2, .h2{
     .font-size(110);
@@ -178,5 +183,13 @@ h4, .h4, h5, .h5, p, .ul, .ul li,
   }
   h4, .h4 {
     .font-size(14);
+  }
+}
+@media @mobileSm {
+  h2, .h2{
+    .font-size(40);
+  }
+  h3, .h3 {
+    .font-size(18);
   }
 }

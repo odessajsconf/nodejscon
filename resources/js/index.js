@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { HeaderComponent } from './Components/Header';
-import { Popup } from './Components/Popup';
 import { RenderSpeakers } from './Modules/RenderSpeakers';
+import { LazyLoading } from './Modules/LazyLoad';
 
 
 
@@ -15,11 +15,12 @@ class App {
   }
 
   _initModules() {
+    new RenderSpeakers();
+    new LazyLoading();
   }
 
   _initComponents() {
     new HeaderComponent();
-    new RenderSpeakers();
   }
 }
 

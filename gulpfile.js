@@ -26,6 +26,7 @@ let path = {
   scripts : ['resources/js/**/*.js'],
   less : ['resources/styles/style.less'],
   fonts : ['resources/fonts/**/*.*'],
+  docs : ['resources/docs/**/*.*'],
   img : ['resources/img/**/*.*']
 };
 
@@ -38,6 +39,12 @@ gulp.task('fonts', function () {
   return gulp.src(path.fonts)
     .pipe(copy())
     .pipe(gulp.dest(PUBLIC_DIR + '/fonts'));
+});
+
+gulp.task('docs', function () {
+  return gulp.src(path.docs)
+    .pipe(copy())
+    .pipe(gulp.dest(PUBLIC_DIR + '/docs'));
 });
 
 gulp.task('img', function () {
@@ -134,5 +141,5 @@ gulp.task('watch', function () {
   gulp.watch('resources/lang/**/*.json', ['localize-default']);
 });
 
-gulp.task('default', ['script', 'less', 'fonts', 'img', /*'hash',*/ 'localize-default', 'watch']);
-gulp.task('prod', ['script-min', 'less', 'fonts', 'img', /*'hash',*/ 'localize-default']);
+gulp.task('default', ['script', 'less', 'fonts', 'docs','img', /*'hash',*/ 'localize-default', 'watch']);
+gulp.task('prod', ['script-min', 'less', 'fonts', 'docs','img', /*'hash',*/ 'localize-default']);

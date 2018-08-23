@@ -210,7 +210,7 @@ export const SpeakersRu = [
 	company : 'Oracle',
 	rept : [
 		{
-			title : 'Management 101 [Ru]',
+			title : 'Management 101 [Ru] [Pre-party]',
 			description : ''
 		}
 	],
@@ -237,5 +237,20 @@ export const SpeakersRu = [
 			fatype : 'github'
 		},
 	]
+  },
+  {
+	image: 'public/img/speakers/nikolai_boiko.jpg',
+	name : 'Николай Бойко',
+	position : '',
+	company : 'Daxx',
+	rept : [
+		{
+			title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
+			description : ''
+		}
+	],
+	aboutSpeaker : '',
+    socialsRendered : '',
+	socials : []
   },
 ];

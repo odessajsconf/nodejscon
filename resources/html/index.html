@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NodeUkraine is the first event in Ukraine focused solely on Node.JS technologies.">
+  <meta name="description" content="${{ index.meta_description }}$">
 
   <link rel="icon" href="public/img/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -12,18 +12,30 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="public/css/app.min.css">
 
+  <!--social snippet metadata-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="http://nodeukraine.org.ua">
+  <meta property="og:title" content="${{ index.meta_title }}$">
+  <meta property="og:description"
+        content="${{ index.meta_description }}$">
+  <meta property="og:image" content="http://nodeukraine.org.ua/public/img/logo_green.svg">
+  <!--social snippet metadata-->
+
   <script>
     window.CONFIG = {
       BASE_URL : '/',
       LANG : '${{ index.lang }}$'
-    };</script>
+    };
+  </script>
 
 
-  <title>Node Conference</title>
+  <title>${{ index.meta_title }}$</title>
 </head>
 <body itemscope itemtype="http://schema.org/Event">
 
-<meta itemprop="name" content="Node Conference">
+<meta itemprop="name" content="NodeUkraine Conference">
 <meta itemprop="description"
       content="NodeUkraine is the first event in Ukraine focused solely on Node.JS technologies.">
 <meta itemprop="endDate" content="2018-09-29">

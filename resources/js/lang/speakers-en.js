@@ -202,5 +202,55 @@ export const SpeakersEn = [
           fatype : 'facebook'
         },
 	]
-  }
+  },
+  {
+	image: '../public/img/speakers/dmitry_mindra.jpg',
+	name : 'Dmitry Mindra',
+	position : 'Senior Manager',
+	company : 'Oracle',
+	rept : [
+		{
+			title : 'Management 101 [Ru] [Pre-party]',
+			description : ''
+		}
+	],
+	aboutSpeaker : '',
+    socialsRendered : '',
+	socials : []
+  },
+  {
+	image: '../public/img/speakers/yurii_chikhrai.jpg',
+	name : 'Yurii Chikhrai',
+	position : 'Node.js Developer',
+	company : 'Shipnext',
+	rept : [
+		{
+			title : 'Streams - ликвидация безграмотности [Ru]',
+			description : 'Доклад должен показать что Streams - важный инструмент Node.js, который не нужно игнорировать, а необходимо использовать в полную силу. После доклада у вас должны появится знания, как сделать более оптимизированные приложения и пройти все страхи использования этого инструмента'
+		}
+	],
+	aboutSpeaker : '',
+    socialsRendered : '',
+	socials : [
+		{
+			link : 'https://github.com/YuriiChikhrai',
+			fatype : 'github'
+		},
+	]
+  },
+  {
+	image: '../public/img/speakers/nikolai_boiko.jpg',
+	name : 'Nikolai Boiko',
+	position : '',
+	company : 'Daxx',
+	rept : [
+		{
+			title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
+			description : ''
+		}
+	],
+	aboutSpeaker : '',
+    socialsRendered : '',
+	socials : []
+  },
 ];

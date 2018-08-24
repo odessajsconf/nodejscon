@@ -16,6 +16,7 @@ export class RenderSpeakers {
     this._events();
     this.helpers = new Helpers();
   }
+	
 
   _init() {
     if(this.CONFIG.LANG === 'ru') {

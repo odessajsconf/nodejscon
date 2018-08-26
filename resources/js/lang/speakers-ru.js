@@ -34,7 +34,7 @@ export const SpeakersRu = [
     company : 'Takeoff Technologies',
     rept : [
       {
-        title : 'Conflict-free replicated data types: распредедленные данные в деталях [RU] [Talk]',
+        title : 'Conflict-free replicated data types: распределенные данные в деталях [RU] [Talk]',
         description : 'Распределенные системы – как устроены и как можно практически применить ' +
         'распределенные структуры данных на базе идей из области CRDT'
       },

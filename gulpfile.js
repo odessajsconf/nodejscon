@@ -64,7 +64,7 @@ gulp.task('script', function () {
 //     .pipe(gulp.dest(PUBLIC_DIR+'/js'))
 // });
 
-gulp.task('script-min', () => {
+gulp.task('script-min', ['script'], () => {
   return gulp.src([PUBLIC_DIR + '/js/index.js'])
     .pipe(minify({
       mangle : false,

@@ -6,23 +6,27 @@
   margin-top: 100px;
 }
 .schedule-list {
-  margin-top: 100px;
+  max-width: 1100px;
+  margin: 100px auto 0;
 }
 .schedule-head {
   display: flex;
   width: 100%;
+  padding: 15px 0;
 }
 
 .schedule-head-item {
-  color: @color_green;
+  //color: @color_green;
+  color: lighten(@color_green, 15%);
   text-align: center;
   width: 50%;
+  font-weight: 700;
+  .font-size(22);
 
   &:first-child {
     width: 140px;
     margin-right: 4%;
   }
-
 }
 
 .schedule-item {
@@ -59,6 +63,7 @@
   .font-size(18);
   font-weight: bold;
   margin-right: 2%;
+  margin-top: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -85,5 +90,15 @@
   }
   .schedule-text {
     .font-size(16);
+  }
+}
+
+@media @mobileMd {
+  .schedule-list-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .schedule-list {
+    min-width: 540px;
   }
 }

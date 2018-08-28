@@ -1,4 +1,4 @@
-export const ScheduleRu = [
+export const ScheduleEn = [
   {
     time:'9.30-10.30',
     icon:'profile',

@@ -100,10 +100,10 @@ gulp.task('hash', function () {
       exts : ['.js', '.css'],
       query_name : 'v'
     }))
-    // .pipe(htmlmin({
-    //   collapseWhitespace : true,
-    //   removeComments : true
-    // }))
+    .pipe(htmlmin({
+      collapseWhitespace : true,
+      removeComments : true
+    }))
     .pipe(gulp.dest('./public/html'))
     .pipe(livereload());
 });

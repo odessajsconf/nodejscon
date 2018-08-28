@@ -39,7 +39,7 @@ export class RenderSchedule {
     $.template('scheduleRow', scheduleRow);
 
     let scheduleItem = '<div class="schedule-text flex-item-1">' +
-      '                  ${title}' +
+      '                  {{html title}}' +
       '                  <div class="schedule-author">' +
       '                    ${author}' +
       '                  </div>' +

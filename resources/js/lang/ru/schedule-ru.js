@@ -22,7 +22,7 @@ export const ScheduleRu = [
     icon:'people',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Начало конференции'},
+      {author: '', title: 'Начало конференции <br> <br> Доклад 1'},
       {author: '', title: 'Доклад 1'}
     ]
   },

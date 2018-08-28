@@ -8,20 +8,67 @@
 .schedule-list {
   margin-top: 100px;
 }
+.schedule-head {
+  display: flex;
+  width: 100%;
+}
+
+.schedule-head-item {
+  color: @color_green;
+  text-align: center;
+  width: 50%;
+
+  &:first-child {
+    width: 140px;
+    margin-right: 4%;
+  }
+
+}
+
 .schedule-item {
   display: flex;
   margin-bottom: 15px;
+  padding: 12px;
+  align-items: center;
+
+  &:nth-child(2n+1) {
+    background-color: lighten(@color_green, 60%);
+  }
 }
 .schedule-time {
+  max-width: 100px;
+  width: 100px;
   white-space: nowrap;
-  color: @color_gray_light;
-  .font-size(30);
-  margin-right: 5%;
+  color: @color_black;
+  .font-size(18);
+  margin-right: 2%;
+}
+.schedule-icon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  background-image: url("../img/i2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 2%;
 }
 .schedule-text {
-  color: @color_gray;
-  .font-size(30);
+  color: @color_green;
+  .font-size(18);
   font-weight: bold;
+  margin-right: 2%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.schedule-author{
+  margin-top: 10px;
+  color: @color_black;
+  .font-size(16);
 }
 
 @media @tablet {

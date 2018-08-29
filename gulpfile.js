@@ -15,6 +15,7 @@ i18n = require('gulp-html-i18n');
 
 var replace = require('gulp-replace');
 var htmlreplace = require('gulp-html-replace');
+var runSequence = require('run-sequence');
 
 require('any-promise/register')('bluebird');
 
@@ -92,17 +93,18 @@ gulp.task('less', function () {
 });
 
 gulp.task('hash', function () {
-  return gulp.src(['./resources/html/index.html'])
-    .pipe(hash_src({
-      build_dir : './public/html',
-      src_path : './resources/html',
-      hash_len : 5,
-      exts : ['.js', '.css'],
-      query_name : 'v'
-    }))
+  return gulp.src(['./resources/html/*.html'])
     .pipe(htmlmin({
       collapseWhitespace : true,
       removeComments : true
+    }))
+    .pipe(hash_src({
+      build_dir : './',
+      src_path : './resources/html',
+      hash_len : 5,
+      exts : ['.js', '.css', '.jpg', '.png', '.svg'],
+      query_name : 'v',
+      verbose: true
     }))
     .pipe(gulp.dest('./public/html'))
     .pipe(livereload());
@@ -141,5 +143,8 @@ gulp.task('watch', function () {
   gulp.watch('resources/lang/**/*.json', ['localize-default']);
 });
 
-gulp.task('default', ['script', 'less', 'fonts', 'docs','img', /*'hash',*/ 'localize-default', 'watch']);
-gulp.task('prod', ['script-min', 'less', 'fonts', 'docs','img', /*'hash',*/ 'localize-default']);
+gulp.task('default', function (callback) {
+  runSequence('script', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', 'watch', callback)});
+
+gulp.task('prod', function (callback) {
+  runSequence('script-min', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', callback)});

@@ -29,6 +29,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "google-maps": "^3.3.0",
     "jquery": "3.2.1",
     "jquery.tmpl": "0.0.2",
     "remodal": "1.1.1",

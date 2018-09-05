@@ -23,7 +23,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Начало конференции <br> <br> Доклад 1'},
-      {author: '', title: 'Доклад 1'}
+      {author: '', title: ''}
     ]
   },
   {

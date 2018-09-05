@@ -19,9 +19,9 @@ class App {
     new RenderSpeakers();
     new RenderSchedule();
     new LazyLoading();
-    // this.map = new Map({
-    //   selector: '#map',
-    // });
+    this.map = new Map({
+      selector: '#map',
+    });
   }
 
   _initComponents() {

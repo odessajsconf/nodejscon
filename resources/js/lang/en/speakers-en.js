@@ -142,7 +142,7 @@ export const SpeakersEn = [
     image : '../public/img/speakers/dmitriy_gusev.jpg',
     name : 'Dmitriy Gusev',
     position : 'Senior Frontend Developer',
-    company : '',
+    company : 'HYS Enterprise',
     rept : [
       {
         title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
@@ -167,8 +167,8 @@ export const SpeakersEn = [
   {
 	image: '../public/img/speakers/alexandra_kalinina.jpg',
 	name : 'Alexandra Kalinina',
-	position : '',
-	company : '',
+  position : 'Full Stack JS Developer',
+  company : 'Valor Software',
 	rept : [
 		{
 			title : 'Testing of deployment process to GCP [Ru]',
@@ -241,12 +241,14 @@ export const SpeakersEn = [
   {
 	image: '../public/img/speakers/nikolai_boiko.jpg',
 	name : 'Nikolai Boiko',
-	position : '',
+	position : 'Software Developer',
 	company : 'Daxx',
 	rept : [
 		{
 			title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
-			description : ''
+			description : 'How to refactor big and complex NodeJS applications.<br>' +
+      'Make correct estimations, chose transition strategy.<br>' +
+      'Step by step guide with code examples and techniques to complete this task.'
 		}
 	],
 	aboutSpeaker : '',

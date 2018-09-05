@@ -142,7 +142,7 @@ export const SpeakersRu = [
     image : 'public/img/speakers/dmitriy_gusev.jpg',
     name : 'Дмитрий Гусев',
     position : 'Senior Frontend Developer',
-    company : '',
+    company : 'HYS Enterprise',
     rept : [
       {
         title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js [Ru]',
@@ -167,12 +167,18 @@ export const SpeakersRu = [
   {
 	image: 'public/img/speakers/alexandra_kalinina.jpg',
 	name : 'Александра Калинина',
-	position : '',
-	company : '',
+	position : 'Full Stack JS Developer',
+	company : 'Valor Software',
 	rept : [
 		{
-			title : 'Testing of deployment process to GCP [Ru]',
-			description : ''
+			title : 'Тестирование деплоймент процесса на GCP [Ru]',
+			description : '"Расскажу про проблемы деплоймента на AWS, плюсы и минусы перехода на GCP, способы минимизации' +
+      ' рисков связанных с деплоем, а для гурманов: обоснование целесообразности и план тестирования деплоймент процесса' +
+      ' на GCP.' +
+      '<br>' +
+      '<br>' +
+      'Доклад однозначно будет полезен всем, кто так или иначе связан с процессом деплоя, кто хочет научиться деплоить' +
+      ' самостоятельно и «по-быстрому». К сожалению, не подходит для адептов AWS."'
 		}
 	],
 	aboutSpeaker : '',
@@ -187,7 +193,7 @@ export const SpeakersRu = [
 	rept : [
 		{
 			title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
-			description : ''
+			description : 'Полезные и не очень, уникальные фишки постгреса которые пригодятся вам при разпаботке на ноде и не только'
 		}
 	],
 	aboutSpeaker : '',
@@ -241,13 +247,15 @@ export const SpeakersRu = [
   {
 	image: 'public/img/speakers/nikolai_boiko.jpg',
 	name : 'Николай Бойко',
-	position : '',
+	position : 'Software Developer',
 	company : 'Daxx',
 	rept : [
-		{
-			title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
-			description : ''
-		}
+    {
+      title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
+      description : 'How to refactor big and complex NodeJS applications.<br>' +
+      'Make correct estimations, chose transition strategy.<br>' +
+      'Step by step guide with code examples and techniques to complete this task.'
+    }
 	],
 	aboutSpeaker : '',
     socialsRendered : '',

@@ -1,16 +1,10 @@
 import $ from 'jquery';
+window.jQuery = $;
+require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
 import { ScheduleRu } from '../lang/ru/schedule-ru.js';
 import { ScheduleEn } from '../lang/en/schedule-en.js';
-
-
-
-window.jQuery = $;
-require('../vendors/jquery-tmpl/jquery.tmpl.min');
-
-
-// import {ScheduleEn} from '../lang/en/schedule-en.js'
 
 
 export class RenderSchedule {
@@ -52,7 +46,6 @@ export class RenderSchedule {
     let scheduleHtml = '';
 
     $.each(this.schedule, function (i, schedule) {
-      console.log(schedule)
       let talksHtml = '';
 
       $.each(schedule.talks, function (j, talk) {
@@ -62,14 +55,12 @@ export class RenderSchedule {
       schedule.scheduleRendered = talksHtml;
 
       let item = $.tmpl('scheduleRow', schedule)[0].outerHTML;
-      console.log(item)
 
       scheduleHtml += item;
 
     });
-    console.log(scheduleHtml)
-    $('#schedule-list .schedule-body').html(scheduleHtml);
 
+    $('#schedule-list .schedule-body').html(scheduleHtml);
   }
 
   _events() {

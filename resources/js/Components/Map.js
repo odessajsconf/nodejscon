@@ -1,18 +1,17 @@
 import $ from 'jquery';
-import { GoogleApiModule } from '../Modules/GoogleApi';
-import { Helpers } from '../Helpers';
-
-
-
 window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
-
+import { GoogleApiModule } from '../Modules/GoogleApi';
+import { Helpers } from '../Helpers';
+// import { PlacesEn } from '../lang/en/palces-en';
+// import { PlacesRu } from '../lang/ru/palces-ru';
 
 export class Map {
 
   constructor(options) {
     this.GoogleApiModule = new GoogleApiModule();
     this.Helpers = new Helpers();
+    this.CONFIG = window.CONFIG;
     this.google = null;
     this.selector = options.selector;
     this.mapOptions = options.mapOptions || {};
@@ -29,13 +28,14 @@ export class Map {
     }, this.mapOptions);
 
     this.markers = [];
-    this.places = [
+
+    const PlacesEn = [
       {
         lat : 46.436590,
         lng : 30.749558,
         infoWindow : this.renderInfoWindowHTML({
-          title : 'Бизнес-центр Солнечный',
-          content : '<p><strong>Адрес:</strong>Солнечная, 5</p>'
+          title : 'Business-center Solnechnyiy',
+          content : '<p><strong>Address: </strong>5, Sonyachna St.</p>'
           // '<ul>' +
           // '<li>july 6</li>' +
           // '<li>Impact Hub</li>' +
@@ -45,6 +45,30 @@ export class Map {
         })
       }
     ];
+
+    const PlacesRu = [
+      {
+        lat : 46.436590,
+        lng : 30.749558,
+        infoWindow : this.renderInfoWindowHTML({
+          title : 'Бизнес-центр Солнечный',
+          content : '<p><strong>Адрес: </strong>Солнечная, 5</p>'
+          // '<ul>' +
+          // '<li>july 6</li>' +
+          // '<li>Impact Hub</li>' +
+          // '</ul>',
+          // img: 'images/map_logos/hub.png',
+          // link: ''
+        })
+      }
+    ];
+
+
+    if(this.CONFIG.LANG === 'ru') {
+      this.places = PlacesRu;
+    } else {
+      this.places = PlacesEn;
+    }
 
     this._events();
   }

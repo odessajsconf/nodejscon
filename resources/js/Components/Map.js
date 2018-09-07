@@ -24,7 +24,6 @@ export class Map {
         lng : 30.749558
       },
       clickableIcons : false,
-      gestureHandling : 'greedy'
     }, this.mapOptions);
 
     this.markers = [];

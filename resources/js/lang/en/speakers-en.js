@@ -32,6 +32,7 @@ export const SpeakersEn = [
     name : 'Max Klymyshyn',
     position : 'Tech Lead',
     company : 'Takeoff Technologies',
+    place : 'Kiev, Ukraine',
     rept : [
       {
         title : 'Conflict-free replicated data types: distributed data in detail [RU] [Talk]',
@@ -71,6 +72,7 @@ export const SpeakersEn = [
     name : 'Roman Sachenko',
     position : 'Software Engineer',
     company : 'DA-14',
+    place : 'Kharkov, Ukraine',
     rept : [
       {
         title : 'Security in NodeJS [Ru]',
@@ -143,6 +145,7 @@ export const SpeakersEn = [
     name : 'Dmitriy Gusev',
     position : 'Senior Frontend Developer',
     company : 'HYS Enterprise',
+    place : 'Odessa, Ukraine',
     rept : [
       {
         title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
@@ -165,43 +168,45 @@ export const SpeakersEn = [
     ]
   },
   {
-	image: '../public/img/speakers/alexandra_kalinina.jpg',
-	name : 'Alexandra Kalinina',
-  position : 'Full Stack JS Developer',
-  company : 'Valor Software',
-	rept : [
-		{
-			title : 'Testing of deployment process to GCP [Ru]',
-			description : ''
-		}
-	],
-	aboutSpeaker : '',
+    image : '../public/img/speakers/alexandra_kalinina.jpg',
+    name : 'Alexandra Kalinina',
+    position : 'Full Stack JS Developer',
+    company : 'Valor Software',
+    place : 'Kharkov, Ukraine',
+    rept : [
+      {
+        title : 'Testing of deployment process to GCP [Ru]',
+        description : ''
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : []
+    socials : []
   },
   {
-	image: '../public/img/speakers/dmitry_chirkin.jpg',
-	name : 'Dmitry Chirkin',
-	position : 'Web Developer',
-	company : 'Nix solutions',
-	rept : [
-		{
-			title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
-			description : ''
-		}
-	],
-	aboutSpeaker : '',
+    image : '../public/img/speakers/dmitry_chirkin.jpg',
+    name : 'Dmitry Chirkin',
+    position : 'Web Developer',
+    company : 'Nix solutions',
+    place : 'Kharkov, Ukraine',
+    rept : [
+      {
+        title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
+        description : ''
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : [
-		{
-			link : 'https://github.com/josser',
-			fatype : 'github'
-		},
-		{
-          link : 'https://facebook.com/josser',
-          fatype : 'facebook'
-        },
-	]
+    socials : [
+      {
+        link : 'https://github.com/josser',
+        fatype : 'github'
+      },
+      {
+        link : 'https://facebook.com/josser',
+        fatype : 'facebook'
+      }
+    ]
   },
   // {
   // image: '../public/img/speakers/dmitry_mindra.jpg',
@@ -209,50 +214,53 @@ export const SpeakersEn = [
   // position : 'Senior Manager',
   // company : 'Oracle',
   // rept : [
-		// {
-		// 	title : 'Management 101 [Ru] [Pre-party]',
-		// 	description : ''
-		// }
+  // {
+  // 	title : 'Management 101 [Ru] [Pre-party]',
+  // 	description : ''
+  // }
   // ],
   // aboutSpeaker : '',
   //   socialsRendered : '',
   // socials : []
   // },
   {
-	image: '../public/img/speakers/yurii_chikhrai.jpg',
-	name : 'Yurii Chikhrai',
-	position : 'Node.js Developer',
-	company : 'Shipnext',
-	rept : [
-		{
-			title : 'Streams - ликвидация безграмотности [Ru]',
-			description : 'Доклад должен показать что Streams - важный инструмент Node.js, который не нужно игнорировать, а необходимо использовать в полную силу. После доклада у вас должны появится знания, как сделать более оптимизированные приложения и пройти все страхи использования этого инструмента'
-		}
-	],
-	aboutSpeaker : '',
+    image : '../public/img/speakers/yurii_chikhrai.jpg',
+    name : 'Yurii Chikhrai',
+    position : 'Node.js Developer',
+    company : 'Shipnext',
+    place : 'Odessa, Ukraine',
+    rept : [
+      {
+        title : 'Streams - ликвидация безграмотности [Ru]',
+        description : 'Доклад должен показать что Streams - важный инструмент Node.js, который не нужно игнорировать, а необходимо использовать в полную силу. После доклада у вас должны появится знания, как сделать более оптимизированные приложения и пройти все страхи использования этого инструмента'
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : [
-		{
-			link : 'https://github.com/YuriiChikhrai',
-			fatype : 'github'
-		},
-	]
+    socials : [
+      {
+        link : 'https://github.com/YuriiChikhrai',
+        fatype : 'github'
+      }
+    ]
   },
   {
-	image: '../public/img/speakers/nikolai_boiko.jpg',
-	name : 'Nikolai Boiko',
-	position : 'Software Developer',
-	company : 'Daxx',
-	rept : [
-		{
-			title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
-			description : 'How to refactor big and complex NodeJS applications.<br>' +
-      'Make correct estimations, chose transition strategy.<br>' +
-      'Step by step guide with code examples and techniques to complete this task.'
-		}
-	],
-	aboutSpeaker : '',
+    image : '../public/img/speakers/nikolai_boiko.jpg',
+    name : 'Nikolai Boiko',
+    position : 'Software Developer',
+    company : 'Daxx',
+    place : 'Kiev, Ukraine',
+    rept : [
+      {
+        title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
+        description : 'How to refactor big and complex NodeJS applications.<br>' +
+        'Make correct estimations, chose transition strategy.<br>' +
+        'Step by step guide with code examples and techniques to complete this task.'
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : []
+    socials : []
   },
-];
+]
+;

@@ -49,7 +49,7 @@ export class HeaderComponent extends BaseComponent {
             $header.toggleClass('scrolled', scrolled)
         });
 
-        $(".menu, .logo").on("click", "a", (e)=> {
+        $(".menu a, .logo a, .go-up-btn").on("click", (e)=> {
             if( $(e.currentTarget).attr('href').substring(0,1) === '#') {
                 e.preventDefault();
                 this.navigateToBlock( $(e.currentTarget).attr('href') );

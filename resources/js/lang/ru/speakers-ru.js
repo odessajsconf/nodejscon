@@ -32,6 +32,7 @@ export const SpeakersRu = [
     name : 'Максим Климишин',
     position : 'Tech Lead',
     company : 'Takeoff Technologies',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Conflict-free replicated data types: распределенные данные в деталях [RU] [Talk]',
@@ -47,7 +48,7 @@ export const SpeakersRu = [
         '  <li>high-level transport &amp; CRDT payload definition</li>\n' +
         '  <li>adding distributed properties</li>\n' +
         '</ul>'
-      },
+      }
     ],
     aboutSpeaker :
     'Full-stack software engineer for Clojure/ClojureScript/Python/JavaScript-based projects with 15+ years experience in technical' +
@@ -71,6 +72,7 @@ export const SpeakersRu = [
     name : 'Роман Саченко',
     position : 'Software Engineer',
     company : 'DA-14',
+    place : 'Харьков, Украина',
     rept : [
       {
         title : 'Безопасность в Node.js [Ru]',
@@ -143,6 +145,7 @@ export const SpeakersRu = [
     name : 'Дмитрий Гусев',
     position : 'Senior Frontend Developer',
     company : 'HYS Enterprise',
+    place : 'Одесса, Украина',
     rept : [
       {
         title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js [Ru]',
@@ -165,50 +168,52 @@ export const SpeakersRu = [
     ]
   },
   {
-	image: 'public/img/speakers/alexandra_kalinina.jpg',
-	name : 'Александра Калинина',
-	position : 'Full Stack JS Developer',
-	company : 'Valor Software',
-	rept : [
-		{
-			title : 'Тестирование деплоймент процесса на GCP [Ru]',
-			description : 'Расскажу про проблемы деплоймента на AWS, плюсы и минусы перехода на GCP, способы минимизации' +
-      ' рисков связанных с деплоем, а для гурманов: обоснование целесообразности и план тестирования деплоймент процесса' +
-      ' на GCP.' +
-      '<br>' +
-      '<br>' +
-      'Доклад однозначно будет полезен всем, кто так или иначе связан с процессом деплоя, кто хочет научиться деплоить' +
-      ' самостоятельно и «по-быстрому». К сожалению, не подходит для адептов AWS.'
-		}
-	],
-	aboutSpeaker : '',
+    image : 'public/img/speakers/alexandra_kalinina.jpg',
+    name : 'Александра Калинина',
+    position : 'Full Stack JS Developer',
+    company : 'Valor Software',
+    place : 'Харьков, Украина',
+    rept : [
+      {
+        title : 'Тестирование деплоймент процесса на GCP [Ru]',
+        description : 'Расскажу про проблемы деплоймента на AWS, плюсы и минусы перехода на GCP, способы минимизации' +
+        ' рисков связанных с деплоем, а для гурманов: обоснование целесообразности и план тестирования деплоймент процесса' +
+        ' на GCP.' +
+        '<br>' +
+        '<br>' +
+        'Доклад однозначно будет полезен всем, кто так или иначе связан с процессом деплоя, кто хочет научиться деплоить' +
+        ' самостоятельно и «по-быстрому». К сожалению, не подходит для адептов AWS.'
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : []
+    socials : []
   },
   {
-	image: 'public/img/speakers/dmitry_chirkin.jpg',
-	name : 'Дмитрий Чиркин',
-	position : 'Web Developer',
-	company : 'Nix solutions',
-	rept : [
-		{
-			title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
-			description : 'Полезные и не очень, уникальные фишки постгреса, которые пригодятся вам при' +
-      ' разработке на ноде и не только'
-		}
-	],
-	aboutSpeaker : '',
+    image : 'public/img/speakers/dmitry_chirkin.jpg',
+    name : 'Дмитрий Чиркин',
+    position : 'Web Developer',
+    company : 'Nix solutions',
+    place : 'Харьков, Украина',
+    rept : [
+      {
+        title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
+        description : 'Полезные и не очень, уникальные фишки постгреса, которые пригодятся вам при' +
+        ' разработке на ноде и не только'
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : [
-		{
-			link : 'https://github.com/josser',
-			fatype : 'github'
-		},
-		{
-          link : 'https://facebook.com/josser',
-          fatype : 'facebook'
-        },
-	]
+    socials : [
+      {
+        link : 'https://github.com/josser',
+        fatype : 'github'
+      },
+      {
+        link : 'https://facebook.com/josser',
+        fatype : 'facebook'
+      }
+    ]
   },
   // {
   // image: 'public/img/speakers/dmitry_mindra.jpg',
@@ -216,50 +221,53 @@ export const SpeakersRu = [
   // position : 'Senior Manager',
   // company : 'Oracle',
   // rept : [
-		// {
-		// 	title : 'Management 101 [Ru] [Pre-party]',
-		// 	description : ''
-		// }
+  // {
+  // 	title : 'Management 101 [Ru] [Pre-party]',
+  // 	description : ''
+  // }
   // ],
   // aboutSpeaker : '',
   //   socialsRendered : '',
   // socials : []
   // },
   {
-	image: 'public/img/speakers/yurii_chikhrai.jpg',
-	name : 'Юрий Чихрай',
-	position : 'Node.js Developer',
-	company : 'Shipnext',
-	rept : [
-		{
-			title : 'Streams - ликвидация безграмотности [Ru]',
-			description : 'Доклад должен показать что Streams - важный инструмент Node.js, который не нужно игнорировать, а необходимо использовать в полную силу. После доклада у вас должны появится знания, как сделать более оптимизированные приложения и пройти все страхи использования этого инструмента'
-		}
-	],
-	aboutSpeaker : '',
+    image : 'public/img/speakers/yurii_chikhrai.jpg',
+    name : 'Юрий Чихрай',
+    position : 'Node.js Developer',
+    company : 'Shipnext',
+    place : 'Одесса, Украина',
+    rept : [
+      {
+        title : 'Streams - ликвидация безграмотности [Ru]',
+        description : 'Доклад должен показать что Streams - важный инструмент Node.js, который не нужно игнорировать, а необходимо использовать в полную силу. После доклада у вас должны появится знания, как сделать более оптимизированные приложения и пройти все страхи использования этого инструмента'
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : [
-		{
-			link : 'https://github.com/YuriiChikhrai',
-			fatype : 'github'
-		},
-	]
+    socials : [
+      {
+        link : 'https://github.com/YuriiChikhrai',
+        fatype : 'github'
+      }
+    ]
   },
   {
-	image: 'public/img/speakers/nikolai_boiko.jpg',
-	name : 'Николай Бойко',
-	position : 'Software Developer',
-	company : 'Daxx',
-	rept : [
-    {
-      title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
-      description : 'How to refactor big and complex NodeJS applications.<br>' +
-      'Make correct estimations, chose transition strategy.<br>' +
-      'Step by step guide with code examples and techniques to complete this task.'
-    }
-	],
-	aboutSpeaker : '',
+    image : 'public/img/speakers/nikolai_boiko.jpg',
+    name : 'Николай Бойко',
+    position : 'Software Developer',
+    company : 'Daxx',
+    place : 'Киев, Украина',
+    rept : [
+      {
+        title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
+        description : 'How to refactor big and complex NodeJS applications.<br>' +
+        'Make correct estimations, chose transition strategy.<br>' +
+        'Step by step guide with code examples and techniques to complete this task.'
+      }
+    ],
+    aboutSpeaker : '',
     socialsRendered : '',
-	socials : []
+    socials : []
   },
-];
+]
+;

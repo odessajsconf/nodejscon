@@ -122,14 +122,23 @@
   display: none;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1475px) {
   .logo img {
     height: 40px;
   }
   .lang li a, .menu li a {
     .font-size(12);
+  }
+}
+
+@media (max-width: 1250px) {
+  .lang li a, .menu li a {
     margin-right: 0;
     padding: 7px 5px;
+
+    &.link {
+      margin-left: 5px;
+    }
   }
 }
 

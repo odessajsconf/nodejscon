@@ -97,6 +97,9 @@
             <li><a href="#sponsors">
               ${{ index.menu_sponsors }}$
             </a></li>
+            <li><a href="#location">
+              ${{ index.menu_location }}$
+            </a></li>
             <li><a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" class="link">
               ${{ index.menu_tickets }}$
             </a></li>
@@ -520,8 +523,22 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="location">
+      <div class="h2">
+        ${{ index.location_heading }}$
+      </div>
+
+      <h3 class="text-center m-b-30">${{ index.location_address }}$</h3>
 
       <div id="map" class="m-t-50" style="height: 500px; width: 100%"></div>
+
+      <div class="m-t-70 text-center volunteer-footer">
+        <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn">
+          ${{ index.volunteer }}$
+        </a>
+      </div>
 
       <div class="m-t-70 text-center volunteer-footer">
         <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn">

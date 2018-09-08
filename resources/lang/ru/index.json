@@ -8,6 +8,7 @@
   "menu_speakers": "Доклады",
   "menu_schedule": "Расписание",
   "menu_sponsors": "Спонсоры",
+  "menu_location": "Локация",
   "menu_tickets": "Билеты",
   "heading_date": "29 сентября, 2018",
   "heading_list_1": "1 день конференции",
@@ -53,6 +54,8 @@
   "sponsors_option_14": "Скидка на билеты на конференцию сотрудникам компании",
   "sponsors_media_heading": "Медиа партнеры",
   "volunteer": "Стать Волонтером",
+  "location_heading": "Локация",
+  "location_address": "БЦ «Солнечный» ул. Солнечная, 5",
   "poup_previous": "Назад",
   "poup_next": "Далее"
 }

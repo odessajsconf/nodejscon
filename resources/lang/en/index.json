@@ -8,6 +8,7 @@
   "menu_speakers": "Speakers",
   "menu_schedule": "Schedule",
   "menu_sponsors": "Sponsorship Proposal",
+  "menu_location": "Location",
   "menu_tickets": "Tickets",
   "heading_date": "September 29, 2018",
   "heading_list_1": "1 Full Day Conference",
@@ -53,6 +54,8 @@
   "sponsors_option_14": "Discount for conference tickets to company employees",
   "sponsors_media_heading": "Media Partners",
   "volunteer": "Become Volunteer",
+  "location_heading": "Location",
+  "location_address": "BC «Solnechnyiy», 5, Sonyachna St.",
   "poup_previous": "Previous",
   "poup_next": "Next"
 }

@@ -1,10 +1,13 @@
 import $ from 'jquery';
-window.jQuery = $;
-require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
-import {SpeakersRu} from '../lang/ru/speakers-ru.js'
-import {SpeakersEn} from '../lang/en/speakers-en.js'
+import { SpeakersRu } from '../lang/ru/speakers-ru.js';
+import { SpeakersEn } from '../lang/en/speakers-en.js';
+
+
+
+window.jQuery = $;
+require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 
 export class RenderSpeakers {
@@ -16,7 +19,7 @@ export class RenderSpeakers {
     this._events();
     this.helpers = new Helpers();
   }
-	
+
 
   _init() {
     if(this.CONFIG.LANG === 'ru') {
@@ -24,14 +27,14 @@ export class RenderSpeakers {
     } else {
       this.speakers = SpeakersEn;
     }
-    
-    if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) > -1 ) {
-      $('#speakers-modal').html( localStorage.speakersModalHtml )
+
+    if(localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) > -1) {
+      $('#speakers-modal').html(localStorage.speakersModalHtml);
     }
 
     let speakerItem =
       '<div class="speaker-item">' +
-      '<div data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">'+
+      '<div data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">' +
       '<div class="speaker-img">' +
       '<img src="${image}" alt="${name}">' +
       '</div>' +
@@ -45,20 +48,22 @@ export class RenderSpeakers {
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} {{if $value.title}}</br> </br>{{/if}}{{/each}}' +
       '</div>' +
-      '</div>'+
+      '</div>' +
       '<div class="speaker-socials">{{html socialsRendered}}</div>' +
       '</div>';
 
     $.template('speakerTemplate', speakerItem);
 
-    var socialsItem = "<a href='${link}' target='_blank'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
-    $.template( "socialsTemplate", socialsItem );
+    var socialsItem = '<a href=\'${link}\' target=\'_blank\'><i class=\'fa fa-${fatype}\' aria-hidden=\'true\'></i></a>';
+    $.template('socialsTemplate', socialsItem);
 
 
     let spekersHtml = '';
 
     $.each(this.speakers, function (i, sp) {
-      $.each($.tmpl("socialsTemplate", sp.socials ), function(a, i){ sp.socialsRendered += i.outerHTML; });
+      $.each($.tmpl('socialsTemplate', sp.socials), function (a, i) {
+        sp.socialsRendered += i.outerHTML;
+      });
 
       let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
       spekersHtml += item.replace('__ReplaceWithIndex', i);
@@ -135,7 +140,7 @@ export class RenderSpeakers {
         speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
         speakerName && $modalNameElement.text(speakerName);
         $modalSpeakerPosition.text(speakerPosition);
-        $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}`:'');
+        $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}` : '');
         speakerPlace && $modalPlaceElement.text(speakerPlace);
 
         reportsContent && $modalreportsContainer.html(reportsContent);
@@ -145,8 +150,8 @@ export class RenderSpeakers {
         $modalSpeakerLinks.html(speakerSocials);
 
         that.helpers.hideLoader($modalBody);
-        setTimeout(()=>{
-          localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
+        setTimeout(() => {
+          localStorage.setItem('speakersModalHtml', $modalBody.html());
         }, 400);
       }
     }

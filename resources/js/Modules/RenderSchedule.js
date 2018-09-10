@@ -1,10 +1,13 @@
 import $ from 'jquery';
-window.jQuery = $;
-require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
 import { ScheduleRu } from '../lang/ru/schedule-ru.js';
 import { ScheduleEn } from '../lang/en/schedule-en.js';
+
+
+
+window.jQuery = $;
+require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 
 export class RenderSchedule {
@@ -39,8 +42,6 @@ export class RenderSchedule {
       '                  </div>' +
       '                </div>';
     $.template('scheduleItemTemplate', scheduleItem);
-
-
 
 
     let scheduleHtml = '';

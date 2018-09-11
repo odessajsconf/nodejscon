@@ -1,4 +1,4 @@
-export const SpeakersRu = [
+export const MainSpeakersRu = [
   // {
   //   image : 'public/img/speakers/nikita_galkin.jpg',
   //   name : 'Никита Галкин',
@@ -78,10 +78,6 @@ export const SpeakersRu = [
         title : 'Безопасность в Node.js [Ru]',
         description : ''
       },
-      {
-        title : 'App diagnostics under the hood [Ru]',
-        description : ''
-      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',

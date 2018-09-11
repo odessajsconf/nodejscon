@@ -1,8 +1,6 @@
 import $ from 'jquery';
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
-import { SpeakersRu } from '../lang/ru/speakers-ru.js';
-import { SpeakersEn } from '../lang/en/speakers-en.js';
 
 
 
@@ -11,8 +9,10 @@ require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 
 export class RenderSpeakers {
-  constructor() {
-    this.popup = new Popup('#speakers-modal');
+  constructor(options) {
+    this.options = options || {};
+    this.$popupElem = $(`#${this.options.modal}`);
+    this.popup = new Popup(this.$popupElem);
     this.CONFIG = window.CONFIG;
     this.speakers = null;
     this._init();
@@ -23,18 +23,18 @@ export class RenderSpeakers {
 
   _init() {
     if(this.CONFIG.LANG === 'ru') {
-      this.speakers = SpeakersRu;
+      this.speakers = this.options.speakersRu;
     } else {
-      this.speakers = SpeakersEn;
+      this.speakers = this.options.speakersEn;
     }
 
-    if(localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) > -1) {
-      $('#speakers-modal').html(localStorage.speakersModalHtml);
+    if(localStorage.speakersModalHtml && location.hash.search(`${this.options.modal}`) > -1) {
+      this.$popupElem.html( localStorage.speakersModalHtml );
     }
 
     let speakerItem =
       '<div class="speaker-item">' +
-      '<div data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">' +
+      `<div data-remodal-target="${this.options.modal}" data-item-index="__ReplaceWithIndex">` +
       '<div class="speaker-img">' +
       '<img src="${image}" alt="${name}">' +
       '</div>' +
@@ -58,102 +58,104 @@ export class RenderSpeakers {
     $.template('socialsTemplate', socialsItem);
 
 
-    let spekersHtml = '';
+    let speakersHtml = '';
 
-    $.each(this.speakers, function (i, sp) {
+    $.each(this.speakers, (i, sp) => {
       $.each($.tmpl('socialsTemplate', sp.socials), function (a, i) {
         sp.socialsRendered += i.outerHTML;
       });
 
       let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
-      spekersHtml += item.replace('__ReplaceWithIndex', i);
+      speakersHtml += item.replace('__ReplaceWithIndex', i);
 
     });
 
-    $('#speakers-list').html(spekersHtml);
+    $( this.options.container ).html(speakersHtml);
 
   }
 
   _events() {
     let that = this;
 
-    $(document).on('click', '[data-remodal-target="speakers-modal"]', function () {
-      let $speakerInfoBlock = $(this);
-      loadSpeakerModal($speakerInfoBlock);
+    $(document).on('click', `[data-remodal-target="${this.options.modal}"]`, (e) => {
+      let $speakerInfoBlock = $(e.currentTarget);
+      this.loadSpeakerModal($speakerInfoBlock);
+    });
+  }
+
+  loadSpeakerModal($speakerInfoBlock) {
+    let $modalBody = this.$popupElem,
+      $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img img'),
+      $modalNameElement = $modalBody.find('.speaker-name'),
+      $modalPlaceElement = $modalBody.find('.speaker-place'),
+      $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
+      $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
+      $modalReportsContainer = $modalBody.find('.speakers-modal_content'),
+      $modalSpeakerLinks = $modalBody.find('.speaker-socials'),
+      // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
+
+      speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
+
+      $prevButton = $modalBody.find('button.remodal-prev'),
+      $nextButton = $modalBody.find('button.remodal-next');
+
+    $prevButton.unbind('click').click(() => {
+      let prevIndex = speakerIndex == 0 ? (this.speakers.length - 1) : speakerIndex - 1;
+      this.helpers.showLoader($modalBody);
+
+      setTimeout(()=> {
+        this.loadSpeakerModal($('[data-item-index="' + prevIndex + '"]'));
+      }, 600);
     });
 
-    function loadSpeakerModal($speakerInfoBlock) {
-      let $modalBody = $('#speakers-modal'),
-        $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img img'),
-        $modalNameElement = $modalBody.find('.speaker-name'),
-        $modalPlaceElement = $modalBody.find('.speaker-place'),
-        $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
-        $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
-        $modalreportsContainer = $modalBody.find('.speakers-modal_content'),
-        $modalSpeakerLinks = $modalBody.find('.speaker-socials'),
-        // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
+    $nextButton.unbind('click').click(() => {
+      let nextIndex = speakerIndex == this.speakers.length - 1 ? 0 : speakerIndex + 1;
+      this.helpers.showLoader($modalBody);
 
-        speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
+      setTimeout( ()=> {
+        this.loadSpeakerModal($('[data-item-index="' + nextIndex + '"]'));
+      }, 600);
 
-        $prevButton = $modalBody.find('button.remodal-prev'),
-        $nextButton = $modalBody.find('button.remodal-next');
+    });
 
-      $prevButton.unbind('click').click(() => {
-        let prevIndex = speakerIndex == 0 ? (that.speakers.length - 1) : speakerIndex - 1;
-        that.helpers.showLoader($modalBody);
+    let speakerData = this.speakers[speakerIndex];
 
-        setTimeout(function () {
-          loadSpeakerModal($('[data-item-index="' + prevIndex + '"]'));
-        }, 600);
-      });
+    if(speakerData) {
+      let speakerAvatar = speakerData.image,
+        speakerName = speakerData.name,
+        speakerPosition = speakerData.position,
+        speakerCompany = speakerData.company,
+        speakerPlace = speakerData.place,
+        speakerSocials = speakerData.socialsRendered,
+        reports = speakerData.rept,
+        reportsContent = '',
+        speakerAboutText = speakerData.aboutSpeaker;
 
-      $nextButton.unbind('click').click(() => {
-        let nextIndex = speakerIndex == that.speakers.length - 1 ? 0 : speakerIndex + 1;
-        that.helpers.showLoader($modalBody);
-
-        setTimeout(function () {
-          loadSpeakerModal($('[data-item-index="' + nextIndex + '"]'));
-        }, 600);
-
-      });
-
-      let speakerData = that.speakers[speakerIndex];
-
-      if(speakerData) {
-        let speakerAvatar = speakerData.image,
-          speakerName = speakerData.name,
-          speakerPosition = speakerData.position,
-          speakerCompany = speakerData.company,
-          speakerPlace = speakerData.place,
-          speakerSocials = speakerData.socialsRendered,
-          reports = speakerData.rept,
-          reportsContent = '',
-          speakerAboutText = speakerData.aboutSpeaker;
-
-        reports.forEach(function (item, i, arr) {
-          reportsContent += `
+      reports.forEach( (item, i, arr) => {
+        reportsContent += `
             <div class="speaker-report">${item.title}</div>
             <div>${item.description}</div>
           `;
-        });
+      });
 
-        speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
-        speakerName && $modalNameElement.text(speakerName);
-        $modalSpeakerPosition.text(speakerPosition);
-        $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}` : '');
-        speakerPlace && $modalPlaceElement.text(speakerPlace);
+      speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
+      speakerName && $modalNameElement.text(speakerName);
+      $modalSpeakerPosition.text(speakerPosition);
+      $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}` : '');
+      speakerPlace && $modalPlaceElement.text(speakerPlace);
 
-        reportsContent && $modalreportsContainer.html(reportsContent);
+      reportsContent && $modalReportsContainer.html(reportsContent);
 
-        // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
+      // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
 
-        $modalSpeakerLinks.html(speakerSocials);
+      $modalSpeakerLinks.html(speakerSocials);
 
-        that.helpers.hideLoader($modalBody);
-        setTimeout(() => {
-          localStorage.setItem('speakersModalHtml', $modalBody.html());
-        }, 400);
-      }
+      this.helpers.hideLoader($modalBody);
+
+      setTimeout(() => {
+        localStorage.setItem('speakersModalHtml', $modalBody.html());
+        console.log(localStorage.speakersModalHtml)
+      }, 400);
     }
   }
 }

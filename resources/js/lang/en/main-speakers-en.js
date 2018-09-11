@@ -1,4 +1,4 @@
-export const SpeakersEn = [
+export const MainSpeakersEn = [
   // {
   //   image : '../public/img/speakers/nikita_galkin.jpg',
   //   name : 'Nikita Galkin',
@@ -75,13 +75,16 @@ export const SpeakersEn = [
     place : 'Kharkov, Ukraine',
     rept : [
       {
-        title : 'Security in NodeJS [Ru]',
-        description : ''
+        title : 'NodeJS Security or Blackened is The End [Ru]',
+        description : '' +
+        'There are dozens of mistakes that can be easily made and lead to huge security problems. <br> <br>' +
+        'On the other hand, there are even more ways to break an application, such as DB injections, brute-force ' +
+        'attacks, regular expression DOS, memory leaks, and hijacking require chain, just to name a few.  <br> <br>' +
+        'During the presentation, I’ll list the most common security problems, talk about the current situation in WEB' +
+        ' and will explain how to deal with safety concerns. <br> <br>' +
+        'What can we do to decrease the level of \'insecurity\'? I\'ll teach the audience to deal with security holes' +
+        ' and will explain the must-steps which should be performed before launching a new application.'
       },
-      {
-        title : 'App diagnostics under the hood [Ru]',
-        description : ''
-      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',

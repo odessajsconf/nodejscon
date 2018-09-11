@@ -270,17 +270,17 @@
                     1950 <span itemprop="priceCurrency" content="UAH">UAH</span>
                   </div>
                 </li>
-                <!--<li class="about-ticket-item">-->
-
-                <!--<a href="#">-->
-                <!--<div class="about-ticket-title">-->
-                <!--Late-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--<div class="about-ticket-desc">-->
-                <!--1800 UAH-->
-                <!--</div>-->
-                <!--</li>-->
+                <li class="about-ticket-item" itemprop="price" content="2100.00">
+                  <a href="https://nodejsconf.ticketforevent.com" target="_blank" itemprop="url">
+                    <div class="about-ticket-title">
+                      Late Chance<br>
+                      Ticket
+                    </div>
+                  </a>
+                  <div class="about-ticket-desc">
+                    2100 <span itemprop="priceCurrency" content="UAH">UAH</span>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -301,19 +301,28 @@
           ${{ index.speakers_head }}$
         </div>
 
-        <div class="flex j-c-space-around speakers-list" id="speakers-list"></div>
+        <div class="h3 m-t-40 text-center">
+          ${{ index.speakers_preparty_head }}$
+        </div>
+
+        <div class="h4 text-center m-t-20 speakers-desc">
+          ${{ index.speakers_preparty_desc }}$
+        </div>
+
+
+        <div class="flex j-c-space-around speakers-list" id="preparty-speakers-list"></div>
+
+        <div class="h4 text-center m-t-70 speakers-desc">
+          ${{ index.speakers_main_desc }}$
+        </div>
+
+        <div class="flex j-c-space-around speakers-list" id="main-speakers-list"></div>
       </div>
       <div class="flex j-c-flex-end user-select-none">
         <img class="speakers-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/speakers_bg.svg"
              alt="opera">
       </div>
     </section>
-
-    <!--<section id="workshops">-->
-    <!--<div class="container">-->
-    <!--<div class="h2">Workshops</div>-->
-    <!--</div>-->
-    <!--</section>-->
 
     <section id="schedule">
       <div class="container">
@@ -521,6 +530,16 @@
                class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/if_js.jpg" alt="If JS">
             </a>
+
+            <a href="https://itvdn.com"
+               class="sponsors-media-item" target="_blank">
+              <img src="public/img/media_partners/itvdn.png" alt="ITVDN">
+            </a>
+
+            <a href="https://edu.cbsystematics.com/"
+               class="sponsors-media-item" target="_blank">
+              <img src="public/img/media_partners/cbs.png" alt="CyberBionic">
+            </a>
           </div>
         </div>
         <!-- Media Partners -->
@@ -575,7 +594,8 @@
 
 
 <!-- Modals -->
-<div class="remodal speakers-modal" data-remodal-id="speakers-modal" id="speakers-modal">
+
+<div class="remodal speakers-modal" data-remodal-id="preparty-speakers-modal" id="preparty-speakers-modal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <div class="flex speakers-modal_heading">
     <div class="speakers-modal_img">
@@ -605,6 +625,39 @@
     </button>
   </div>
 </div>
+
+<div class="remodal speakers-modal" data-remodal-id="main-speakers-modal" id="main-speakers-modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="flex speakers-modal_heading">
+    <div class="speakers-modal_img">
+      <img src="https://via.placeholder.com/1x1" data-src="public/img/speakers/andrey_grachev.png" alt="">
+    </div>
+    <div class="speakers-modal_txt">
+      <div class="speaker-name"></div>
+
+      <div class="speaker-position">
+        <span class="position"></span>
+        <span class="company"></span>
+      </div>
+      <div class="speaker-place"></div>
+
+      <div class="speaker-socials"></div>
+    </div>
+  </div>
+
+  <div class="speakers-modal_content m-t-40 m-b-50"></div>
+
+  <div class="flex j-c-space-between">
+    <button class="remodal-prev">
+      ${{ index.poup_previous }}$
+    </button>
+    <button class="remodal-next">
+      ${{ index.poup_next }}$
+    </button>
+  </div>
+</div>
+
+<!-- Modals -->
 
 <script src="public/js/index.js"></script>
 

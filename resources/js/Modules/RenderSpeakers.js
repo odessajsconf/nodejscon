@@ -153,8 +153,7 @@ export class RenderSpeakers {
       this.helpers.hideLoader($modalBody);
 
       setTimeout(() => {
-        localStorage.setItem('speakersModalHtml', $modalBody.html());
-        console.log(localStorage.speakersModalHtml)
+        localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
       }, 400);
     }
   }

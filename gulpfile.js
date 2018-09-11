@@ -116,7 +116,7 @@ gulp.task('localize', ['hash'], function () {
 
   return gulp.src(index)
     .pipe(i18n({
-      langDir : './resources/lang',
+      langDir : './resources/lang/html',
       createLangDirs : true,
       defaultLang : 'ru'
     }))

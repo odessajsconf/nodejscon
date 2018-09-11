@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
-import { ScheduleRu } from '../lang/ru/schedule-ru.js';
-import { ScheduleEn } from '../lang/en/schedule-en.js';
+import { ScheduleRu } from '../../lang/ru/schedule-ru.js';
+import { ScheduleEn } from '../../lang/en/schedule-en.js';
 
 
 

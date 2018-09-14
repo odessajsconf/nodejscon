@@ -137,7 +137,7 @@ gulp.task('localize-default', ['localize-en'], function () {
 
 gulp.task('watch', function () {
   livereload.listen();
-  gulp.watch('resources/js/**/*.js', ['script']);
+  gulp.watch('resources/**/*.js', ['script']);
   gulp.watch('resources/styles/**/*.less', ['less']);
   gulp.watch('resources/html/index.html', ['localize-default']);
   gulp.watch('resources/lang/**/*.json', ['localize-default']);

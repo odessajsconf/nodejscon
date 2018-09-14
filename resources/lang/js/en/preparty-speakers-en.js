@@ -45,4 +45,46 @@ export const PrepartySpeakersEn = [
       },
     ]
   },
+  {
+  image: '../public/img/speakers/dmitry_mindra.jpg',
+  name : 'Dmitry Mindra',
+  position : 'Senior Manager',
+  company : 'Oracle',
+  rept : [
+  {
+  	title : 'Management 101 [Ru] [Pre-party]',
+  	description : ''
+  }
+  ],
+  aboutSpeaker : '',
+    socialsRendered : '',
+  socials : []
+  },
+  {
+    image : '../public/img/speakers/ksenia-redunova.jpg',
+    name : 'Ksenia Redunova',
+    position : 'Team Lead',
+    company : 'Lohika',
+    place : 'Odessa, Ukraine',
+    rept : [
+      {
+        title : 'Presentation Karaoke [Ru] [Pre-party]',
+        description : 'I\'m sure public speaking skills are important in our work and even everyday life. Sometimes it\'s ' +
+        'difficult to get relaxed and (omg!) improvise staying alone and talking to audience. We will play a game to train' +
+        ' our improvisation talents and public speaking skills. It\'s totally interactive and everybody is welcome to join!'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://www.facebook.com/redunova',
+        fatype : 'facebook'
+      },
+      {
+        link : 'https://www.linkedin.com/in/redunovaksenia/',
+        fatype : 'linkedin-square'
+      }
+    ]
+  },
 ];

@@ -211,21 +211,6 @@ export const MainSpeakersRu = [
       }
     ]
   },
-  // {
-  // image: 'public/img/speakers/dmitry_mindra.jpg',
-  // name : 'Дмитрий Миндра',
-  // position : 'Senior Manager',
-  // company : 'Oracle',
-  // rept : [
-  // {
-  // 	title : 'Management 101 [Ru] [Pre-party]',
-  // 	description : ''
-  // }
-  // ],
-  // aboutSpeaker : '',
-  //   socialsRendered : '',
-  // socials : []
-  // },
   {
     image : 'public/img/speakers/yurii_chikhrai.jpg',
     name : 'Юрий Чихрай',

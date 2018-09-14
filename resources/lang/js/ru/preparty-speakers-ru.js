@@ -4,7 +4,7 @@ export const PrepartySpeakersRu = [
     name : 'Евгений Гавриленко',
     position : 'Senior software engineer',
     company : 'Lohika',
-    place : 'Odessa, Ukraine',
+    place : 'Одесса, Украина',
     rept : [
       {
         title : 'The learning how to learn [Ru]',
@@ -17,7 +17,7 @@ export const PrepartySpeakersRu = [
       {
         link : 'mailto:Gavrilenco@gmail.com',
         fatype : 'envelope'
-      },
+      }
     ]
   },
   {
@@ -25,7 +25,7 @@ export const PrepartySpeakersRu = [
     name : 'Dima Kanevsky',
     position : 'Chief Nothing Officer',
     company : 'Gorilla',
-    place : 'Odessa, Ukraine',
+    place : 'Одесса, Украина',
     rept : [
       {
         title : 'Жесткая правда о развитии мягких навыков',
@@ -49,7 +49,50 @@ export const PrepartySpeakersRu = [
       {
         link : 'mailto:dka@gorilla.com.ua',
         fatype : 'envelope'
-      },
+      }
     ]
   },
+  {
+    image : 'public/img/speakers/dmitry_mindra.jpg',
+    name : 'Дмитрий Миндра',
+    position : 'Senior Manager',
+    company : 'Oracle',
+    place : 'Одесса, Украина',
+    rept : [
+      {
+        title : 'Management 101 [Ru] [Pre-party]',
+        description : ''
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : []
+  },
+  {
+    image : 'public/img/speakers/ksenia-redunova.jpg',
+    name : 'Ксения Редунова',
+    position : 'Team Lead',
+    company : 'Lohika',
+    place : 'Одесса, Украина',
+    rept : [
+      {
+        title : 'Presentation Karaoke [Ru] [Pre-party]',
+        description : 'I\'m sure public speaking skills are important in our work and even everyday life. Sometimes it\'s ' +
+        'difficult to get relaxed and (omg!) improvise staying alone and talking to audience. We will play a game to train' +
+        ' our improvisation talents and public speaking skills. It\'s totally interactive and everybody is welcome to join!'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://www.facebook.com/redunova',
+        fatype : 'facebook'
+      },
+      {
+        link : 'https://www.linkedin.com/in/redunovaksenia/',
+        fatype : 'linkedin-square'
+      }
+    ]
+  }
 ];

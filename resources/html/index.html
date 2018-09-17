@@ -249,15 +249,15 @@
 
                 <!--<li class="about-ticket-item" itemprop="price" content="1500.00">-->
 
-                  <!--<a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" itemprop="url">-->
-                    <!--<div class="about-ticket-title">-->
-                      <!--Early Bird <br>-->
-                      <!--Ticket-->
-                    <!--</div>-->
-                  <!--</a>-->
-                  <!--<div class="about-ticket-desc">-->
-                    <!--1500 <span itemprop="priceCurrency" content="UAH">UAH</span>-->
-                  <!--</div>-->
+                <!--<a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" itemprop="url">-->
+                <!--<div class="about-ticket-title">-->
+                <!--Early Bird <br>-->
+                <!--Ticket-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--<div class="about-ticket-desc">-->
+                <!--1500 <span itemprop="priceCurrency" content="UAH">UAH</span>-->
+                <!--</div>-->
                 <!--</li>-->
                 <li class="about-ticket-item" itemprop="price" content="1950.00">
                   <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank" itemprop="url">
@@ -521,6 +521,19 @@
         </div>
         <!-- Conference partners-->
 
+        <!-- HR partners-->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_hr_heading }}$</h3>
+
+          <div class="sponsors-media-list">
+            <a href="https://www.daxx.com/" class="sponsors-media-item" target="_blank"
+               style="flex: 0 0 25%; max-width: 25%;">
+              <img src="public/img/hr_partners/rabota_ua.jpg" alt="rabota.ua" style="max-width: none">
+            </a>
+          </div>
+        </div>
+        <!-- HR partners-->
+
         <!-- Media Partners -->
         <div class="m-t-80">
           <h3 class="text-center m-b-30">${{ index.sponsors_media_heading }}$</h3>
@@ -552,9 +565,25 @@
                class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/cbs.png" alt="CyberBionic">
             </a>
+
             <a href="https://www.easycode.school/"
                class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/easy_code.jpg" alt="Easy code">
+            </a>
+
+            <a href="https://beetroot.academy/"
+               class="sponsors-media-item" target="_blank">
+              <img src="public/img/media_partners/beetroot_academy.png" alt="beetroot_academy">
+            </a>
+
+            <a href="http://skillsup.ua/"
+               class="sponsors-media-item" target="_blank">
+              <img src="public/img/media_partners/skills_up.png" alt="skills_up">
+            </a>
+
+            <a href="https://www.eliftech.com/"
+               class="sponsors-media-item" target="_blank">
+              <img src="public/img/media_partners/eliftech.png" alt="eliftech">
             </a>
           </div>
         </div>
@@ -573,13 +602,18 @@
       <div id="map" class="m-t-50" style="height: 500px; width: 100%"></div>
 
       <div class="container">
-        <div class="m-t-70 text-center volunteer-footer">
-          <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn">
+        <div class="m-t-70  text-center volunteer-footer">
+          <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn m-10">
             ${{ index.volunteer }}$
           </a>
         </div>
-
+        <!--<div class="m-t-40  text-center volunteer-footer">-->
+          <!--<a href="javascript: void(0)" class="btn m-10">-->
+            <!--${{ index.code_conduct }}$-->
+          <!--</a>-->
+        <!--</div>-->
       </div>
+
       <div class="user-select-none">
         <img class="sponsors-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/sponsors_bg.svg"
              alt="colonnade">

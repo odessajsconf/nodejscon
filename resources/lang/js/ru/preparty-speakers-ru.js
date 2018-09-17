@@ -60,7 +60,7 @@ export const PrepartySpeakersRu = [
     place : 'Одесса, Украина',
     rept : [
       {
-        title : 'Management 101 [Ru] [Pre-party]',
+        title : 'Management 101 [Ru]',
         description : ''
       }
     ],
@@ -76,7 +76,7 @@ export const PrepartySpeakersRu = [
     place : 'Одесса, Украина',
     rept : [
       {
-        title : 'Presentation Karaoke [Ru] [Pre-party]',
+        title : 'Presentation Karaoke [Ru]',
         description : 'I\'m sure public speaking skills are important in our work and even everyday life. Sometimes it\'s ' +
         'difficult to get relaxed and (omg!) improvise staying alone and talking to audience. We will play a game to train' +
         ' our improvisation talents and public speaking skills. It\'s totally interactive and everybody is welcome to join!'

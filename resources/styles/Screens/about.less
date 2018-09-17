@@ -86,6 +86,35 @@
   color: @color_gray_light;
 }
 
+.about-advantages {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 70px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-advantage-item {
+  width: 33%;
+  padding: 15px;
+}
+
+.about-advantage-icon {
+  margin: 0 auto;
+  .font-size(45);
+  text-align: center;
+  color: @color_green;
+}
+
+.about-advantage-text {
+  margin-top: 20px;
+  color: @color_gray_light;
+  text-align: center;
+  font-weight: bold;
+}
+
+
 @media @laptopMd {
   .about-content {
     display: block!important;
@@ -130,5 +159,14 @@
     height: 120px;
     padding: 20px 20px 20px 40px;
     .font-size(20)
+  }
+
+  .about-advantages {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .about-advantage-item {
+    width: 50%;
+    min-width: 160px;
   }
 }

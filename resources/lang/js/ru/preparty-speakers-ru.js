@@ -91,7 +91,7 @@ export const PrepartySpeakersRu = [
       },
       {
         link : 'https://www.linkedin.com/in/redunovaksenia/',
-        fatype : 'linkedin-square'
+        fatype : 'linkedin'
       }
     ]
   }

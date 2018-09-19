@@ -3,8 +3,6 @@ window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { GoogleApiModule } from '../Modules/GoogleApi';
 import { Helpers } from '../Helpers';
-// import { PlacesEn } from '../lang/en/palces-en';
-// import { PlacesRu } from '../lang/ru/palces-ru';
 
 export class Map {
 
@@ -24,6 +22,7 @@ export class Map {
         lng : 30.749558
       },
       clickableIcons : false,
+      // gestureHandling : 'greedy'
     }, this.mapOptions);
 
     this.markers = [];
@@ -34,15 +33,17 @@ export class Map {
         lng : 30.749558,
         infoWindow : this.renderInfoWindowHTML({
           title : 'Business-center Solnechnyiy',
-          content : '<p><strong>Address: </strong>5, Sonyachna St.</p>'
-          // '<ul>' +
-          // '<li>july 6</li>' +
-          // '<li>Impact Hub</li>' +
-          // '</ul>',
-          // img: 'images/map_logos/hub.png',
-          // link: ''
+          content : '<p><span>Address: </span>5, Sonyachna St.</p>'
         })
-      }
+      },
+      {
+        lat : 46.480186,
+        lng : 30.7476283,
+        infoWindow : this.renderInfoWindowHTML({
+          title : 'office of the company Lohika',
+          content : '<p><span>Address: </span>1, Bunina St.</p>'
+        })
+      },
     ];
 
     const PlacesRu = [
@@ -51,15 +52,17 @@ export class Map {
         lng : 30.749558,
         infoWindow : this.renderInfoWindowHTML({
           title : 'Бизнес-центр Солнечный',
-          content : '<p><strong>Адрес: </strong>Солнечная, 5</p>'
-          // '<ul>' +
-          // '<li>july 6</li>' +
-          // '<li>Impact Hub</li>' +
-          // '</ul>',
-          // img: 'images/map_logos/hub.png',
-          // link: ''
+          content : '<p><span>Адрес: </span>Солнечная, 5</p>'
         })
-      }
+      },
+      {
+        lat : 46.480186,
+        lng : 30.7476283,
+        infoWindow : this.renderInfoWindowHTML({
+          title : 'Офис компании Lohika',
+          content : '<p><span>Адрес: </span>Бунина, 1</p>'
+        })
+      },
     ];
 
 
@@ -86,10 +89,8 @@ export class Map {
 
   _initMap() {
     this.map = new this.google.maps.Map(document.querySelector(this.selector), this.options);
-
     this.bounds = new this.google.maps.LatLngBounds();
     this.infowindow = new this.google.maps.InfoWindow();
-
     this.drop();
   }
 
@@ -100,8 +101,14 @@ export class Map {
       this.addMarkerWithTimeout(this.places[i], i * 200);
     }
     //крайние точки
-    this.bounds.extend({lat : 46.429, lng : 30.749558});
-    this.bounds.extend({lat : 46.45026, lng : 30.749558});
+    this.bounds.extend({lat : 46.42, lng : 30.749558});
+    this.bounds.extend({lat : 46.51, lng : 30.749558});
+    //крайние точки
+
+    this.places.forEach((item, i, arr)=>{
+      this.bounds.extend(item);
+    });
+
     this.map.fitBounds(this.bounds);
   }
 

@@ -40,7 +40,7 @@ export class Map {
         lat : 46.480186,
         lng : 30.7476283,
         infoWindow : this.renderInfoWindowHTML({
-          title : 'office of the company Lohika',
+          title : 'Pre-party: office of the company Lohika',
           content : '<p><span>Address: </span>1, Bunina St.</p>'
         })
       },
@@ -59,7 +59,7 @@ export class Map {
         lat : 46.480186,
         lng : 30.7476283,
         infoWindow : this.renderInfoWindowHTML({
-          title : 'Офис компании Lohika',
+          title : 'Pre-party: офис компании Lohika',
           content : '<p><span>Адрес: </span>Бунина, 1</p>'
         })
       },

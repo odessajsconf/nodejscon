@@ -143,7 +143,7 @@ export class Map {
   renderInfoWindowHTML(content) {
     let infoWindowBlock =
       '<div class="infoWindow-content">' +
-      '<h3>${title}</h3>' +
+      '<h3>{{html title }}</h3>' +
       '<div class="flex justify-content-between mb-1">\n' +
       // '<div class="">' +
       // '<a href="${link}" target="_blank">\n' +

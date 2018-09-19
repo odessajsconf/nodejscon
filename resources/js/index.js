@@ -32,5 +32,5 @@ class App {
 
 
 $('body').ready(() => {
-  window.App = new App(window.CONFIG || {});
+  window.APP = new App(window.CONFIG || {});
 });

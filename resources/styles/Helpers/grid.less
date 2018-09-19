@@ -10,10 +10,11 @@
 Flex direction
 */
 
-.f-d-row{
+.f-d-row {
   flex-direction: row;
 }
-.f-d-column{
+
+.f-d-column {
   flex-direction: column;
 }
 
@@ -30,6 +31,7 @@ Justify content
 .j-c-space-between {
   justify-content: space-between;
 }
+
 .j-c-space-around {
   justify-content: space-around;
 }
@@ -61,27 +63,30 @@ Align items
  Flex wrap
 */
 
-.f-w-w{
+.f-w-w {
   flex-wrap: wrap;
 }
-.f-w-wr{
+
+.f-w-wr {
   flex-wrap: wrap-reverse;
 }
-.f-w-nw{
+
+.f-w-nw {
   flex-wrap: nowrap;
 }
-
 
 /**
 Flex items
  */
-.flex-greed(@list, @type){
+.flex-greed(@list, @type) {
 
-  .flex-greed-loop(@i: length(@list)) when(@i > 0){
+  .flex-greed-loop(@i: length(@list)) when (@i > 0) {
 
     .flex-greed-loop(@i - 1);
     @size: extract(@list, @i);
-    &-@{size}{ @{type}: @size; }
+    &-@{size} {
+        @{type}: @size;
+    }
 
   }
 
@@ -106,10 +111,14 @@ Flex items
   .flex-greed(@greedList, flex);
 }
 
+.m-0a {
+  margin: 0 auto;
+}
+
 @media @mobileLg {
   // Fix for "flex-direction: column;" in IE
   // add for child nodes
-  .f-d-column-fix{
+  .f-d-column-fix {
     flex: 1 1 auto;
   }
 }

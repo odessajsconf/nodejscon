@@ -250,5 +250,31 @@ export const MainSpeakersEn = [
     socialsRendered : '',
     socials : []
   },
+    {
+      image : '../public/img/speakers/stanislav_dzhus.jpg',
+      name : 'Stanislav Dzhus',
+      position : 'Software Engineer',
+      company : 'AgileEngine',
+      place : 'Kyiv, Ukraine',
+      rept : [
+        {
+          title : 'Ways of communication between microservices [Ru]',
+          description : 'I will tell about three ways of communication: HTTP-requests, WebSockets, RabbitMQ. I will ' +
+          'explain using examples in which cases specific way should be used.'
+        }
+      ],
+      aboutSpeaker : '',
+      socialsRendered : '',
+      socials : [
+        {
+          link : 'https://github.com/blablapolicja',
+          fatype : 'github'
+        },
+        {
+          link : 'https://www.linkedin.com/in/stanislavdzhus/',
+          fatype : 'linkedin'
+        }
+      ]
+    },
 ]
 ;

@@ -5,6 +5,8 @@ import { MainSpeakersRu } from '../../lang/js/ru/main-speakers-ru.js';
 import { MainSpeakersEn } from '../../lang/js/en/main-speakers-en.js';
 import { PrepartySpeakersEn } from '../../lang/js/en/preparty-speakers-en';
 import { PrepartySpeakersRu } from '../../lang/js/ru/preparty-speakers-ru';
+import { WorkshopRu } from '../../lang/js/ru/workshop-ru';
+import { WorkshopEn } from '../../lang/js/en/workshop-en';
 
 export class SpeakersComponent extends BaseComponent {
 
@@ -22,6 +24,13 @@ export class SpeakersComponent extends BaseComponent {
           speakersRu: PrepartySpeakersRu,
           speakersEn: PrepartySpeakersEn,
           container: '#preparty-speakers-list'
+        });
+
+        this.WorkShop = new RenderSpeakers({
+          modal: 'workshop-modal',
+          speakersRu: WorkshopRu,
+          speakersEn: WorkshopEn,
+          container: '#workshop-list'
         });
     }
 

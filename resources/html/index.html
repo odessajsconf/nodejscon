@@ -91,7 +91,7 @@
             <li><a href="#speakers">
               ${{ index.menu_speakers }}$
             </a></li>
-            <!--<li><a href="#workshops">Workshops</a></li>-->
+            <li><a href="#workshop">${{ index.menu_workshop }}$</a></li>
             <li><a href="#schedule">
               ${{ index.menu_schedule }}$
             </a></li>
@@ -378,6 +378,16 @@
       </div>
     </section>
 
+    <section id="workshop" class="speakers flex f-d-column j-c-space-between">
+      <div class="container">
+        <div class="h2">
+          ${{ index.workshop_head }}$
+        </div>
+
+        <div class="flex j-c-space-around speakers-list m-t-50" id="workshop-list"></div>
+      </div>
+    </section>
+
     <section id="schedule">
       <div class="container">
         <div class="h2">
@@ -419,120 +429,6 @@
           </p>
           <br>
         </div>
-
-        <!--<div class="table-container m-t-10">-->
-        <!--<table class="table">-->
-        <!--<thead>-->
-        <!--<tr>-->
-        <!--<th></th>-->
-        <!--<th>Bronze</th>-->
-        <!--<th>Silver</th>-->
-        <!--<th>Gold</th>-->
-        <!--<th>General</th>-->
-        <!--</tr>-->
-
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_1 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_2 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_3 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_4 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_5 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_6 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_7 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_8 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_9 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_10 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_11 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_12 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_13 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_14 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td>5%</td>-->
-        <!--<td>10%</td>-->
-        <!--<td>15%</td>-->
-        <!--</tr>-->
-        <!--</thead>-->
-        <!--</table>-->
-        <!--</div>-->
-
         <div class="m-t-50 h4 text-center sponsors-text">
           <p>
             ${{ index.sponsors_txt_2 }}$
@@ -739,6 +635,37 @@
 </div>
 
 <div class="remodal speakers-modal" data-remodal-id="main-speakers-modal" id="main-speakers-modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="flex speakers-modal_heading">
+    <div class="speakers-modal_img">
+      <img src="https://via.placeholder.com/1x1" alt="">
+    </div>
+    <div class="speakers-modal_txt">
+      <div class="speaker-name"></div>
+
+      <div class="speaker-position">
+        <span class="position"></span>
+        <span class="company"></span>
+      </div>
+      <div class="speaker-place"></div>
+
+      <div class="speaker-socials"></div>
+    </div>
+  </div>
+
+  <div class="speakers-modal_content m-t-40 m-b-50"></div>
+
+  <div class="flex j-c-space-between">
+    <button class="remodal-prev">
+      ${{ index.poup_previous }}$
+    </button>
+    <button class="remodal-next">
+      ${{ index.poup_next }}$
+    </button>
+  </div>
+</div>
+
+<div class="remodal speakers-modal" data-remodal-id="workshop-modal" id="workshop-modal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <div class="flex speakers-modal_heading">
     <div class="speakers-modal_img">

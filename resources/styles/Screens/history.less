@@ -1,0 +1,38 @@
+.history-list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.history-item {
+  display: inline-block;
+  width: 25%;
+  padding: 15px;
+  transition: .2s;
+
+  &:hover {
+    opacity: .85;
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    transition: .2s;
+  }
+}
+
+@media @tablet {
+
+  .history-item {
+    width: 33%;
+  }
+}
+
+@media @mobileLg {
+
+  .history-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}

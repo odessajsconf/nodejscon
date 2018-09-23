@@ -323,6 +323,14 @@
                     ${{ index.about_advantages_5 }}$
                   </div>
                 </li>
+                <li class="about-advantage-item">
+                  <div class="about-advantage-icon">
+                    <i class="fa fa-video-camera"></i>
+                  </div>
+                  <div class="about-advantage-text">
+                    ${{ index.about_advantages_6 }}$
+                  </div>
+                </li>
 
               </ul>
 
@@ -350,9 +358,10 @@
         </div>
 
         <div class="h4 text-center m-t-20 speakers-desc">
+          ${{ index.speakers_preparty_theme }}$ <br><br>
           ${{ index.speakers_preparty_desc }}$
         </div>
-        
+
         <div class="m-t-30 text-center">
           <a href="https://goo.gl/forms/1yKKDXrCvdu5AcoF2" class="btn" target="_blank">
             ${{ index.speakers_preparty_registration }}$
@@ -455,24 +464,19 @@
               <!--"sponsors_program": "Скачать партнерскую программу",-->
             </a>
           </div>
-
         </div>
 
-        <!-- Conference partners-->
+        <!-- Sponsors -->
         <div class="m-t-80">
-          <h3 class="text-center m-b-30">${{ index.sponsors_conference_heading }}$</h3>
+          <h3 class="text-center m-b-30">${{ index.sponsors_heading }}$</h3>
 
           <div class="sponsors-media-list">
-            <a href="https://www.daxx.com/" class="sponsors-media-item" target="_blank">
-              <img src="public/img/conference_partners/daxx.png" alt="daxx">
-            </a>
-            
-            <a href="https://agileengine.com/" class="sponsors-media-item" target="_blank">
-              <img src="public/img/conference_partners/agile_engine.png" alt="daxx">
+            <a href="https://codemotion.ninja/" class="sponsors-media-item sponsors-media-wide" target="_blank">
+              <img src="public/img/sponsors/codemotion.jpg" alt="codemotion">
             </a>
           </div>
         </div>
-        <!-- Conference partners-->
+        <!-- Sponsors -->
 
         <!-- HR partners-->
         <div class="m-t-80">
@@ -485,6 +489,22 @@
           </div>
         </div>
         <!-- HR partners-->
+
+        <!-- Conference partners-->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_conference_heading }}$</h3>
+
+          <div class="sponsors-media-list">
+            <a href="https://www.daxx.com/" class="sponsors-media-item" target="_blank">
+              <img src="public/img/conference_partners/daxx.png" alt="daxx">
+            </a>
+
+            <a href="https://agileengine.com/" class="sponsors-media-item" target="_blank">
+              <img src="public/img/conference_partners/agile_engine.png" alt="daxx">
+            </a>
+          </div>
+        </div>
+        <!-- Conference partners-->
 
         <!-- Media Partners -->
         <div class="m-t-80">
@@ -562,18 +582,31 @@
                class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/eatdog.png" alt="eatdog">
             </a>
-            
+
             <a href="https://www.hys-enterprise.com/"
                class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/hys.jpg" alt="hys-enterprise">
             </a>
-            
+
             <a href="https://chernivtsi.js.org/"
                class="sponsors-media-item sponsors-media-item-small" target="_blank">
               <img src="public/img/media_partners/chernivtsi_js.svg" alt="Chernivtsi.js">
             </a>
           </div>
         </div>
+        <!-- Media Partners -->
+
+        <!-- Tech sponsor -->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_tech_heading }}$</h3>
+
+          <div class="sponsors-media-list">
+            <a href="hhttps://vega.ua/" class="sponsors-media-item sponsors-media-wide" target="_blank">
+              <img src="public/img/sponsors/vega.jpg" alt="vega">
+            </a>
+          </div>
+        </div>
+        <!-- Tech sponsor -->
       </div>
     </section>
 
@@ -595,17 +628,48 @@
           </a>
         </div>
         <!--<div class="m-t-40  text-center volunteer-footer">-->
-          <!--<a href="javascript: void(0)" class="btn m-10">-->
-            <!--${{ index.code_conduct }}$-->
-          <!--</a>-->
+        <!--<a href="javascript: void(0)" class="btn m-10">-->
+        <!--${{ index.code_conduct }}$-->
+        <!--</a>-->
         <!--</div>-->
       </div>
 
-      <div class="user-select-none">
-        <img class="sponsors-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/sponsors_bg.svg"
-             alt="colonnade">
+    </section>
+
+    <section id="history">
+      <div class="container">
+        <div class="h2">
+          ${{ index.history_head }}$
+        </div>
+
+        <div class="history-list">
+          <a href="http://odessajs.org/2013/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2013.jpg" alt="OdessaJS'2013">
+          </a>
+          <a href="http://odessajs.org/2014/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2014.jpg" alt="OdessaJS'2014">
+          </a>
+          <a href="http://odessajs.org/2015/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2015.jpg" alt="OdessaJS'2015">
+          </a>
+          <a href="http://odessajs.org/2016/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2016.jpg" alt="OdessaJS'2016">
+          </a>
+          <a href="http://odessajs.org/2017/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2017.jpg" alt="OdessaJS'2017">
+          </a>
+          <a href="http://odessajs.org/" class="history-item" target="_blank">
+            <img src="public/img/history/2018.jpg" alt="OdessaJS'2018">
+          </a>
+        </div>
       </div>
     </section>
+
+
+    <div class="user-select-none">
+      <img class="sponsors-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/sponsors_bg.svg"
+           alt="colonnade">
+    </div>
   </div>
 </div>
 

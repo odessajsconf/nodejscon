@@ -166,55 +166,63 @@
   </header>
   <div class="wrapper">
     <section id="heading" class="heading">
-      <div class="container">
-        <div class="heading-title-row flex j-c-space-between a-i-center m-t-40">
-          <div class="heading-logo">
-            <img src="public/img/logo.png?v1.01" alt="Node Conference" itemprop="image">
-            <!--<img src="public/img/logo_green.svg?v1.01" alt="Node Conference" itemprop="image">-->
-          </div>
-          <div class="heading-date" itemprop="startDate" content="2018-09-29">
-            ${{ index.heading_date }}$
-          </div>
-        </div>
+      <!--<div class="container">-->
+      <!--<div class="heading-title-row flex j-c-space-between a-i-center m-t-40">-->
+      <!--<div class="heading-logo">-->
+      <!--<img src="public/img/logo.png?v1.01" alt="Node Conference" itemprop="image">-->
+      <!--&lt;!&ndash;<img src="public/img/logo_green.svg?v1.01" alt="Node Conference" itemprop="image">&ndash;&gt;-->
+      <!--</div>-->
+      <!--<div class="heading-date" itemprop="startDate" content="2018-09-29">-->
+      <!--${{ index.heading_date }}$-->
+      <!--</div>-->
+      <!--</div>-->
 
-        <div class="flex j-c-flex-end">
-          <div class="text-center heading-tickets-btn">
-            <a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank"
-               class="btn btn-light-green">${{ index.menu_tickets }}$</a>
-          </div>
-        </div>
+      <!--<div class="flex j-c-flex-end">-->
+      <!--<div class="text-center heading-tickets-btn">-->
+      <!--<a href="https://nodejsconf.ticketforevent.com/?draft_mode=on" target="_blank"-->
+      <!--class="btn btn-light-green">${{ index.menu_tickets }}$</a>-->
+      <!--</div>-->
+      <!--</div>-->
 
-        <div class="m-t-30 text-center volunteer-header">
-          <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn">
-            ${{ index.volunteer }}$
-          </a>
-        </div>
+      <!--<div class="m-t-30 text-center volunteer-header">-->
+      <!--<a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn">-->
+      <!--${{ index.volunteer }}$-->
+      <!--</a>-->
+      <!--</div>-->
 
-        <div>
-          <ul class="heading-list">
-            <li class="calendar">
-              <strong>${{ index.heading_list_1 }}$</strong>
-            </li>
-            <li class="format">
-              <strong>${{ index.heading_list_3 }}$</strong> <br>
-              <br>
-              - ${{ index.heading_list_3_1 }}$ <br>
-              - ${{ index.heading_list_3_2 }}$ <br>
-              - ${{ index.heading_list_3_3 }}$
-            </li>
+      <!--<div>-->
+      <!--<ul class="heading-list">-->
+      <!--<li class="calendar">-->
+      <!--<strong>${{ index.heading_list_1 }}$</strong>-->
+      <!--</li>-->
+      <!--<li class="format">-->
+      <!--<strong>${{ index.heading_list_3 }}$</strong> <br>-->
+      <!--<br>-->
+      <!-- - ${{ index.heading_list_3_1 }}$ <br>-->
+      <!-- - ${{ index.heading_list_3_2 }}$ <br>-->
+      <!-- - ${{ index.heading_list_3_3 }}$-->
+      <!--</li>-->
 
-            <li class="sheet">
-              <strong>${{ index.heading_list_2 }}$</strong>
-            </li>
-            <li class="sun">
-              <strong>${{ index.heading_list_4 }}$</strong>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <!--<li class="sheet">-->
+      <!--<strong>${{ index.heading_list_2 }}$</strong>-->
+      <!--</li>-->
+      <!--<li class="sun">-->
+      <!--<strong>${{ index.heading_list_4 }}$</strong>-->
+      <!--</li>-->
+      <!--</ul>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="user-select-none">-->
+      <!--<img class="heading-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/heading_bg.svg"-->
+      <!--alt="lighthouse">-->
+      <!--</div>-->
       <div class="user-select-none">
-        <img class="heading-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/heading_bg.svg"
-             alt="lighthouse">
+
+        <picture>
+          <source media="(max-width: 992px)" srcset="public/img/collage_mob.jpg">
+          <source media="(min-width: 993px)" srcset="public/img/collage_desk.jpg">
+          <img src="public/img/collage_desk.jpg" class="heading-bg-img collage" alt="Speakers">
+        </picture>
       </div>
     </section>
 

@@ -1,6 +1,6 @@
 export const ScheduleRu = [
   {
-    time:'9.30-10.30',
+    time:'9.00-10.00',
     icon:'profile',
     scheduleRendered: '',
     talks: [
@@ -9,25 +9,16 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'10.30-10.40',
-    icon:'people',
+    time:'10.00-10.40',
+    icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Открытие'},
+      {author: 'Роман Саченко', title: 'Безопасность в Node.js'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'10.40-11.20',
-    icon:'people',
-    scheduleRendered: '',
-    talks: [
-      {author: '', title: 'Начало конференции <br> <br> Доклад 1'},
-      {author: '', title: ''}
-    ]
-  },
-  {
-    time:'11.20-11.40',
+    time:'10.40-10.50',
     icon:'clock',
     scheduleRendered: '',
     talks: [
@@ -36,16 +27,16 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'11.40-12.20',
+    time:'10.50-11.30',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 2'},
+      {author: 'Максим Климишин', title: 'Conflict-free replicated data types: распределенные данные в деталях'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'12.20-12.40',
+    time:'11.30-11.45',
     icon:'cup',
     scheduleRendered: '',
     talks: [
@@ -54,16 +45,16 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'12.40-13.20',
+    time:'11.45-12.25',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 3'},
-      {author: '', title: ''}
+      {author: 'Николай Бойко', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
+      {author: 'Максим Климишин', title: 'Построение блокчейна, используя CRDT и Merkle Trees \[Master Class\]'}
     ]
   },
   {
-    time:'13.30-15.00',
+    time:'12.25-13.30',
     icon:'plate',
     scheduleRendered: '',
     talks: [
@@ -72,16 +63,16 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'15.00-15.40',
+    time:'13.30-14.10',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 4'},
+      {author: 'Александра Калинина', title: 'Тестирование деплоймент процесса на GCP'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'15.40-16.00',
+    time:'14.10-14.20',
     icon:'clock',
     scheduleRendered: '',
     talks: [
@@ -90,16 +81,16 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'16.00-16.40',
+    time:'14.20-15.00',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 5'},
+      {author: 'Станислав Джус', title: 'Способы коммуникации между микросервисами'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'16.40-17.10',
+    time:'15.00-15.15',
     icon:'cup',
     scheduleRendered: '',
     talks: [
@@ -108,16 +99,16 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'17.10-17.50',
+    time:'15.15-15.55',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 6'},
+      {author: 'Дмитрий Чиркин', title: 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'17.50-18.10',
+    time:'15.55-16.05',
     icon:'clock',
     scheduleRendered: '',
     talks: [
@@ -126,16 +117,52 @@ export const ScheduleRu = [
     ]
   },
   {
-    time:'18.10-18.50',
+    time:'16.05-16.45',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 7'},
+      {author: 'Юрий Чихрай', title: 'Streams - ликвидация безграмотности'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'19.00',
+    time:'16.45-17.00',
+    icon:'clock',
+    scheduleRendered: '',
+    talks: [
+      {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
+    ]
+  },
+  {
+    time:'17.00-17.40',
+    icon:'sheet',
+    scheduleRendered: '',
+    talks: [
+      {author: 'Дмитрий Гусев', title: '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js'},
+      {author: '', title: ''}
+    ]
+  },
+  {
+    time:'17.40-17.50',
+    icon:'clock',
+    scheduleRendered: '',
+    talks: [
+      {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
+    ]
+  },
+  {
+    time:'17.50-18.30',
+    icon:'sheet',
+    scheduleRendered: '',
+    talks: [
+      {author: 'Денис Ярмош', title: ''},
+      {author: '', title: ''}
+    ]
+  },
+  {
+    time:'18.30',
     icon:'people',
     scheduleRendered: '',
     talks: [

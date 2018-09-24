@@ -41,13 +41,21 @@ export const MainSpeakersRu = [
         },
         {
           title : 'Построение блокчейна, используя CRDT и Merkle Trees [Ru] [Workshop]',
-          description : '<ul>\n' +
+          description :
+          '<p class="text-bold m-b-5">MAJOR TOPICS</p>' +
+          '<ul class="m-t-0">\n' +
           '  <li>introduction &amp; basic tools installation</li>\n' +
           '  <li>blockchain basic implementation</li>\n' +
           '  <li>low-level transport</li>\n' +
           '  <li>high-level transport &amp; CRDT payload definition</li>\n' +
           '  <li>adding distributed properties</li>\n' +
-          '</ul>'
+          '</ul>' +
+          '<p class="text-bold m-b-5">WHY YOU SHOULD COME TO THIS WORKSHOP</p>' +
+          '<p class="m-t-0">People who developing modern client-side apps with JavaScript should know about distributed data structures like CRDT.</p>' +
+          '<p class="text-bold m-b-5">SKILLS &amp; EQUIPMENT REQUIRED FOR THE WORKSHOP</p>' +
+          '<p class="m-t-0">Laptop, internet, git, node.js installed on laptop</p>' +
+          '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+          '<p class="m-t-0">Middle+ front-end developers</p>'
         }
       ],
       aboutSpeaker :

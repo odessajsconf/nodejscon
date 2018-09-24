@@ -29,7 +29,8 @@ export class RenderSpeakers {
     }
 
     if(localStorage.speakersModalHtml && location.hash.search(`${this.options.modal}`) > -1) {
-      this.$popupElem.html( localStorage.speakersModalHtml );
+      this.$popupElem.html(localStorage.speakersModalHtml);
+      this._bindNavControlsListeners();
     }
 
     let speakerItem =
@@ -70,8 +71,7 @@ export class RenderSpeakers {
 
     });
 
-    $( this.options.container ).html(speakersHtml);
-
+    $(this.options.container).html(speakersHtml);
   }
 
   _events() {
@@ -92,31 +92,10 @@ export class RenderSpeakers {
       $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
       $modalReportsContainer = $modalBody.find('.speakers-modal_content'),
       $modalSpeakerLinks = $modalBody.find('.speaker-socials'),
-      // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
+      speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index'));
 
-      speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
-
-      $prevButton = $modalBody.find('button.remodal-prev'),
-      $nextButton = $modalBody.find('button.remodal-next');
-
-    $prevButton.unbind('click').click(() => {
-      let prevIndex = speakerIndex == 0 ? (this.speakers.length - 1) : speakerIndex - 1;
-      this.helpers.showLoader($modalBody);
-
-      setTimeout(()=> {
-        this.loadSpeakerModal($('[data-item-index="' + prevIndex + '"]'));
-      }, 600);
-    });
-
-    $nextButton.unbind('click').click(() => {
-      let nextIndex = speakerIndex == this.speakers.length - 1 ? 0 : speakerIndex + 1;
-      this.helpers.showLoader($modalBody);
-
-      setTimeout( ()=> {
-        this.loadSpeakerModal($('[data-item-index="' + nextIndex + '"]'));
-      }, 600);
-
-    });
+    $modalBody.find('.speakers-modal_heading').attr('data-current-index', speakerIndex);
+    this._bindNavControlsListeners();
 
     let speakerData = this.speakers[speakerIndex];
 
@@ -131,7 +110,7 @@ export class RenderSpeakers {
         reportsContent = '',
         speakerAboutText = speakerData.aboutSpeaker;
 
-      reports.forEach( (item, i, arr) => {
+      reports.forEach((item, i, arr) => {
         reportsContent += `
             <div class="speaker-report">${item.title}</div>
             <div>${item.description}</div>
@@ -153,8 +132,34 @@ export class RenderSpeakers {
       this.helpers.hideLoader($modalBody);
 
       setTimeout(() => {
-        localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
+        localStorage.setItem('speakersModalHtml', $modalBody.html());
       }, 400);
     }
+  }
+
+  _bindNavControlsListeners() {
+    let $modalBody = this.$popupElem,
+      speakerIndex =  +$modalBody.find('.speakers-modal_heading').attr('data-current-index'),
+      $prevButton = $modalBody.find('button.remodal-prev'),
+      $nextButton = $modalBody.find('button.remodal-next');
+
+    $prevButton.unbind('click').click(() => {
+      let prevIndex = speakerIndex == 0 ? (this.speakers.length - 1) : speakerIndex - 1;
+      this.helpers.showLoader($modalBody);
+
+      setTimeout(() => {
+        this.loadSpeakerModal($('[data-item-index="' + prevIndex + '"]'));
+      }, 600);
+    });
+
+    $nextButton.unbind('click').click(() => {
+      let nextIndex = speakerIndex == this.speakers.length - 1 ? 0 : speakerIndex + 1;
+      this.helpers.showLoader($modalBody);
+
+      setTimeout(() => {
+        this.loadSpeakerModal($('[data-item-index="' + nextIndex + '"]'));
+        console.log( nextIndex)
+      }, 600);
+    });
   }
 }

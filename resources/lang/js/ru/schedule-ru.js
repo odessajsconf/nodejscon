@@ -50,7 +50,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: 'Николай Бойко', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
-      {author: 'Максим Климишин', title: 'Построение блокчейна, используя CRDT и Merkle Trees \[Master Class\]'}
+      {author: 'Максим Климишин', title: 'Построение блокчейна, используя CRDT и Merkle Trees \[Мастер класс\]'}
     ]
   },
   {

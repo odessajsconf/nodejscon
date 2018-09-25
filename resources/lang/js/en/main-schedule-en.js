@@ -170,4 +170,13 @@ export const MainScheduleEn = [
       {author: '', title: ''}
     ]
   },
+  {
+    time:'19.00-21.00',
+    icon:'people',
+    scheduleRendered: '',
+    talks: [
+      {author: '', title: 'After-party for real Javascript ninja from the team of organizers NodeUkraine & Codemotion'},
+      {author: '', title: ''}
+    ]
+  },
 ];

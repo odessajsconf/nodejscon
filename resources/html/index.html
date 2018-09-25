@@ -95,6 +95,9 @@
             <li><a href="#schedule">
               ${{ index.menu_schedule }}$
             </a></li>
+            <li><a href="#afterparty">
+              ${{ index.menu_afterparty }}$
+            </a></li>
             <li><a href="#sponsors">
               ${{ index.menu_sponsors }}$
             </a></li>
@@ -341,7 +344,7 @@
                 </li>
                 <li class="about-advantage-item">
                   <div class="about-advantage-icon">
-                    <i class="fa fa-glass"></i>
+                    <i class="fa fa-beer"></i>
                   </div>
                   <div class="about-advantage-text">
                     ${{ index.about_advantages_5 }}$
@@ -415,8 +418,12 @@
         <div class="h2">
           ${{ index.workshop_head }}$
         </div>
-
-        <div class="flex j-c-space-around speakers-list m-t-50" id="workshop-list"></div>
+        <div class="h4 m-t-40 text-center">
+            ${{ index.workshop_description }}$
+        </div>
+        <div class="flex j-c-space-around speakers-list m-t-50" id="workshop-list">
+            
+        </div>
       </div>
     </section>
 
@@ -467,7 +474,26 @@
              alt="colonnade">
       </div>
     </section>
-
+    
+    <section id="afterparty" class="afterparty">
+        <div class="container">
+            <div class="h2">${{ index.afterparty_head }}$</div>
+        </div>
+        
+        <div class="m-t-80 h4 text-center sponsors-text">
+            <p>${{ index.afterparty_txt_1 }}$</p>
+            
+            <p>${{ index.afterparty_txt_2 }}$ - 
+            <a class="text-bold link white-space-nw" href="https://www.lustdorf.com/">Lustdorf</a>
+            </p>
+            
+            <p>${{ index.afterparty_txt_3 }}$</p>
+            
+            <p>${{ index.afterparty_txt_4 }}$</p>
+        </div>
+    </section>
+    
+    
     <section id="sponsors" class="sponsors">
       <div class="container">
         <div class="h2">
@@ -681,7 +707,16 @@
         <div class="h2">
           ${{ index.location_heading }}$
         </div>
-
+        
+        <div class="location-img-container">
+            <div class="location-img-container_item">
+                <img src="public/img/location/location_1.jpg" alt="location_photo_1">
+            </div>
+            <div class="location-img-container_item">
+                <img src="public/img/location/location_2.jpg" alt="location_photo_2">
+            </div>
+        </div>
+        
         <h3 class="text-center m-b-30">${{ index.location_address }}$</h3>
       </div>
 

@@ -1,0 +1,28 @@
+#location{
+    .container{
+        .location-img-container{
+            display: flex;
+            justify-content: space-between;
+            .location-img-container_item{
+                max-width: 48%;
+                box-sizing: border-box;
+                padding: 15px 0;
+                img{
+                    max-height: 550px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media @mobileLg {
+    
+    .location-img-container{
+        flex-direction: column;
+        &_item{
+            width: 100%;
+            max-width:100% !important;
+        }
+    }
+}

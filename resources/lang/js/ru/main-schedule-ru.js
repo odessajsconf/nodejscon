@@ -157,7 +157,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Денис Ярмош', title: ''},
+      {author: 'Денис Ярмош', title: 'SQL Indexes and Constraints in depth'},
       {author: '', title: ''}
     ]
   },

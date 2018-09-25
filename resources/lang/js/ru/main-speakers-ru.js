@@ -283,6 +283,39 @@ export const MainSpeakersRu = [
           fatype : 'linkedin'
         }
       ]
-    }
+    },
+        {
+      image : 'public/img/speakers/dennis_yarmosh.png',
+      name : 'Денис Ярмош',
+      position : 'Lead JavaScript Ninja',
+      company : 'Codemotion',
+      place : 'Киев, Украина',
+      rept : [
+        {
+          title : 'SQL Indexes and Constraints in depth [Ru]',
+          description : 'В этом докладе я объясню как индексы и ограничения работают внутри базы данных и как корректно их использовать'
+        }
+      ],
+      aboutSpeaker : '',
+      socialsRendered : '',
+      socials : [
+        {
+          link : 'https://github.com/dyarmosh',
+          fatype : 'github'
+        },
+        {
+          link : 'https://www.linkedin.com/in/dennis-yarmosh-1697607a/',
+          fatype : 'linkedin'
+        },
+        {
+          link : 'mailto:dennis.yarmosh@gmail.com',
+          fatype : 'envelope'
+        },
+        {
+          link : 'https://twitter.com/dennisyarmosh',
+          fatype : 'twitter'
+        }
+      ]
+    },
   ]
 ;

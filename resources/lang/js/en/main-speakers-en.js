@@ -284,5 +284,38 @@ export const MainSpeakersEn = [
         }
       ]
     },
+    {
+      image : '../public/img/speakers/dennis_yarmosh.png',
+      name : 'Dennis Yarmosh',
+      position : 'Lead JavaScript Ninja',
+      company : 'Codemotion',
+      place : 'Kyiv, Ukraine',
+      rept : [
+        {
+          title : 'SQL Indexes and Constraints in depth [Ru]',
+          description : 'In this talk I\'m going to explain how indexes and constraints work inside of the database and how to use them correctly.'
+        }
+      ],
+      aboutSpeaker : '',
+      socialsRendered : '',
+      socials : [
+        {
+          link : 'https://github.com/dyarmosh',
+          fatype : 'github'
+        },
+        {
+          link : 'https://www.linkedin.com/in/dennis-yarmosh-1697607a/',
+          fatype : 'linkedin'
+        },
+        {
+          link : 'mailto:dennis.yarmosh@gmail.com',
+          fatype : 'envelope'
+        },
+        {
+          link : 'https://twitter.com/dennisyarmosh',
+          fatype : 'twitter'
+        }
+      ]
+    },
 ]
 ;

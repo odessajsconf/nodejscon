@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import { HeaderComponent } from './Components/Header';
 import { LazyLoading } from './Modules/LazyLoad';
-import { RenderSchedule } from './Modules/RenderSchedule';
 import { Map } from './Components/Map';
 import { SpeakersComponent } from './Components/Speakers';
+import { ScheduleComponent } from './Components/Schedules';
 
 
 
@@ -17,7 +17,7 @@ class App {
 
   _initModules() {
     // new RenderSpeakers();
-    new RenderSchedule();
+    // new RenderSchedule();
     new LazyLoading();
     this.map = new Map({
       selector : '#map'
@@ -27,6 +27,7 @@ class App {
   _initComponents() {
     new HeaderComponent();
     new SpeakersComponent();
+    new ScheduleComponent();
   }
 }
 

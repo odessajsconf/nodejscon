@@ -158,7 +158,6 @@ export class RenderSpeakers {
 
       setTimeout(() => {
         this.loadSpeakerModal($('[data-item-index="' + nextIndex + '"]'));
-        console.log( nextIndex)
       }, 600);
     });
   }

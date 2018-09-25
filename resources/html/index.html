@@ -223,6 +223,9 @@
           <img src="https://via.placeholder.com/1x1" class="heading-bg-img collage" alt="Speakers" data-src="public/img/collage_desk.jpg">
         </picture>
       </div>
+      <div class="h3 text-center text-green text-bold m-t-50">
+        ${{ index.heading_start }}$
+      </div>
     </section>
 
     <section id="about" class="about flex f-d-column j-c-space-between">
@@ -427,8 +430,25 @@
         <!--${{ index.schedule_txt }}$-->
         <!--</div>-->
 
+        <h3 class="text-center">
+          ${{ index.speakers_preparty_head }}$
+        </h3>
+
         <div class="schedule-list-container">
-          <div id="schedule-list" class="schedule-list">
+          <div id="preparty-schedule-list" class="schedule-list">
+            <!--<div class="schedule-head">-->
+              <!--<div class="schedule-head-item"></div>-->
+              <!--<div class="schedule-head-item">Stage A [Talk]</div>-->
+              <!--&lt;!&ndash;<div class="schedule-head-item">Stage B [Tech Corner]</div>&ndash;&gt;-->
+            <!--</div>-->
+
+            <div class="schedule-body">
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-list-container">
+          <div id="main-schedule-list" class="schedule-list">
             <div class="schedule-head">
               <div class="schedule-head-item"></div>
               <div class="schedule-head-item">Stage A [Talk]</div>

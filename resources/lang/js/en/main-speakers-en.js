@@ -159,10 +159,8 @@ export const MainSpeakersEn = [
     place : 'Odessa, Ukraine',
     rept : [
       {
-        title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
-        description : 'В ходе беседы поговорим о некоторых весьма полезных инструментах, для генерации стартового ' +
-        'состояние проекта, автоматической настройки основных компонентов. В общем, как автоматизировать все то, что' +
-        ' каждый раз приходится делать, но не очень хочется'
+        title : '"Don’t hit a man while he’s down" - useful tools for a quick Node.JS project’s development start [Ru]',
+        description : 'We’ll talk about some useful tools for the generation of a project’s beginning state, automatic settings of the main components. To keep it short, how to automatize all the repetitive actions you’re tired of performing each time.'
       }
     ],
     aboutSpeaker : '',
@@ -202,8 +200,8 @@ export const MainSpeakersEn = [
     place : 'Kharkov, Ukraine',
     rept : [
       {
-        title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL [Ru]',
-        description : ''
+        title : 'PostgreSQL for hipsters or why your next project should be in PostgreSQL. [Ru]',
+        description : 'Useful and not too useful, unique PostgreSQL features that will help with Node.JS development.'
       }
     ],
     aboutSpeaker : '',
@@ -227,7 +225,7 @@ export const MainSpeakersEn = [
     place : 'Odessa, Ukraine',
     rept : [
       {
-        title : 'Streams - ликвидация безграмотности [Ru]',
+        title : 'Eradication of illiteracy in Streams. [Ru]',
         description : 'Доклад должен показать что Streams - важный инструмент Node.js, который не нужно игнорировать, а необходимо использовать в полную силу. После доклада у вас должны появится знания, как сделать более оптимизированные приложения и пройти все страхи использования этого инструмента'
       }
     ],

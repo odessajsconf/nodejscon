@@ -249,9 +249,9 @@ export const MainSpeakersRu = [
       rept : [
         {
           title : 'NodeJS Refactoring: How to kill a Dragon and stay alive [Ru]',
-          description : 'How to refactor big and complex NodeJS applications.<br>' +
-          'Make correct estimations, chose transition strategy.<br>' +
-          'Step by step guide with code examples and techniques to complete this task.'
+          description : 'Как сделать рефакторинг больших и сложных приложений на NodeJS.<br>' +
+          'Сделать правильные оценки, выбрать стратегию перехода.<br>' +
+          'Пошаговый гид с примерами кода и подходами решения этой задачи.'
         }
       ],
       aboutSpeaker : '',

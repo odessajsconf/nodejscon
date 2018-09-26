@@ -13,7 +13,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Роман Саченко', title: 'Безопасность в Node.js'},
+	  {author: 'Денис Ярмош', title: 'SQL Indexes and Constraints in depth'},
       {author: '', title: ''}
     ]
   },
@@ -139,7 +139,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Дмитрий Гусев', title: '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js'},
+	  {author: 'Роман Саченко', title: 'Безопасность в Node.js'},
       {author: '', title: ''}
     ]
   },
@@ -157,7 +157,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Денис Ярмош', title: 'SQL Indexes and Constraints in depth'},
+      {author: 'Дмитрий Гусев', title: '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js'},
       {author: '', title: ''}
     ]
   },

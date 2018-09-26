@@ -292,7 +292,7 @@ export const MainSpeakersRu = [
       place : 'Киев, Украина',
       rept : [
         {
-          title : 'SQL Indexes and Constraints in depth [Ru]',
+          title : 'SQL Indexes and Constraints in depth [Ua]',
           description : 'В этом докладе я объясню как индексы и ограничения работают внутри базы данных и как корректно их использовать'
         }
       ],

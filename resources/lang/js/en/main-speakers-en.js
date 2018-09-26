@@ -290,7 +290,7 @@ export const MainSpeakersEn = [
       place : 'Kyiv, Ukraine',
       rept : [
         {
-          title : 'SQL Indexes and Constraints in depth [Ru]',
+          title : 'SQL Indexes and Constraints in depth [Ua]',
           description : 'In this talk I\'m going to explain how indexes and constraints work inside of the database and how to use them correctly.'
         }
       ],

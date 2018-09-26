@@ -13,7 +13,7 @@ export const MainScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Roman Sachenko', title: 'NodeJS Security or Blackened is The End'},
+	  {author: 'Dennis Yarmosh', title: 'SQL Indexes and Constraints in depth'},
       {author: '', title: ''}
     ]
   },
@@ -139,7 +139,7 @@ export const MainScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Dmitriy Gusev', title: '"Don’t hit a man while he’s down" - useful tools for a quick Node.JS project’s development start'},
+	  {author: 'Roman Sachenko', title: 'NodeJS Security or Blackened is The End'},
       {author: '', title: ''}
     ]
   },
@@ -157,7 +157,7 @@ export const MainScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Dennis Yarmosh', title: 'SQL Indexes and Constraints in depth'},
+      {author: 'Dmitriy Gusev', title: '"Don’t hit a man while he’s down" - useful tools for a quick Node.JS project’s development start'},
       {author: '', title: ''}
     ]
   },

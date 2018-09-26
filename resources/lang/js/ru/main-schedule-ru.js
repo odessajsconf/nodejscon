@@ -49,7 +49,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Николай Бойко', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
+      {author: 'Юрий Чихрай', title: 'Streams - ликвидация безграмотности'},
       {author: 'Максим Климишин', title: 'Построение блокчейна, используя CRDT и Merkle Trees \[Мастер класс\]'}
     ]
   },
@@ -121,7 +121,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Юрий Чихрай', title: 'Streams - ликвидация безграмотности'},
+      {author: 'Николай Бойко', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
       {author: '', title: ''}
     ]
   },

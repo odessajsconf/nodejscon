@@ -49,7 +49,7 @@ export const MainScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Nikolai Boiko', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
+      {author: 'Yurii Chikhrai', title: 'Eradication of illiteracy in Streams'},
       {author: 'Max Klymyshyn', title: 'Build blockchain using CRDT and Merkle Trees \[Master Class\]'}
     ]
   },
@@ -121,7 +121,7 @@ export const MainScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Yurii Chikhrai', title: 'Eradication of illiteracy in Streams'},
+      {author: 'Nikolai Boiko', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
       {author: '', title: ''}
     ]
   },

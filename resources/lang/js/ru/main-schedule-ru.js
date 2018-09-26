@@ -63,7 +63,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'13.30-14.10',
+    time:'13.30-14.20',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
@@ -72,7 +72,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'14.10-14.20',
+    time:'14.20-14.30',
     icon:'clock',
     scheduleRendered: '',
     talks: [
@@ -81,7 +81,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'14.20-15.00',
+    time:'14.30-15.10',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
@@ -90,16 +90,16 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'15.00-15.15',
-    icon:'cup',
+    time:'15.10-15.25',
+    icon:'clock',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Кофе-брейк'},
+      {author: '', title: 'Перерыв'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'15.15-15.55',
+    time:'15.25-16.05',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
@@ -108,16 +108,16 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'15.55-16.05',
-    icon:'clock',
+    time:'16.05-16.15',
+    icon:'cup',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Перерыв'},
+      {author: '', title: 'Кофе-брейк'},
       {author: '', title: ''}
     ]
   },
   {
-    time:'16.05-16.45',
+    time:'16.15-16.55',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
@@ -126,7 +126,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'16.45-17.00',
+    time:'16.55-17.10',
     icon:'clock',
     scheduleRendered: '',
     talks: [
@@ -135,7 +135,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'17.00-17.40',
+    time:'17.10-17.50',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
@@ -144,7 +144,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'17.40-17.50',
+    time:'17.50-18.00',
     icon:'clock',
     scheduleRendered: '',
     talks: [
@@ -153,7 +153,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'17.50-18.30',
+    time:'18.00-18.40',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
@@ -162,7 +162,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'18.30',
+    time:'18.40',
     icon:'people',
     scheduleRendered: '',
     talks: [

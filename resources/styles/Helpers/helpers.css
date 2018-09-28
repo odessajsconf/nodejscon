@@ -522,7 +522,7 @@
   text-align: justify;
 }
 .text-bold {
-  font-weight: 600;
+  font-weight: bold!important;
 }
 .uppercase {
   text-transform: uppercase;
@@ -552,6 +552,7 @@
 .user-select-none {
   user-select: none;
   position: relative;
+  z-index: -1;
 }
 .user-select-none::before {
   content: '';
@@ -563,6 +564,10 @@
 }
 .white-space-nw {
   white-space: nowrap;
+}
+[data-src] {
+  opacity: 0;
+  transition: .2s;
 }
 @keyframes frame-load-anim {
   0% {

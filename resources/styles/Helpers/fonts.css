@@ -2,10 +2,12 @@
 @font-face {
   font-family: "stolzl";
   src: url("../fonts/stolzl/stolzl-book.otf") format('opentype');
+  font-display: fallback;
   font-weight: 400;
 }
 @font-face {
   font-family: "stolzl";
   src: url("../fonts/stolzl/stolzl-bold.otf") format('opentype');
+  font-display: fallback;
   font-weight: 700;
 }

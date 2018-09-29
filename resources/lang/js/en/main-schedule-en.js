@@ -104,7 +104,7 @@ export const MainScheduleEn = [
     scheduleRendered : '',
     talks : [
       {author : 'Dmitry Chirkin', title : 'PostgreSQL for hipsters or why your next project should be in PostgreSQL'},
-      {author : '', title : ''}
+      {author : 'Roman Sachenko', title : 'How to support the qualitative code in teams and companies'}
     ]
   },
   {

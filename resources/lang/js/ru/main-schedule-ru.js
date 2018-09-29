@@ -107,7 +107,7 @@ export const MainScheduleRu = [
         author : 'Дмитрий Чиркин',
         title : 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL'
       },
-      {author : '', title : ''}
+      {author : 'Роман Саченко', title : 'Как поддерживать качественный код в командах и компаниях'}
     ]
   },
   {

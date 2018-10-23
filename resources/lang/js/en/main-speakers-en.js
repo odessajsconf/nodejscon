@@ -72,7 +72,11 @@ export const MainSpeakersEn = [
       {
         link : 'https://twitter.com/maxmaxmaxmax',
         fatype : 'twitter'
-      }
+      },
+      {
+          link : 'https://drive.google.com/file/d/1mHxqJ1N7xujgzobsFK7-rg1_vewolQaV/view',
+          fatype : 'file-powerpoint-o'
+        },
     ]
   },
   {
@@ -174,10 +178,10 @@ export const MainSpeakersEn = [
         link : 'https://github.com/dogusev"',
         fatype : 'github'
       },
-//	  {
-//          link : 'https://docs.google.com/presentation/d/1WRxa2mDIff7eVGd4bdgo0LVjE7rUqoO5p1Su-dTom7Y',
-//          fatype : 'file-powerpoint-o'
-//      },
+	  {
+          link : 'https://docs.google.com/presentation/d/1WRxa2mDIff7eVGd4bdgo0LVjE7rUqoO5p1Su-dTom7Y',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -195,10 +199,10 @@ export const MainSpeakersEn = [
     aboutSpeaker : '',
     socialsRendered : '',
     socials : [
-//		{
-//          link : 'https://docs.google.com/presentation/d/1r5h83L49VmiaAjjlZGaGusyqE-hAWzqPdoOg5mSoijk',
-//          fatype : 'file-powerpoint-o'
-//        },
+		{
+          link : 'https://docs.google.com/presentation/d/1r5h83L49VmiaAjjlZGaGusyqE-hAWzqPdoOg5mSoijk',
+          fatype : 'file-powerpoint-o'
+        },
 	]
   },
   {
@@ -223,7 +227,11 @@ export const MainSpeakersEn = [
       {
         link : 'https://facebook.com/josser',
         fatype : 'facebook'
-      }
+      },
+      {
+          link : 'https://drive.google.com/open?id=1nz1g48JM8ZRdZaEFN79HxKx30kG7RGzM',
+          fatype : 'file-powerpoint-o'
+        },
     ]
   },
   {
@@ -245,10 +253,10 @@ export const MainSpeakersEn = [
         link : 'https://github.com/YuriiChikhrai',
         fatype : 'github'
       },
-//	  {
-//          link : 'https://docs.google.com/presentation/d/146YCIA5Gcn4lsSNz_lG3CZWwik2-rUTXv24OlAsOEpY/edit#slide=id.p1',
-//          fatype : 'file-powerpoint-o'
-//      },
+	  {
+          link : 'https://docs.google.com/presentation/d/146YCIA5Gcn4lsSNz_lG3CZWwik2-rUTXv24OlAsOEpY/edit#slide=id.p1',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -325,7 +333,11 @@ export const MainSpeakersEn = [
         {
           link : 'https://twitter.com/dennisyarmosh',
           fatype : 'twitter'
-        }
+        },
+        {
+          link : 'https://drive.google.com/open?id=1BZDPssi75h9Iqc-oI182JHKt8JPxGO-j',
+          fatype : 'file-powerpoint-o'
+        },
       ]
     },
 ]

@@ -1,188 +1,122 @@
 .heading {
   position: relative;
-  //background-color: #fff;
-  //background-image: url("../img/heading_bg.svg");
-  //background-position: bottom center;
-  //background-repeat: no-repeat;
-  //background-size: 106%;
-  //height: 100vh;
-  //max-height: 1100px;
-  //min-height: 800px;
   padding: 70px 0 0;
-
-  .user-select-none {
+  //background-color: #0343c7;
+  width: 100%;
+  //height: 838px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .head_logo{
+    position: relative;
+    margin-top: 64px;
+    height: 100%;
+    max-height: 88px;
     width: 100%;
-    //position: absolute;
-    //bottom: 0;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 31%;
+      min-width: 300px;
+      max-width: 424px;
+    }
+  }
+  .btn_container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 98px;
+    padding-bottom: 57px;
+    .heading_btn{
+      cursor: pointer;
+      &:first-child{
+        margin-right: 26px;
+      }
+      img{
+        height: 62px;
+        width: auto;
+      }
+    }
+  }
+  .ninja{
+    position: absolute;
+    left: -60px;
+    top: 240px;
+    width: 100%;
+    height: auto;
+    max-width: 1215px;
+    min-width: 800px;
+  }
+  .dashes_1{
+    position: absolute;
+    right: -243px;
+    top: 312px;
+    width: 76%;
+    height: auto;
+    max-width: 1030px;
+  }
+  .dashes_2{
+    position: absolute;
+    left: 85px;
+    top: 113px;
+    width: 76%;
+    height: auto;
+    max-width: 80px;
+  }
+  .dashes_3{
+    position: absolute;
+    right: 178px;
+    top: 113px;
+    width: 76%;
+    height: auto;
+    max-width: 177px;
+  }
+  .dashes_4{
+    position: absolute;
+    left: 56px;
+    bottom: 8px;
+    width: 76%;
+    height: auto;
+    max-width: 367px;
+  }
+  .dashes_5{
+    position: absolute;
+    right: 54px;
+    bottom: 8px;
+    width: 76%;
+    height: auto;
+    max-width: 413px;
+  }
+  .dashes_6{
+    position: absolute;
+    right: -22px;
+    top: 600px;
+    width: 76%;
+    height: auto;
+    max-width: 177px;
+  }
+  .main_title{
+    color: #000;
+    font-family: "Hannover Messe";
+    .font-size(55);
+    font-weight: 400;
+    line-height: 60.42px;
+    text-transform: uppercase;
+    text-align: right;
+    width: 100%;
+    padding-right: 10% !important;
+    margin-top: 340px;
+    margin-bottom: 0;
   }
 	.font_for_translation{
 		font-size: 32px !important;
 		font-weight: 500;
 	}
-    
-    .btn-container{
-        display: flex;
-        justify-content: center;
-        
-        .btn{
-            margin-right: 30px;
-            &:last-child{
-                margin-right: 0;
-            }
-        }
-    }
-    .photo-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 40px;
-        justify-content: space-around;
-        .box{
-            text-decoration: none !important;
-            transition: all ease-out 0.3s;
-            padding: 10px 10px 30px;
-            border-radius: 6px;
-            width: 350px;
-            img{
-                width: 100%;
-            }
-            .h5{
-               color: black;
-            }
-            &:hover{
-                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
-                .h5{
-                    color: #2e7d32;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-    .video-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 40px;
-        justify-content: center;
-        .box{
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
-            margin:  0 15px;
-            .frame-container{
-                position: relative;
-                padding-bottom: 56.25%;
-                padding-top: 30px;
-                height: 0;
-                overflow: hidden;
-                iframe{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border: 0;
-                }
-            }
-        }
-    }
-}
-
-.heading-bg-img {
-  display: block;
-  width: 105%;
-  margin-left: -2.3%;
-  user-select: none;
-  &.collage {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-.heading-logo {
-  width: 100%;
-  max-width: 600px;
-  transition: .2s;
-
-  img {
-    width: 100%;
-  }
-}
-
-.heading-date {
-  margin-left: 15px;
-  .font-size(40);
-  font-weight: bold;
-  color: @color_green;
-  letter-spacing: 7px;
-  white-space: nowrap;
-  background-color: #fff;
-  transition: .2s;
-}
-
-.heading-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 6vh;
-  padding-left: 0;
-  width: 50%;
-  .font-size(14);
-  font-weight: bold;
-  color: @color_green;
-  background-color: #fff;
-  list-style-type: none;
-  letter-spacing: 3px;
-
-  li {
-    width: 50%;
-    position: relative;
-    margin-bottom: 15px;
-    padding-left: 50px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: -7px;
-      //top: 50%;
-      //transform: translateY(-50%);
-      left: 10px;
-      width: 30px;
-      height: 30px;
-      background-image: url("../img/favicon.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-
-    &.calendar {
-      &::after {
-        background-image: url("../img/i1.svg");
-      }
-    }
-
-    &.sheet {
-      &::after {
-        background-image: url("../img/i2.svg");
-      }
-    }
-
-    &.format {
-      &::after {
-        background-image: url("../img/i3.svg");
-      }
-    }
-
-    &.sun {
-      &::after {
-        background-image: url("../img/i4.svg");
-      }
-    }
-  }
-}
-.heading-tickets-btn {
-  display: none;
+   
 }
 @media screen and (max-width: 1400px) {
-  .heading {
-    //min-height: 700px;
-  }
 
   .heading-logo {
     max-width: 400px;
@@ -216,9 +150,6 @@
         
         .box{
             width: 500px !important;
-            img{
-                
-            }
         }
     } 
 }
@@ -249,59 +180,14 @@
 }
 
 @media @mobileLg {
-  .heading {
-    //min-height: 610px;
-    //height: auto;
-    //max-height: none;
-
-    .user-select-none {
-      position: relative;
-    }
-  }
-
-  .heading-bg-img {
-    margin-top: 0;
-  }
-
-  .heading-title-row {
-    margin-top: 20px !important;
-    display: block !important;
-  }
-
-  .heading-logo {
-    margin: 0 auto;
-  }
-
-  .heading-date {
-    .font-size(18);
-    text-align: center;
-    margin: 40px auto 0;
-    white-space: normal;
-  }
-
-  .heading-list {
-    display: block;
-    margin-top: 45px;
-    width: 100%;
-
-    li {
-      width: 100%;
-    }
-  }
-
-  .heading-tickets-btn {
-    margin-top: 40px;
-    max-width: none;
-    width: 100%;
+  .dashes_4, .dashes_5, .dashes_6{
+    display: none;
   }
 
     .photo-container{
         
         .box{
             width: 350px !important;
-            img{
-                
-            }
         }
     }
     
@@ -311,9 +197,6 @@
             flex: 0 0 100% !important;
             max-width: 100% !important;
             margin:  0;
-            .frame-container{
-                
-            }
         }
     }
 

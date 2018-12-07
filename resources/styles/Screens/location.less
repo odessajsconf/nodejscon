@@ -5,7 +5,13 @@
   .location-img-container_item {
     max-width: 48%;
     box-sizing: border-box;
-    padding: 15px 0;
+    padding: 15px;
+    &:last-child{
+      padding: 15px  0 15px 15px;
+    }
+    &:first-child{
+      padding: 15px 15px 15px 0;
+    }
     img {
       max-height: 550px;
       max-width: 100%;
@@ -13,13 +19,31 @@
   }
 }
 
-@media @mobileLg {
+#location{
+  .adress_link{
+    text-decoration: none;
+    transition: 0.3s all ease-out;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: #000;
+    }
+  }
+  .adress_text{
+    .font-size(30);
+    color:  #000;
+  }
+}
+
+@media screen and (max-width: 992px) {
 
   .location-img-container {
     flex-direction: column;
     &_item {
       width: 100%;
       max-width: 100% !important;
+      img{
+        width: 100%;
+      }
     }
   }
 }

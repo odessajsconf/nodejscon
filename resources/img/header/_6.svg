@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.54 28.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 4.77px;
+      }
+
+      .cls-2 {
+        fill: #000;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 9_6</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <path class="cls-1" d="M86.89,2.53,77,8a1.17,1.17,0,0,0-.6,1V20a1.13,1.13,0,0,0,.6,1l9.91,5.49a1.27,1.27,0,0,0,1.2,0L98,21a1.11,1.11,0,0,0,.6-1V9A1.13,1.13,0,0,0,98,8l-9.9-5.48a1.27,1.27,0,0,0-1.2,0"/>
+      <line class="cls-2" x1="63.16" y1="14.5" x2="2.38" y2="14.5"/>
+      <line class="cls-2" x1="173.16" y1="14.5" x2="112.38" y2="14.5"/>
+    </g>
+  </g>
+</svg>

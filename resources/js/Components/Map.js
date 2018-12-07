@@ -18,8 +18,8 @@ export class Map {
       zoom : 12,
       maxZoom : 20,
       center : {
-        lat : 46.436590,
-        lng : 30.749558
+        lat : 50.3808611,
+        lng : 30.451856
       },
       clickableIcons : false,
       // gestureHandling : 'greedy'
@@ -29,40 +29,40 @@ export class Map {
 
     const PlacesEn = [
       {
-        lat : 46.436590,
-        lng : 30.749558,
+        lat : 50.3808611,
+        lng : 30.451856,
         infoWindow : this.renderInfoWindowHTML({
           title : 'Business-center Solnechnyiy',
           content : '<p><span>Address: </span>5, Sonyachna St.</p>'
         })
       },
-      {
+      /*{
         lat : 46.480186,
         lng : 30.7476283,
         infoWindow : this.renderInfoWindowHTML({
           title : 'Pre-party:<br> office of the company Lohika',
           content : '<p><span>Address: </span>1, Bunina St.</p>'
         })
-      },
+      },*/
     ];
 
     const PlacesRu = [
       {
-        lat : 46.436590,
-        lng : 30.749558,
+        lat : 50.3808611,
+        lng : 30.451856,
         infoWindow : this.renderInfoWindowHTML({
           title : 'Бизнес-центр Солнечный',
           content : '<p><span>Адрес: </span>Солнечная, 5</p>'
         })
       },
-      {
+      /*{
         lat : 46.480186,
         lng : 30.7476283,
         infoWindow : this.renderInfoWindowHTML({
           title : 'Pre-party:<br> офис компании Lohika',
           content : '<p><span>Адрес: </span>Бунина, 1</p>'
         })
-      },
+      },*/
     ];
 
 
@@ -101,8 +101,8 @@ export class Map {
       this.addMarkerWithTimeout(this.places[i], i * 200);
     }
     //крайние точки
-    this.bounds.extend({lat : 46.42, lng : 30.749558});
-    this.bounds.extend({lat : 46.51, lng : 30.749558});
+    this.bounds.extend({lat : 50.34, lng : 30.451856});
+    this.bounds.extend({lat : 50.43, lng : 30.451856});
     //крайние точки
 
     this.places.forEach((item, i, arr)=>{

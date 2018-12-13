@@ -34,14 +34,9 @@ export const MainSpeakersRu = [
       company : 'Microsoft',
       rept : [
         {
-          title : '',
-          description : ''
+          title : 'The Future of Machine Learning & JavaScript',
+          description : "There are many exciting things happening with AI, from which, until recently, JavaScript developers were largely shut out. But things are changing, if you can do `npm install @tensorflow/tfjs` or make an API call, you can now do AI. In this fast-paced talk, I'll open your mind to what's possible by demoing several AI-powered JavaScript apps and show you how they were built using either TensorFlow.js or easy to use AI powered APIs. You don't need a PhD in Maths, you don't need years of experience, you just need imagination and the willingness to try. "
         },
-        {
-          title : '',
-          description :
-          ''
-        }
       ],
       aboutSpeaker :
       '',

@@ -56,5 +56,38 @@ export const MainSpeakersRu = [
           },
       ]
     },
+    {
+        image: 'public/img/speakers/jamie_maria.jpg',
+        name: 'Jamie Maria Schouren',
+        position: 'Co-Founder',
+        company: 'DEITY BV',
+        rept: [
+            {
+                title: '',
+                description: ""
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link: 'https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/',
+                fatype: 'linkedin'
+            },
+            {
+                link: 'https://twitter.com/JamieMariaS',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/deity-io/falcon',
+                fatype: 'github'
+            },
+            {
+                link: 'https://www.instagram.com/deity_pwa/',
+                fatype: 'instagram'
+            },
+        ]
+    }
   ]
 ;

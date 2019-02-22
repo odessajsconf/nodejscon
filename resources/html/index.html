@@ -100,6 +100,9 @@
             <li><a href="https://nodeukraine.org.ua/2018/index.html">
               ${{ index.menu_archive }}$
             </a></li>
+            <li><a class="dark" href="">
+              ${{ index.menu_tickets }}$
+            </a></li>
 
             <li class="socials-block-mobile">
               <div class="flex socials-block">
@@ -205,7 +208,7 @@
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMBr0yFs9zRt5T6GoM7MRYS5XF481aGND2pCh9DUs03FTD3w/viewform" class="heading_btn">
                 <img src="https://via.placeholder.com/1x1"data-src="public/img/header/Submit a talk.svg" alt="submit a talk">
             </a>
-            <a href="public/docs/Presentation.pdf" class="heading_btn">
+            <a href="public/docs/OdessaJS_presentation_EN_2019.pdf" class="heading_btn">
                 <img src="https://via.placeholder.com/1x1"data-src="public/img/header/Become a Sponsor.svg" alt="become a sponsor">
             </a>
           </div>
@@ -370,10 +373,18 @@
         <div class="h2">
           ${{ index.speakers_head }}$
         </div>
+        <div class="h3 m-t-40 text-center">
+          ${{ index.speakers_preparty_head }}$
+        </div>
+        <div class="h4 text-center m-t-20 speakers-desc">
+          ${{ index.speakers_preparty_theme }}$
+          <br><br>
+          ${{ index.speakers_preparty_desc }}$
+        </div>
 
         
 
-        <!--<div class="flex j-c-space-around speakers-list" id="preparty-speakers-list"></div>-->
+        <div class="flex j-c-space-around speakers-list" id="preparty-speakers-list"></div>
 
 
         <div class="flex j-c-space-around speakers-list" id="main-speakers-list"></div> 
@@ -494,7 +505,7 @@
           </p>
 
           <div class="text-center m-t-50">
-            <a href="public/docs/Presentation.pdf"
+            <a href="public/docs/OdessaJS_presentation_EN_2019.pdf"
                target="_blank" class="btn">
               ${{ index.sponsors_program }}$
               <!--"sponsors_program": "Download sponsorship proposal",-->
@@ -538,7 +549,7 @@
         <a class="adress_link text-center m-b-30" href="http://www.favorparkhotel.com/">
             <h3>Favor Park Hotel</h3>
         </a>
-        <h3 class="adress_text text-center m-b-30">${{ index.location_address }}$</h4>
+        <h3 class="adress_text text-center m-b-30">${{ index.location_address }}$</h3>
       </div>
 
       <div id="map" class="m-t-50" style="height: 500px; width: 100%"></div>

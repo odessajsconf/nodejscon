@@ -31,3 +31,49 @@
     .font-size(20)!important;
   }
 }
+
+.fixed-social {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  a {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    text-decoration: none;
+    border: 1px solid #2e7d32;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.2s linear;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+    
+    i {
+      font-size: 20px;
+      color: #2e7d32;
+      transition: all 0.2s linear;
+    }
+    
+    &:hover {
+      background: #2e7d32;
+      
+      i {
+        color: #fff;
+      }
+    }
+  }
+}

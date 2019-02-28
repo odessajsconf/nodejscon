@@ -88,6 +88,60 @@ export const MainSpeakersEn = [
                     fatype: 'instagram'
                 },
             ]
+        },
+        {
+            image: '../public/img/speakers/liran-tal.jpeg',
+            name: 'Liran Tal',
+            position: 'Developer Advocate',
+            company: 'Snyk.io',
+            rept: [
+                {
+                    title: 'Black Clouds and Silver Linings in Node.js Security',
+                    description: "Remember eslint-scope and event-stream incidents? As an energetic member of the Node.js Foundation's Security Working Group, Liran will provide a 360 perspective of some black clouds of security horror stories in the JavaScript & Node.js ecosystem and educate on mitigating and building secure applications. We will deep-dive into practical Node.js vulnerabilities and how to protect against them, and cover some of OWASP Top 10. Liran will also introduce initiatives the Node.js Security WG have been undertaking to secure the ecosystem and recent security updates in npm."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/liran_tal',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://github.com/lirantal',
+                    fatype: 'github'
+                },
+                {
+                    link: 'https://medium.com/@liran.tal',
+                    fatype: 'link'
+                },
+            ]
+        },
+        {
+            image: '../public/img/speakers/viktor-turskyi.jpg',
+            name: 'Viktor Turskyi',
+            position: 'CEO and Solution architect',
+            company: 'WebbyLab',
+            rept: [
+                {
+                    title: 'The working architecture of NodeJs applications',
+                    description: "I've seen a lot of NodeJs applications. I see a lot of misunderstandings around architectural patterns. 99% of NodeJS tutorials do not cover this topic and limited to \"hello world\" apps. How to build a really large application? How to think about architectural layers? What is wrong with the majority of JS frameworks? How does GraphQL influence my architecture? I will answer all of these questions."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/koorchik',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://github.com/koorchik',
+                    fatype: 'github'
+                }
+            ]
         }
     ]
 ;

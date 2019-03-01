@@ -90,7 +90,7 @@ export const MainSpeakersRu = [
         ]
     },
     {
-        image: 'public/img/speakers/liran-tal.jpeg',
+        image: 'public/img/speakers/liran-tal.png',
         name: 'Liran Tal',
         position: 'Developer Advocate',
         company: 'Snyk.io',

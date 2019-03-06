@@ -1,0 +1,78 @@
+.program-committee-list {
+  flex-wrap: wrap;
+}
+
+.program-committee-item {
+  margin: 10px 10px 30px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 30%;
+  max-width: 320px;
+  min-width: 280px;
+  cursor: pointer;
+  transition: .2s;
+
+  &__img {
+
+    img {
+      filter: grayscale(100%);
+      display: inline-block;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__name {
+    margin-top: 15px;
+    color: @color_green;
+    .font-size(26);
+    font-weight: 700;
+  }
+
+  &__position {
+    margin-top: 15px;
+    color: @color_gray_light;
+    .font-size(15);
+    font-weight: 400;
+  }
+}
+
+.program-committee-item__socials {
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 3px 5px;
+    .font-size(20);
+    color: @color_gray_light;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .2s;
+
+    &:hover {
+      color: @color_green;
+    }
+
+  }
+}
+
+@media @mobileLg {
+  .program-committee-list {
+    margin-top: 20px;
+  }
+
+  .program-committee-item__name {
+    .font-size(18)
+  }
+
+  .program-committee-item__position {
+    .font-size(14);
+    margin-top: 10px;
+  }
+
+  .program-committee-item {
+    margin: 10px;
+  }
+}

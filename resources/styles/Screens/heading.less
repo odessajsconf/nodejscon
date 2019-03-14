@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  background-color: #4caa50;
+
   .head_logo{
     position: relative;
     margin-top: 64px;
@@ -23,7 +26,6 @@
   }
   .btn_container{
     width: 100%;
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -31,23 +33,35 @@
     padding-bottom: 57px;
     .heading_btn{
       cursor: pointer;
-      &:first-child{
-        margin-right: 26px;
+      margin-right: 38px;
+      &:last-child{
+        margin-right: 0px;
       }
       img{
-        height: 62px;
+        height: 80px;
         width: auto;
       }
     }
   }
+  //.ninja{
+  //  position: absolute;
+  //  left: -60px;
+  //  top: 240px;
+  //  width: 100%;
+  //  height: auto;
+  //  max-width: 1215px;
+  //  min-width: 800px;
+  //}
   .ninja{
     position: absolute;
-    left: -60px;
-    top: 240px;
-    width: 100%;
-    height: auto;
-    max-width: 1215px;
-    min-width: 800px;
+    right: 0;
+    top: 70px;
+    height: 70%;
+
+    img {
+      display: block;
+      height: 100%;
+    }
   }
   .dashes_1{
     position: absolute;
@@ -98,17 +112,31 @@
     max-width: 177px;
   }
   .main_title{
-    color: #000;
-    font-family: "Hannover Messe";
-    .font-size(55);
-    font-weight: 400;
-    line-height: 60.42px;
-    text-transform: uppercase;
-    text-align: right;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-right: 10% !important;
-    margin-top: 340px;
-    margin-bottom: 0;
+    margin-top: 150px;
+    margin-bottom: 215px;
+
+    span {
+      font-family: stolzl,sans-serif;
+      .font-size(66);
+      font-weight: 700;
+      line-height: 1;
+      color: @color_green;
+      margin: 0;
+    }
+
+    p {
+      font-family: stolzl,sans-serif;
+      .font-size(150);
+      font-weight: 700;
+      line-height: 1;
+      color: @color_green;
+      margin: 0;
+    }
   }
 	.font_for_translation{
 		font-size: 32px !important;
@@ -117,6 +145,13 @@
    
 }
 @media screen and (max-width: 1400px) {
+
+  .heading {
+
+    .ninja {
+      right: -300px;
+    }
+  }
 
   .heading-logo {
     max-width: 400px;
@@ -144,6 +179,7 @@
 }
 
 @media @laptopMd{
+
     .photo-container{
         flex-direction: column;
         align-items: center;
@@ -151,12 +187,62 @@
         .box{
             width: 500px !important;
         }
-    } 
+    }
+
+  .heading {
+
+    .btn_container{
+      .heading_btn{
+        img{
+          height: 60px;
+        }
+      }
+    }
+
+    .main_title{
+      margin-top: 100px;
+      margin-bottom: 150px;
+
+      span {
+        .font-size(44);
+      }
+
+      p {
+        .font-size(100);
+      }
+    }
+  }
 }
 
 @media @tablet {
   .heading {
     padding: 70px 0 0;
+
+    .ninja {
+      right: -200px;
+      height: 60%;
+    }
+
+    .btn_container{
+      .heading_btn{
+        img{
+          height: 50px;
+        }
+      }
+    }
+
+    .main_title{
+      margin-top: 75px;
+      margin-bottom: 125px;
+
+      span {
+        .font-size(36);
+      }
+
+      p {
+        .font-size(90);
+      }
+    }
   }
 
   .heading-logo {
@@ -180,6 +266,20 @@
 }
 
 @media @mobileLg {
+
+  .heading {
+
+    .btn_container {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
+
+      .heading_btn {
+        margin-right: 0;
+      }
+    }
+  }
+
   .dashes_4, .dashes_5, .dashes_6{
     display: none;
   }
@@ -201,3 +301,4 @@
     }
 
 }
+

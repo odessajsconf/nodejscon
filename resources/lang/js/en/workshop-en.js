@@ -1,46 +1,50 @@
 export const WorkshopEn = [
-  {
-    image : '../public/img/speakers/max_klymyshyn.jpg',
-    name : 'Max Klymyshyn',
-    position : 'Tech Lead',
-    company : 'Takeoff Technologies',
-    place : 'Kiev, Ukraine',
-    rept : [
-      {
-        title : 'Build blockchain using CRDT and Merkle Trees [Ru] [Workshop]',
-        description :
-        '<p class="text-bold m-b-5">MAJOR TOPICS</p>' +
-        '<ul class="m-t-0">\n' +
-        '  <li>introduction &amp; basic tools installation</li>\n' +
-        '  <li>blockchain basic implementation</li>\n' +
-        '  <li>low-level transport</li>\n' +
-        '  <li>high-level transport &amp; CRDT payload definition</li>\n' +
-        '  <li>adding distributed properties</li>\n' +
-        '</ul>' +
-        '<p class="text-bold m-b-5">WHY YOU SHOULD COME TO THIS WORKSHOP</p>' +
-        '<p class="m-t-0">People who developing modern client-side apps with JavaScript should know about distributed data structures like CRDT.</p>' +
-        '<p class="text-bold m-b-5">SKILLS &amp; EQUIPMENT REQUIRED FOR THE WORKSHOP</p>' +
-        '<p class="m-t-0">Laptop, internet, git, node.js installed on laptop</p>' +
-        '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
-        '<p class="m-t-0">Middle+ front-end developers</p>'
-      }
-    ],
-    aboutSpeaker :
-    'Full-stack software engineer for Clojure/ClojureScript/Python/JavaScript-based projects with 15+ years experience in technical' +
-    ' team leadership and management of distributed teams. Max interested in distributed systems, data replication and consistency algorithms, ' +
-    'information science, functional languages and modern mobile and front-end development. Delivered more than 50 talks within past 5 years ' +
-    'about developments and trends in Python, JavaScript, Databases, Dev Processes, Testing Processes and Project Management.',
-    title : 'Build blockchain using CRDT and Merkle Trees [Ru]',
-    socialsRendered : '',
-    socials : [
-      {
-        link : 'https://www.linkedin.com/in/klymyshyn',
-        fatype : 'linkedin'
-      },
-      {
-        link : 'https://twitter.com/maxmaxmaxmax',
-        fatype : 'twitter'
-      }
-    ]
-  }
+    {
+        image : '../public/img/speakers/asimhussain.png',
+        name : 'Asum Hussain',
+        position : 'Cloud Developer Advocate',
+        company : 'Microsoft',
+        place : '',
+        rept : [
+            {
+                title : 'Workshop: Introduction to Machine Learning with TensorFlow.js',
+                description :
+                    '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                    '<p class="m-t-0">Learn how to build and train Neural Networks using the most popular Machine Learning framework for JavaScript, TensorFlow.js. </p>' +
+                    '<p class="m-t-0">This is a practical workshop where you\'ll learn "hands-on" by building several different applications from scratch using TensorFlow.js.</p>' +
+                    '<p class="m-t-0">By the end you\'ll know:</p>' +
+                    '<ul class="m-t-0">\n' +
+                    '  <li>The *essential* mathematics.</li>\n' +
+                    '  <li>What are Neural Networks?</li>\n' +
+                    '  <li>How to find and use pre-trained models from the internet.</li>\n' +
+                    '  <li>How to build and train a Neural Network to solve regression and classification tasks.</li>\n' +
+                    '  <li>aHow to build upon an existing Neural Network and perform Transfer Learning.</li>\n' +
+                    '</ul>' +
+                    '<p class="text-bold m-b-5">WHY YOU SHOULD COME TO THIS WORKSHOP</p>' +
+                    '<p class="m-t-0">People who developing modern client-side apps with JavaScript should know about distributed data structures like CRDT.</p>' +
+                    '<p class="text-bold m-b-5">SKILLS &amp; EQUIPMENT REQUIRED FOR THE WORKSHOP</p>' +
+                    '<p class="m-t-0">If you have ever been interested in Machine Learning, if you want to get a taste for what this exciting field has to offer, if you want to be able to talk to other Machine Learning/AI specialists in a language they understand, then this workshop is for you.</p>' +
+                    '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+                    '<p class="m-t-0">The ideal student for this workshop is someone with existing experience with JavaScript. You must have experience running commands on the command line. You are experienced running NodeJS scripts. You know how to  `npm install` a package.</p>'
+            }
+        ],
+        aboutSpeaker :
+            'Taught by Asim Hussain, co-organiser of the AI JavaScript London Meetup, co-creator of https://aijs.rocks and member of the W3C WebMachineLearning Community Group Asim has been teaching JavaScript for many years and is the author of the book Angular: From Theory to Practice.',
+        title : 'Introduction to Machine Learning with TensorFlow.js',
+        socialsRendered : '',
+        socials : [
+            {
+                link : 'https://github.com/jawache',
+                fatype : 'github'
+            },
+            {
+                link : 'https://twitter.com/jawache',
+                fatype : 'twitter'
+            },
+            {
+                link : 'https://codecraft.tv/',
+                fatype : 'link'
+            },
+        ]
+    }
 ];

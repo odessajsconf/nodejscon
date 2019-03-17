@@ -7,6 +7,103 @@
   //height: 100vh;
   //min-height: 100vh;
   //height: auto;
+
+  .left-wrapper, .right-wrapper {
+    width: 50%;
+
+    .logo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      p {
+        font-family: "stolzl", sans-serif;
+        margin: 0;
+        .font-size(100);
+        color: #4caa50;
+        text-transform: uppercase;
+
+        &:first-child {
+          width: 100%;
+        }
+      }
+
+      a {
+        width: 500px;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .date {
+      font-family: "stolzl", sans-serif;
+      margin: 0;
+      .font-size(80);
+      color: #414042;
+      text-transform: uppercase;
+    }
+
+    .ninja {
+      display: block;
+      width: 80%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .right-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .about-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      padding-right: 20px;
+
+      .icon {
+        width: 85px;
+        height: 120px;
+        margin-right: 20px;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .text {
+        max-width: ~"calc(100% - 105px)";
+      }
+
+      p {
+        font-family: Gilroy, stolzl, sans-serif;
+        margin: 0;
+        .font-size(24);
+        color: #414042;
+
+        strong {
+          .font-size(50);
+          font-family: "stolzl", sans-serif;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 
 .about-bg-img{
@@ -118,8 +215,84 @@
   font-weight: bold;
 }
 
+@media @laptopLg {
+
+  .about {
+    .left-wrapper, .right-wrapper {
+
+      .logo {
+
+        p {
+          .font-size(80);
+        }
+
+        a {
+          width: 400px;
+        }
+      }
+
+      .date {
+        .font-size(60);
+      }
+
+      .ninja {
+        display: block;
+        width: 80%;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .right-wrapper {
+
+      .about-item {
+
+        .icon {
+          width: 60px;
+          height: 120px;
+          margin-right: 20px;
+        }
+
+        p {
+          .font-size(18);
+
+          strong {
+            .font-size(36);
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media @laptopMd {
+
+  .about {
+
+    .left-wrapper, .right-wrapper {
+
+      .logo {
+
+        p {
+          .font-size(60);
+        }
+
+        a {
+          width: 300px;
+        }
+      }
+
+      .date {
+        .font-size(40);
+      }
+    }
+  }
+
   .about-content {
     display: block!important;
   }
@@ -139,6 +312,37 @@
   .about-tickets-list {
     margin-top: 30px;
     justify-content: space-around;
+  }
+}
+
+@media @tablet {
+
+  .about {
+
+    .left-wrapper {
+      margin-bottom: 40px;
+    }
+
+
+    .left-wrapper, .right-wrapper {
+      width: 100%;
+
+      .logo {
+
+        p {
+          .font-size(40);
+        }
+
+        a {
+          width: 250px;
+        }
+      }
+
+      .date {
+        .font-size(40);
+      }
+    }
+
   }
 }
 
@@ -174,3 +378,18 @@
     min-width: 160px;
   }
 }
+
+@media @mobile {
+
+  .about {
+
+    .right-wrapper {
+
+      .about-item {
+        width: 100%;
+      }
+    }
+  }
+
+}
+

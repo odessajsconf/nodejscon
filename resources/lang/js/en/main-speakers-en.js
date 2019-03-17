@@ -142,6 +142,134 @@ export const MainSpeakersEn = [
                     fatype: 'github'
                 }
             ]
+        },
+        {
+            image: '../public/img/speakers/alexandra-kalinina.png',
+            name: 'Alexandra Kalinina',
+            position: 'Fullstack JS developer',
+            company: 'Valor Software',
+            rept: [
+                {
+                    title: 'You don\'t need Lodash, do you?',
+                    description: ""
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/korery?lang=ru',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://www.linkedin.com/in/alexandra-kalinina-73201548/',
+                    fatype: 'linkedin'
+                },
+                {
+                    link: 'https://github.com/korel-san',
+                    fatype: 'github'
+                }
+            ]
+        },
+        {
+            image: '../public/img/speakers/Vitalii-Ratyshnyi.png',
+            name: 'Vitalii Ratyshnyi',
+            position: 'Software Engineer',
+            company: 'Devunet',
+            rept: [
+                {
+                    title: 'Definition of Done: Deadline driven development',
+                    description: "Getting things done sounds like imaginary joke talking about development process. There's always technical debt and you just missed another deadline? Sounds familiar, huh? In this talk I will tell you a story about my overoptimistic estimations from developers perspective and how to prevent this stuff in future. There're rules written by your nerve cells and I would like to share it with you."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://www.linkedin.com/in/v-ratyshnyi/',
+                    fatype: 'linkedin'
+                },
+                {
+                    link: 'https://github.com/MisreadableMind',
+                    fatype: 'github'
+                },
+                {
+                    link: 'https://speakers.in.ua/',
+                    fatype: 'link'
+                }
+            ]
+        },
+        {
+            image: '../public/img/speakers/vitalii-hurin.jpg',
+            name: 'Vitalii Hurin',
+            position: 'Team Lead & Backend Developer',
+            company: 'Master of Code Global',
+            rept: [
+                {
+                    title: 'Peak loads in chat bot projects. History of struggle',
+                    description: "- Specificity and \"pitfalls\" load in chat bots. \n <br>" +
+                        "- Possible solutions to the dangers.\n <br>" +
+                        "- Causes and consequences of problems with the application of classical architecture.\n <br>" +
+                        "- History of the decision on the real project. Using AWS Lambda, AWS SQS, Golang. <br>"
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://www.facebook.com/vitalii.hurin',
+                    fatype: 'facebook'
+                }
+            ]
+        },
+        {
+            image: '../public/img/speakers/luciano-mammino.png',
+            name: 'Luciano Mammino',
+            position: 'Cloud Architect',
+            company: 'Vectra AI',
+            rept: [
+                {
+                    title: 'It’s about time to embrace Streams',
+                    description: "With very practical examples we'll learn how streams work in Node.js & the Browser. With streams, you will be able to write elegant JavaScript applications that are much more composable and memory efficient!"
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+            ]
+        },
+        {
+            image: '../public/img/speakers/tanya-butenko.png',
+            name: 'Tanya Butenko',
+            position: '1. Software engineer  2. Founder and CEO',
+            company: '1. Hireup  2. Muses Code JS Inc',
+            rept: [
+                {
+                    title: 'Muses Code JS or How Communities Change People',
+                    description: "When I decided to change my career one of the important factors was JavaScript community - a welcoming place with people who had similar interests. For me, it was surprising that everyone was so eager to share knowledge for free, unlike many other professions. Then I decided to be involved. After 2 years I started Muses Code JS and it changed my life and lives of other people. Now I want to share lessons I've learned, how leading countrywide community changed my perception of some things and how we managed to change the lives of some women and the opinion of some men."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/ButenkoMe',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://github.com/ButenkoT',
+                    fatype: 'github'
+                },
+                {
+                    link: 'https://musescodejs.org',
+                    fatype: 'link'
+                }
+            ]
         }
     ]
 ;

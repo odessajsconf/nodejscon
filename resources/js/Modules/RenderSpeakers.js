@@ -40,10 +40,11 @@ export class RenderSpeakers {
       '<img src="${image}" alt="${name}">' +
       '</div>' +
       '<div class="speaker-name">${name}</div>' +
-      '<div class="speaker-position">${position} ' +
-      '{{if company}}' +
-      '@${company}' +
-      '{{/if}}' +
+      '<div class="speaker-position">' +
+      '{{each speakerPos }} {{html $value.position}} {{if company}} @ {{html $value.company}} {{/if}} <br> </br> {{/each}}' +
+     // '{{if company}}' +
+     // '@${company}' +
+     // '{{/if}}' +
       '</div>' +
       '<div class="speaker-place">${place}</div>' +
       '<div class="speaker-report">' +
@@ -120,7 +121,7 @@ export class RenderSpeakers {
       speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
       speakerName && $modalNameElement.text(speakerName);
       $modalSpeakerPosition.text(speakerPosition);
-      $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}` : '');
+      $modalSpeakerCompany.text(speakerCompany ? `${speakerCompany}` : '');
       speakerPlace && $modalPlaceElement.text(speakerPlace);
 
       reportsContent && $modalReportsContainer.html(reportsContent);

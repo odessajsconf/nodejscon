@@ -2,8 +2,13 @@ export const WorkshopRu = [
   {
     image : 'public/img/speakers/asimhussain.png',
     name : 'Asum Hussain',
-    position : 'Cloud Developer Advocate',
-    company : 'Microsoft',
+    speakerPos: [
+      {
+        position : 'Cloud Developer Advocate',
+        company : 'Microsoft',
+      },
+    ], 
+    
     place : '',
     rept : [
       {

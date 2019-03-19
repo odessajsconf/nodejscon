@@ -25,8 +25,13 @@ export const PrepartySpeakersEn = [
     {
         image : '../public/img/speakers/yaroslavgolovach.png',
         name : 'Yaroslav Golovach',
-        position : 'Co-Founder, CEO and CTO',
-        company : 'Codemotion',
+        speakerPos: [
+          {
+            position : 'Co-Founder, CEO and CTO',
+            company : 'Codemotion',
+          },
+        ],
+        
         rept : [
             {
                 title : 'It`s not about coding',

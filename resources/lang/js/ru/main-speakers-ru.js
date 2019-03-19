@@ -30,8 +30,14 @@ export const MainSpeakersRu = [
     {
       image : 'public/img/speakers/asimhussain.png',
       name : 'Asim Hussain',
-      position : 'Cloud Developer Advocate',
-      company : 'Microsoft',
+      speakerPos: [
+        {
+            position : 'Cloud Developer Advocate',
+            company : 'Microsoft',
+            
+        },
+        ], 
+      
       rept : [
         {
           title : 'The Future of Machine Learning & JavaScript',
@@ -59,8 +65,13 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/jamie_maria.jpg',
         name: 'Jamie Maria Schouren',
-        position: 'Co-Founder',
-        company: 'DEITY BV',
+        speakerPos: [
+            {
+                position: 'Co-Founder',
+                company: 'DEITY BV',
+                
+            },
+        ], 
         rept: [
             {
                 title: '',
@@ -92,8 +103,13 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/liran-tal.png',
         name: 'Liran Tal',
-        position: 'Developer Advocate',
-        company: 'Snyk.io',
+        speakerPos: [
+            {
+                position: 'Developer Advocate',
+                company: 'Snyk.io',
+                
+            },
+        ],  
         rept: [
             {
                 title: 'Black Clouds and Silver Linings in Node.js Security',
@@ -121,8 +137,13 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/viktor-turskyi.jpg',
         name: 'Виктор Турский',
-        position: 'CEO and Solution architect',
-        company: 'WebbyLab',
+        speakerPos: [
+            {
+                position: 'CEO and Solution architect',
+                company: 'WebbyLab',
+                
+            },
+        ],  
         rept: [
             {
                 title: 'The working architecture of NodeJs applications',
@@ -146,8 +167,13 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/alexandra-kalinina.png',
         name: 'Александра Калинина',
-        position: 'Fullstack JS developer',
-        company: 'Valor Software',
+        speakerPos: [
+            {
+                position: 'Fullstack JS developer',
+                company: 'Valor Software',
+                
+            },
+        ],        
         rept: [
             {
                 title: 'You don\'t need Lodash, do you?',
@@ -175,8 +201,13 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/Vitalii-Ratyshnyi.png',
         name: 'Vitalii Ratyshnyi',
-        position: 'Software Engineer',
-        company: 'Devunet',
+        speakerPos: [
+            {
+                position: 'Software Engineer',
+                company: 'Devunet',
+                
+            },
+        ],
         rept: [
             {
                 title: 'Definition of Done: Deadline driven development',
@@ -204,8 +235,13 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/vitalii-hurin.jpg',
         name: 'Vitalii Hurin',
-        position: 'Team Lead & Backend Developer',
-        company: 'Master of Code Global',
+        speakerPos: [
+            {
+                position: 'Team Lead & Backend Developer',
+                company: 'Master of Code Global',
+                
+            },
+        ],
         rept: [
             {
                 title: 'Пікові навантаження в чат-бот проектах. Історія боротьби.',
@@ -228,8 +264,15 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/luciano-mammino.png',
         name: 'Luciano Mammino',
-        position: 'Cloud Architect',
-        company: 'Vectra AI',
+        speakerPos: [
+            {
+                position: 'Cloud Architect',
+                company: 'Vectra AI'
+                
+            },
+        ],
+        
+        
         rept: [
             {
                 title: 'It’s about time to embrace Streams',
@@ -245,8 +288,18 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/tanya-butenko.png',
         name: 'Tanya Butenko',
-        position: '1. Software engineer  2. Founder and CEO',
-        company: '1. Hireup  2. Muses Code JS Inc',
+        speakerPos: [
+            {
+                position: 'Software engineer',
+                company: 'Hireup'
+                
+            },
+            {
+                position: 'Founder and CEO',
+                company: 'Muses Code JS Inc'
+            },
+        ],
+        
         rept: [
             {
                 title: 'Muses Code JS or How Communities Change People',

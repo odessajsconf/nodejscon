@@ -3,7 +3,7 @@
  */
 
 import $ from 'jquery';
-require('../../node_modules/slick-carousel/slick/slick.js');
+require('../../../node_modules/slick-carousel/slick/slick.js');
 
 export class Slider {
 
@@ -21,6 +21,7 @@ export class Slider {
     }
 
     _initSlider() {
+        console.log($(this.selector).slick(this.options));
         return $(this.selector).slick(this.options);
     }
 

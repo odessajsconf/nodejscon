@@ -1,0 +1,1036 @@
+.tickets-block {
+
+  &__title {
+    font-family: Gilroy,stolzl,sans-serif;
+    font-weight: 700;
+    .font-size(75);
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .tickets-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .img-wrapper {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .slick-list {
+      z-index: 1;
+    }
+
+    .slick-dots {
+      position: absolute;
+      left: 50%;
+      top: 1.5vw;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      z-index: 2;
+      transform: translateX(-50%);
+
+      li {
+        margin: 0 15px;
+
+        button {
+          font-size: 0;
+          background-color: transparent;
+          border: none;
+          padding: 0 15px;
+
+          &:before {
+            display: block;
+            color: #d0d2d3;
+            .font-size(28);
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            white-space: nowrap;
+            font-weight: 900;
+          }
+        }
+
+        &:nth-child(1) {
+
+          button {
+
+            &:before {
+              content: 'Student Ticket';
+            }
+          }
+        }
+
+        &:nth-child(2) {
+
+          button {
+
+            &:before {
+              content: 'Regular Ticket';
+            }
+          }
+        }
+
+        &:nth-child(3) {
+
+          button {
+
+            &:before {
+              content: 'Diversity';
+            }
+          }
+        }
+
+        &:nth-child(4) {
+
+          button {
+
+            &:before {
+              content: 'Workshop';
+            }
+          }
+        }
+
+        &.slick-active {
+
+          button {
+
+            &:before {
+              color: @color_green;
+            }
+          }
+        }
+      }
+    }
+
+    .slider-arrow {
+      position: absolute;
+      top: 400px;
+      width: 2.8vw;
+      min-width: 30px;
+      z-index: 2;
+      padding: 5px;
+      margin: 0;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      &.slick-prev {
+        left: 6.25vw;
+        transform: translate(-50%, -50%) scale(-1, 1);
+      }
+
+      &.slick-next {
+        right: 6.25vw;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .tickets-slider__slide {
+      position: relative;
+      padding: 5vw 0 3vw;
+
+      &.student-ticket {
+
+        .honeycomb-1 {
+          position: absolute;
+          width: 14.6vw;
+          left: 0;
+          top: -4.8vw;
+          transform: scale(-1, -1);
+        }
+
+        .honeycomb-2 {
+          position: absolute;
+          width: 14.6vw;
+          right: 0;
+          bottom: 0;
+        }
+
+        .student-ticket-img-1 {
+          position: absolute;
+          width: 13.3vw;
+          left: ~'calc(50% - 39.5vw)';
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .student-ticket-img-2 {
+          position: absolute;
+          width: 11.5vw;
+          right: ~'calc(50% - 37.5vw)';
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &.full-ticket {
+
+        .honeycomb-1 {
+          position: absolute;
+          width: 14.6vw;
+          left: -2.9vw;
+          top: -3.5vw;
+          transform: scale(-1, -1);
+        }
+
+        .honeycomb-2 {
+          position: absolute;
+          width: 14.6vw;
+          right: -3.9vw;
+          bottom: -4.43vw;
+        }
+
+        .full-ticket-img-1 {
+          position: absolute;
+          width: 11.8vw;
+          left: ~'calc(50% - 40vw)';
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .full-ticket-img-2 {
+          position: absolute;
+          width: 11.8vw;
+          right: ~'calc(50% - 38.5vw)';
+          top: 45%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &.diversity-ticket {
+
+        .honeycomb-1 {
+          position: absolute;
+          width: 14.6vw;
+          left: -2.6vw;
+          top: -4.43vw;
+          transform: scale(-1, -1);
+        }
+
+        .honeycomb-2 {
+          position: absolute;
+          width: 14.6vw;
+          right: -2.34vw;
+          bottom: -7vw;
+          transform: scale(1, -1);
+        }
+
+        .diversity-ticket-img-1 {
+          position: absolute;
+          width: 11vw;
+          left: ~'calc(50% - 37.2vw)';
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .diversity-ticket-img-2 {
+          position: absolute;
+          width: 12.6vw;
+          right: ~'calc(50% - 38.4vw)';
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &.workshop-ticket {
+
+        .honeycomb-1 {
+          position: absolute;
+          width: 14.6vw;
+          left: -2.6vw;
+          top: 0;
+          transform: scale(-1, -1);
+        }
+
+        .workshop-ticket-img-1 {
+          position: absolute;
+          width: 12.3vw;
+          left: ~'calc(50% - 38vw)';
+          top: 37%;
+          transform: translateY(-50%);
+          z-index: 2;
+        }
+
+        .workshop-ticket-img-2 {
+          position: absolute;
+          width: 6.3vw;
+          right: ~'calc(50% - 41.75vw)';
+          top: 25%;
+          transform: translateY(-50%) scale(-1, 1);
+        }
+
+        .workshop-ticket-img-3 {
+          position: absolute;
+          width: 5.3vw;
+          right: ~'calc(50% - 46vw)';
+          top: 80%;
+          transform: translateY(-50%) scale(-1, 1);
+        }
+
+        .workshop-ticket-img-4 {
+          position: absolute;
+          width: 5.3vw;
+          left: ~'calc(50% - 37vw)';
+          top: 67%;
+          transform: translateY(-50%) scale(-1, 1);
+        }
+
+        .workshop-ticket-img-5 {
+          position: absolute;
+          width: 2.9vw;
+          left: ~'calc(50% - 42.8vw)';
+          top: 77%;
+          transform: translateY(-50%);
+          z-index: 2;
+        }
+
+        .workshop-ticket-img-6 {
+          position: absolute;
+          width: 3vw;
+          right: ~'calc(50% - 37vw)';
+          top: 62%;
+          transform: translateY(-50%);
+          z-index: 2;
+        }
+      }
+
+      .ticket-content {
+        width: 59vw;
+        margin: 0 auto;
+        position: relative;
+        padding: 3.5vw 6vw 2.5vw;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+        background-color: #fff;
+        min-height: 580px;
+
+        &__title {
+          .font-size(60);
+          color: @color_gray;
+          margin: 0;
+          font-family: 'Gilroy', "stolzl", sans-serif;
+          font-weight: 900;
+        }
+
+        &__description {
+          .font-size(22);
+          .line-height(22, 36);
+          font-family: 'Gilroy', "stolzl", sans-serif;
+          font-weight: 400;
+          padding: 0;
+          margin: 0;
+          position: relative;
+        }
+
+        &__workshop {
+          .font-size(22);
+          .line-height(22, 36);
+          font-family: 'Gilroy', "stolzl", sans-serif;
+          font-weight: 700;
+          padding: 0;
+          margin: 20px 0 40px;
+          position: relative;
+          color: @color_green;
+        }
+
+        &__description-list{
+          list-style-type: none;
+          margin: 0 0 2.6vw;
+          padding: 0;
+
+          li {
+            .font-size(22);
+            .line-height(22, 36);
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            font-weight: 400;
+            padding: 0 0 0 34px;
+            position: relative;
+
+            &:before {
+              content: '';
+              display: block;
+              width: 12px;
+              height: 12px;
+              position: absolute;
+              background-color: @color_gray;
+              left: 0;
+              top: 12px;
+            }
+
+            strong {
+              font-weight: 700;
+            }
+          }
+        }
+
+        &__footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &__price {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          padding-right: 20px;
+          max-width: 100%;
+
+          .mail-to {
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            .font-size(22);
+            font-weight: 900;
+            color: @color_gray;
+            margin: 0;
+            text-decoration: none;
+            margin-top: 15px;
+          }
+
+          .price__value {
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            .font-size(48);
+            font-weight: 900;
+            color: @color_green;
+            margin: 0 20px 0 0;
+          }
+
+          .price__currency {
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            .font-size(24);
+            font-weight: 900;
+            color: @color_green;
+            margin: 0 0 9px 0;
+          }
+
+          .price__ask {
+            width: 100%;
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            .font-size(22);
+            font-weight: 900;
+            color: @color_green;
+            margin: 0;
+          }
+        }
+
+        .heading_btn {
+          height: 60px;
+
+          img {
+            display: block;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @laptopLg {
+
+  .tickets-block {
+
+    &__title {
+      .font-size(75);
+    }
+
+    .tickets-slider {
+
+      .slick-dots {
+        position: absolute;
+        left: 50%;
+        top: 1.5vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        z-index: 2;
+        transform: translateX(-50%);
+
+        li {
+          margin: 0 15px;
+
+          button {
+
+            &:before {
+              .font-size(22);
+            }
+          }
+        }
+      }
+
+      .slider-arrow {
+        top: 400px;
+        width: 2.8vw;
+        min-width: 30px;
+        padding: 5px;
+
+        &.slick-prev {
+          left: 6.25vw;
+          transform: translate(-50%, -50%) scale(-1, 1);
+        }
+
+        &.slick-next {
+          right: 6.25vw;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .tickets-slider__slide {
+        padding: 5vw 0 3vw;
+
+        &.student-ticket {
+
+          .honeycomb-1 {
+            width: 14.6vw;
+            left: 0;
+            top: -4.8vw;
+          }
+
+          .honeycomb-2 {
+            position: absolute;
+            width: 14.6vw;
+            right: 0;
+            bottom: 0;
+          }
+
+          .student-ticket-img-1 {
+            position: absolute;
+            width: 13.3vw;
+            left: ~'calc(50% - 39.5vw)';
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .student-ticket-img-2 {
+            position: absolute;
+            width: 11.5vw;
+            right: ~'calc(50% - 37.5vw)';
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &.full-ticket {
+
+          .honeycomb-1 {
+            position: absolute;
+            width: 14.6vw;
+            left: -2.9vw;
+            top: -3.5vw;
+            transform: scale(-1, -1);
+          }
+
+          .honeycomb-2 {
+            position: absolute;
+            width: 14.6vw;
+            right: -3.9vw;
+            bottom: -4.43vw;
+          }
+
+          .full-ticket-img-1 {
+            position: absolute;
+            width: 11.8vw;
+            left: ~'calc(50% - 40vw)';
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .full-ticket-img-2 {
+            position: absolute;
+            width: 11.8vw;
+            right: ~'calc(50% - 38.5vw)';
+            top: 45%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &.diversity-ticket {
+
+          .honeycomb-1 {
+            position: absolute;
+            width: 14.6vw;
+            left: -2.6vw;
+            top: -4.43vw;
+            transform: scale(-1, -1);
+          }
+
+          .honeycomb-2 {
+            position: absolute;
+            width: 14.6vw;
+            right: -2.34vw;
+            bottom: -7vw;
+            transform: scale(1, -1);
+          }
+
+          .diversity-ticket-img-1 {
+            position: absolute;
+            width: 11vw;
+            left: ~'calc(50% - 37.2vw)';
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          .diversity-ticket-img-2 {
+            position: absolute;
+            width: 12.6vw;
+            right: ~'calc(50% - 38.4vw)';
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &.workshop-ticket {
+
+          .honeycomb-1 {
+            position: absolute;
+            width: 14.6vw;
+            left: -2.6vw;
+            top: 0;
+            transform: scale(-1, -1);
+          }
+
+          .workshop-ticket-img-1 {
+            position: absolute;
+            width: 12.3vw;
+            left: ~'calc(50% - 38vw)';
+            top: 37%;
+            transform: translateY(-50%);
+            z-index: 2;
+          }
+
+          .workshop-ticket-img-2 {
+            position: absolute;
+            width: 6.3vw;
+            right: ~'calc(50% - 41.75vw)';
+            top: 25%;
+            transform: translateY(-50%) scale(-1, 1);
+          }
+
+          .workshop-ticket-img-3 {
+            position: absolute;
+            width: 5.3vw;
+            right: ~'calc(50% - 46vw)';
+            top: 80%;
+            transform: translateY(-50%) scale(-1, 1);
+          }
+
+          .workshop-ticket-img-4 {
+            position: absolute;
+            width: 5.3vw;
+            left: ~'calc(50% - 37vw)';
+            top: 67%;
+            transform: translateY(-50%) scale(-1, 1);
+          }
+
+          .workshop-ticket-img-5 {
+            position: absolute;
+            width: 2.9vw;
+            left: ~'calc(50% - 42.8vw)';
+            top: 77%;
+            transform: translateY(-50%);
+            z-index: 2;
+          }
+
+          .workshop-ticket-img-6 {
+            position: absolute;
+            width: 3vw;
+            right: ~'calc(50% - 37vw)';
+            top: 62%;
+            transform: translateY(-50%);
+            z-index: 2;
+          }
+        }
+
+        .ticket-content {
+          width: 59vw;
+          margin: 0 auto;
+          position: relative;
+          padding: 3.5vw 6vw 2.5vw;
+          box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+          background-color: #fff;
+          min-height: 580px;
+
+          &__title {
+            .font-size(60);
+            color: @color_gray;
+            margin: 0;
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            font-weight: 900;
+          }
+
+          &__description {
+            .font-size(22);
+            .line-height(22, 36);
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            position: relative;
+          }
+
+          &__workshop {
+            .font-size(22);
+            .line-height(22, 36);
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            font-weight: 700;
+            padding: 0;
+            margin: 20px 0 40px;
+            position: relative;
+            color: @color_green;
+          }
+
+          &__description-list{
+            list-style-type: none;
+            margin: 0 0 2.6vw;
+            padding: 0;
+
+            li {
+              .font-size(22);
+              .line-height(22, 36);
+              font-family: 'Gilroy', "stolzl", sans-serif;
+              font-weight: 400;
+              padding: 0 0 0 34px;
+              position: relative;
+
+              &:before {
+                content: '';
+                display: block;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                background-color: @color_gray;
+                left: 0;
+                top: 12px;
+              }
+
+              strong {
+                font-weight: 700;
+              }
+            }
+          }
+
+          &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          &__price {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            padding-right: 20px;
+
+            .price__value {
+              font-family: 'Gilroy', "stolzl", sans-serif;
+              .font-size(48);
+              font-weight: 900;
+              color: @color_green;
+              margin: 0 20px 0 0;
+            }
+
+            .price__currency {
+              font-family: 'Gilroy', "stolzl", sans-serif;
+              .font-size(24);
+              font-weight: 900;
+              color: @color_green;
+              margin: 0 0 9px 0;
+            }
+          }
+
+          .heading_btn {
+            height: 60px;
+
+            img {
+              display: block;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @laptopMd {
+
+  .tickets-block {
+
+    &__title {
+      .font-size(60);
+    }
+
+    .tickets-slider {
+
+      .slick-dots {
+        top: 40px;
+      }
+    }
+  }
+}
+
+@media @tablet {
+  .tickets-block {
+
+    &__title {
+      .font-size(48);
+    }
+
+    .tickets-slider {
+
+      .slider-arrow {
+        display: none!important;
+      }
+
+      .tickets-slider__slide {
+        padding: 100px 0 60px;
+
+        .ticket-content {
+          padding: 30px 60px;
+
+          &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .heading_btn {
+              height: 60px;
+              margin-top: 20px;
+            }
+          }
+        }
+
+        &.student-ticket {
+
+          .honeycomb-1 {
+            display: none;
+          }
+
+          .honeycomb-2 {
+            display: none;
+          }
+
+          .student-ticket-img-1 {
+            width: 200px;
+            left: 0;
+          }
+
+          .student-ticket-img-2 {
+            width: 200px;
+            right: 0;
+          }
+        }
+
+        &.full-ticket {
+
+          .honeycomb-1 {
+            display: none;
+          }
+
+          .honeycomb-2 {
+            display: none;
+          }
+
+          .full-ticket-img-1 {
+            position: absolute;
+            width: 200px;
+            left: -50px;
+          }
+
+          .full-ticket-img-2 {
+            position: absolute;
+            width: 200px;
+            right: 0;
+          }
+        }
+
+        &.diversity-ticket {
+
+          .honeycomb-1 {
+            display: none;
+          }
+
+          .honeycomb-2 {
+            display: none;
+          }
+
+          .diversity-ticket-img-1 {
+            position: absolute;
+            width: 200px;
+            left: 0;
+          }
+
+          .diversity-ticket-img-2 {
+            position: absolute;
+            width: 200px;
+            right: 0;
+          }
+        }
+
+        &.workshop-ticket {
+
+          .honeycomb-1 {
+            display: none;
+          }
+
+          .workshop-ticket-img-1 {
+            position: absolute;
+            width: 160px;
+            left: 0;
+          }
+
+          .workshop-ticket-img-2 {
+            position: absolute;
+            width: 70px;
+            right: 0;
+            top: 25%;
+            transform: translateY(-50%) scale(-1, 1);
+          }
+
+          .workshop-ticket-img-3 {
+            position: absolute;
+            width: 60px;
+            right: 30px;
+            top: 80%;
+            transform: translateY(-50%) scale(-1, 1);
+          }
+
+          .workshop-ticket-img-4 {
+            position: absolute;
+            width: 60px;
+            left: 30px;
+          }
+
+          .workshop-ticket-img-5 {
+            position: absolute;
+            width: 40px;
+            left: 20px;
+          }
+
+          .workshop-ticket-img-6 {
+            position: absolute;
+            width: 40px;
+            right: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @mobileLg {
+  .tickets-block {
+
+    .tickets-slider {
+
+      .slick-dots {
+        position: absolute;
+        left: 50%;
+        flex-direction: column;
+
+        li {
+          margin: 0 15px 15px;
+        }
+      }
+
+      .tickets-slider__slide {
+        padding: 220px 0 60px;
+
+        &.workshop-ticket {
+
+          .workshop-ticket-img-1 {
+            display: none ;
+          }
+
+          .workshop-ticket-img-2 {
+            right: 0;
+          }
+
+          .workshop-ticket-img-3 {
+            right: 10px;
+          }
+
+          .workshop-ticket-img-4 {
+            left: 10px;
+          }
+
+          .workshop-ticket-img-5 {
+            z-index: 1;
+            right: 20px;
+          }
+
+          .workshop-ticket-img-6 {
+            right: 30px;
+          }
+        }
+
+        .ticket-content {
+          width: 85%;
+
+          &__title {
+            .font-size(48);
+          }
+
+          .heading_btn {
+            height: 60px;
+            margin-top: 20px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media @mobile {
+  .tickets-block {
+
+    .tickets-slider {
+
+      .tickets-slider__slide {
+
+        .ticket-content {
+          width: 85%;
+          padding: 15px 20px;
+
+
+          .ticket-content__footer {
+            .price__value {
+              .font-size(20);
+            }
+
+            .price__currency {
+              .font-size(16);
+              margin: 0;
+            }
+
+            .price__ask {
+              .font-size(16);
+            }
+
+            .mail-to {
+              .font-size(18);
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

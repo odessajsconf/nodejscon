@@ -1,7 +1,7 @@
 export const WorkshopEn = [
     {
         image : '../public/img/speakers/asimhussain.png',
-        name : 'Asum Hussain',
+        name : 'Asim Hussain',
         speakerPos: [
             {
                 position : 'Cloud Developer Advocate',

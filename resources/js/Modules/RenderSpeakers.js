@@ -92,6 +92,7 @@ export class RenderSpeakers {
       $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
       $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
       $modalReportsContainer = $modalBody.find('.speakers-modal_content'),
+      $modalSpeakerAboutText = $modalBody.find('.modal-about'),
       $modalSpeakerLinks = $modalBody.find('.speaker-socials'),
       speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index'));
 
@@ -126,7 +127,7 @@ export class RenderSpeakers {
 
       reportsContent && $modalReportsContainer.html(reportsContent);
 
-      // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
+      speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').html(speakerAboutText).end().toggle(true);
 
       $modalSpeakerLinks.html(speakerSocials);
 

@@ -81,6 +81,7 @@
     display: block;
     margin: 0 auto;
     width: 100%;
+    filter: grayscale(100%);
   }
 }
 
@@ -98,9 +99,16 @@
   }
 }
 
+.modal-about p,
+.modal-about div {
+  margin-bottom: 20px;
+}
+
 .speakers-modal_content p,
 .speakers-modal_content div,
-.speakers-modal_content {
+.speakers-modal_content,
+.modal-about p,
+.modal-about div {
   text-align: left;
   color: @color_gray_light;
   .font-size(15);

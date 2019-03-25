@@ -915,48 +915,74 @@
 
         </section>
 
-        <section class="program-committee">
+        <section id="programCommittee" class="speakers flex f-d-column j-c-space-between">
             <div class="container">
-                <h2 class="m-b-40">
+                <div class="h2">
                     ${{ index.heading_program_committee }}$
-                </h2>
-                <div class="flex j-c-space-around program-committee-list">
-                    <div class="program-committee-item">
-                        <div class="program-committee-item__img">
-                            <img src="public/img/p-c/leonid.png" alt="Leonid Trytynichenko">
-                        </div>
-                        <p class="program-committee-item__name">Leonid Trytynichenko</p>
-                        <p class="program-committee-item__position">Team Lead, Node.js Developer @Master Of Code Global </p>
-                        <div class="program-committee-item__socials">
-                            <a href="https://ua.linkedin.com/in/trytynichenko " target="_blank">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://trytynichenko.com " target="_blank">
-                                <i class="fa fa-link" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="program-committee-item">
-                        <div class="program-committee-item__img">
-                            <img src="public/img/p-c/eldar.jpeg" alt="Dzhafarov Eldar">
-                        </div>
-                        <p class="program-committee-item__name">Dzhafarov Eldar</p>
-                        <p class="program-committee-item__position">CTO @Cross Platform Solutions GmbH</p>
-                        <div class="program-committee-item__socials">
-                            <a href="https://www.linkedin.com/in/edjafarov/" target="_blank">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://github.com/edjafarov" target="_blank">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://twitter.com/edjafarov" target="_blank">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
+                <!--<div class="h3 m-t-40 text-center">
+                    ${{ index.speakers_preparty_head }}$
+                </div>
+                <div class="h4 text-center m-t-20 speakers-desc">
+                    ${{ index.speakers_preparty_theme }}$
+                    <br><br>
+                    ${{ index.speakers_preparty_desc }}$
+                </div>-->
+
+
+
+
+
+                <div class="flex j-c-space-around speakers-list" id="program-committee-list"></div>
             </div>
+            <!--<div class="flex j-c-flex-end user-select-none">
+              <img class="speakers-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/speakers_bg.svg"
+                   alt="opera">
+            </div>-->
         </section>
+
+        <!--<section class="program-committee">-->
+            <!--<div class="container">-->
+                <!--<h2 class="m-b-40">-->
+                    <!--${{ index.heading_program_committee }}$-->
+                <!--</h2>-->
+                <!--<div class="flex j-c-space-around program-committee-list">-->
+                    <!--<div class="program-committee-item">-->
+                        <!--<div class="program-committee-item__img">-->
+                            <!--<img src="public/img/p-c/leonid.png" alt="Leonid Trytynichenko">-->
+                        <!--</div>-->
+                        <!--<p class="program-committee-item__name">Leonid Trytynichenko</p>-->
+                        <!--<p class="program-committee-item__position">Team Lead, Node.js Developer @Master Of Code Global </p>-->
+                        <!--<div class="program-committee-item__socials">-->
+                            <!--<a href="https://ua.linkedin.com/in/trytynichenko " target="_blank">-->
+                                <!--<i class="fa fa-linkedin" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                            <!--<a href="https://trytynichenko.com " target="_blank">-->
+                                <!--<i class="fa fa-link" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="program-committee-item">-->
+                        <!--<div class="program-committee-item__img">-->
+                            <!--<img src="public/img/p-c/eldar.jpeg" alt="Dzhafarov Eldar">-->
+                        <!--</div>-->
+                        <!--<p class="program-committee-item__name">Dzhafarov Eldar</p>-->
+                        <!--<p class="program-committee-item__position">CTO @Cross Platform Solutions GmbH</p>-->
+                        <!--<div class="program-committee-item__socials">-->
+                            <!--<a href="program-committee-modal" target="_blank">-->
+                                <!--<i class="fa fa-linkedin" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                            <!--<a href="https://github.com/edjafarov" target="_blank">-->
+                                <!--<i class="fa fa-github" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                            <!--<a href="https://twitter.com/edjafarov" target="_blank">-->
+                                <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
 
         <section class="share">
             <div class="h3 text-center text-bold m-t-50">
@@ -1123,6 +1149,41 @@
     </div>
 
     <div class="speakers-modal_content m-t-40 m-b-50"></div>
+
+    <div class="flex j-c-space-between">
+        <button class="remodal-prev">
+            ${{ index.poup_previous }}$
+        </button>
+        <button class="remodal-next">
+            ${{ index.poup_next }}$
+        </button>
+    </div>
+</div>
+
+<div class="remodal speakers-modal" data-remodal-id="program-committee-modal" id="program-committee-modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="flex speakers-modal_heading">
+        <div class="speakers-modal_img">
+            <img src="https://via.placeholder.com/1x1" alt="Photo">
+        </div>
+        <div class="speakers-modal_txt">
+            <div class="speaker-name"></div>
+
+            <div class="speaker-position">
+                <span class="position"></span>
+                <span class="company"></span>
+            </div>
+            <div class="speaker-place"></div>
+
+            <div class="speaker-socials"></div>
+        </div>
+    </div>
+
+    <div class="speakers-modal_content m-t-40 m-b-50">
+    </div>
+    <div class="modal-about">
+        <div class="modal-body__text"></div>
+    </div>
 
     <div class="flex j-c-space-between">
         <button class="remodal-prev">

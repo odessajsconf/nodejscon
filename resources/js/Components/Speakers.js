@@ -7,6 +7,8 @@ import { PrepartySpeakersEn } from '../../lang/js/en/preparty-speakers-en';
 import { PrepartySpeakersRu } from '../../lang/js/ru/preparty-speakers-ru';
 import { WorkshopRu } from '../../lang/js/ru/workshop-ru';
 import { WorkshopEn } from '../../lang/js/en/workshop-en';
+import { ProgramCommitteeRu } from '../../lang/js/ru/program-committee-ru';
+import { ProgramCommitteeEn } from '../../lang/js/en/program-committee-en';
 
 export class SpeakersComponent extends BaseComponent {
 
@@ -31,6 +33,13 @@ export class SpeakersComponent extends BaseComponent {
           speakersRu: WorkshopRu,
           speakersEn: WorkshopEn,
           container: '#workshop-list'
+        });
+
+        this.ProgramCommittee = new RenderSpeakers({
+            modal: 'program-committee-modal',
+            speakersRu: ProgramCommitteeRu,
+            speakersEn: ProgramCommitteeEn,
+            container: '#program-committee-list'
         });
     }
 

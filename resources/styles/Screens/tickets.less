@@ -388,9 +388,10 @@
           display: flex;
           justify-content: flex-start;
           align-items: flex-end;
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
           padding-right: 20px;
           max-width: 100%;
+          
 
           .mail-to {
             font-family: 'Gilroy', "stolzl", sans-serif;
@@ -400,6 +401,15 @@
             margin: 0;
             text-decoration: none;
             margin-top: 15px;
+          }
+
+          .price__note{
+            max-width: 120px;
+            margin: 0;
+            margin-bottom: 10px;
+            @media @laptopMd{
+              margin: 0;
+            }
           }
 
           .price__value {
@@ -737,7 +747,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             padding-right: 20px;
 
             .price__value {
@@ -1162,9 +1172,10 @@
 
           &__price {
             align-items: flex-end;
-            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
             justify-content: flex-end;
             padding-right: 0;
+            max-width: 150px;
 
             .mail-to {
               .font-size(16);

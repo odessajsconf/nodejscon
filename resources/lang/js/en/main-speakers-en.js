@@ -64,6 +64,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/jamie_maria.jpg',
             name: 'Jamie Maria Schouren',
+            place : 'Eindhoven, The Netherlands',
             speakerPos: [
                 {
                     position: 'Co-Founder',
@@ -102,6 +103,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/liran-tal.png',
             name: 'Liran Tal',
+            place : 'Tel Aviv, Israel',
             speakerPos: [
                 {
                     position: 'Developer Advocate',
@@ -136,6 +138,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/viktor-turskyi.jpg',
             name: 'Viktor Turskyi',
+            place : 'Ukraine, Kyiv',
             speakerPos: [
                 {
                     position: 'CEO and Solution architect',
@@ -166,6 +169,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/alexandra-kalinina.png',
             name: 'Alexandra Kalinina',
+            place : 'Ukraine, Kharkiv',
             speakerPos: [
                 {
                     position: 'Fullstack JS developer',
@@ -200,6 +204,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/Vitalii-Ratyshnyi.png',
             name: 'Vitalii Ratyshnyi',
+            place : 'Ukraine, Kyiv',
             speakerPos: [
                 {
                     position: 'Software Engineer',
@@ -234,6 +239,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/vitalii-hurin.jpg',
             name: 'Vitalii Hurin',
+            place : 'Ukraine, Cherkasy',
             speakerPos: [
                 {
                     position: 'Team Lead & Backend Developer',
@@ -262,6 +268,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/luciano-mammino.png',
             name: 'Luciano Mammino',
+            place : 'Dublin, Ireland',
             speakerPos: [
                 {
                     position: 'Cloud Architect',
@@ -285,6 +292,7 @@ export const MainSpeakersEn = [
         {
             image: '../public/img/speakers/tanya-butenko.png',
             name: 'Tanya Butenko',
+            place : 'Sydney, Australia',
             speakerPos: [
                 {
                     position: 'Software engineer',

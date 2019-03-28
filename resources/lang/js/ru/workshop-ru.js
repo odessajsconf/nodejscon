@@ -9,7 +9,7 @@ export const WorkshopRu = [
       },
     ], 
     
-    place : '',
+    place : 'London, UK',
     rept : [
       {
         title : 'Workshop: Introduction to Machine Learning with TensorFlow.js',

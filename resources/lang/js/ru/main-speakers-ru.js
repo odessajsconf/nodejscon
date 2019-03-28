@@ -30,6 +30,7 @@ export const MainSpeakersRu = [
     {
       image : 'public/img/speakers/asimhussain.png',
       name : 'Asim Hussain',
+      place : 'London, UK',
       speakerPos: [
         {
             position : 'Cloud Developer Advocate',
@@ -65,6 +66,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/jamie_maria.jpg',
         name: 'Jamie Maria Schouren',
+        place : 'Eindhoven, The Netherlands',
         speakerPos: [
             {
                 position: 'Co-Founder',
@@ -103,6 +105,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/liran-tal.png',
         name: 'Liran Tal',
+        place : 'Tel Aviv, Israel',
         speakerPos: [
             {
                 position: 'Developer Advocate',
@@ -137,6 +140,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/viktor-turskyi.jpg',
         name: 'Виктор Турский',
+        place : 'Украина, Киев',
         speakerPos: [
             {
                 position: 'CEO and Solution architect',
@@ -167,6 +171,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/alexandra-kalinina.png',
         name: 'Александра Калинина',
+        place : 'Украина, Харьков',
         speakerPos: [
             {
                 position: 'Fullstack JS developer',
@@ -200,7 +205,8 @@ export const MainSpeakersRu = [
     },
     {
         image: 'public/img/speakers/Vitalii-Ratyshnyi.png',
-        name: 'Vitalii Ratyshnyi',
+        name: 'Виталий Ратушный',
+        place : 'Украина, Киев',
         speakerPos: [
             {
                 position: 'Software Engineer',
@@ -234,7 +240,8 @@ export const MainSpeakersRu = [
     },
     {
         image: 'public/img/speakers/vitalii-hurin.jpg',
-        name: 'Vitalii Hurin',
+        name: 'Виталий Гурин',
+        place : 'Украина, Черкассы',
         speakerPos: [
             {
                 position: 'Team Lead & Backend Developer',
@@ -264,6 +271,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/luciano-mammino.png',
         name: 'Luciano Mammino',
+        place : 'Dublin, Ireland',
         speakerPos: [
             {
                 position: 'Cloud Architect',
@@ -288,6 +296,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/tanya-butenko.png',
         name: 'Tanya Butenko',
+        place : 'Sydney, Australia',
         speakerPos: [
             {
                 position: 'Software engineer',

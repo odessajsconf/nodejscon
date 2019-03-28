@@ -31,7 +31,7 @@ export const PrepartySpeakersEn = [
             company : 'Codemotion',
           },
         ],
-        
+        place : 'Ukraine, Kyiv',
         rept : [
             {
                 title : 'It`s not about coding',

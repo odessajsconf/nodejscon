@@ -29,7 +29,8 @@ export const PrepartySpeakersRu = [
             position : 'Co-Founder, CEO and CTO',
             company : 'Codemotion',
           },
-        ],        
+        ],     
+        place : 'Украина, Киев',   
         rept : [
             {
                 title : 'It`s not about coding',

@@ -327,6 +327,79 @@ export const MainSpeakersEn = [
                     fatype: 'link'
                 }
             ]
-        }
+        },
+        /*{
+            image: '../public/img/speakers/andrew-mikhailov.jpg',
+            name: 'Andrew Mikhailov',
+            place : 'Kharkiv, Ukraine',
+            speakerPos: [
+                {
+                    position: 'CTO',
+                    company: 'Zfort Group',
+                    
+                },
+            ],
+            
+            rept: [
+                {
+                    title: 'Deploying enterprise HyperLedger block-chains',
+                    description: "The talk is about deploying enterprise-level block-chains written for the HyperLedger stack. We tried to look into the future as well as to describe the current technology beneath enterprise block-chains. First, we describe the scale of the young and rapidly-growing dimension in information systems development (the block-chain). This direction is closely coupled with such technologies of the future as SmartEconomy, SmartCities and SmartLiving. Second, we tell about technical details of one among the few real enterprise block-chain start-ups. The main talk purpose is to stimulate various kinds of developers to think about which technologies will be most required in the closest 5 to 10 years."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/andrewmikhailov',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://github.com/andrewmikhailov',
+                    fatype: 'github'
+                },
+                {
+                    link: 'https://www.facebook.com/andrew.mikhailov.96',
+                    fatype: 'facebook'
+                },
+                {
+                    link: 'https://www.linkedin.com/in/andrew-mikhailov-66571912/',
+                    fatype: 'linkedin'
+                }
+            ]
+        },
+        {
+            image: '../public/img/speakers/luciano-mammino.png',
+            name: 'Maksym Demydenko',
+            place : 'Kyiv, Ukraine',
+            speakerPos: [
+                {
+                    position: '',
+                    company: 'Codemotion',
+                    
+                },
+            ],
+            
+            rept: [
+                {
+                    title: 'Using Blockchain in Node.js project: JavaScript Ninja’s experience',
+                    description: "The report will be devoted to real cases of using blockchain technology in the implementation of the project on Node.js.
+Possible architectural approaches, use-cases and business processes covered by this technology will be highlighted. My task as a speaker is to share experience and show the way of thinking when building systems using distributed registry technology."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://www.instagram.com/maksdemidenko/',
+                    fatype: 'instagram'
+                },
+                {
+                    link: 'https://www.facebook.com/max.demidenko',
+                    fatype: 'facebook'
+                }
+            ]
+        },*/
     ]
 ;

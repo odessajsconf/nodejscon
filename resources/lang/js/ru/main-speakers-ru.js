@@ -372,14 +372,14 @@ export const MainSpeakersRu = [
                 fatype: 'linkedin'
             }
         ]
-    },
+    },*/
     {
-        image: '../public/img/speakers/luciano-mammino.png',
+        image: '../public/img/speakers/maksym-demydenko-min.jpg',
         name: 'Maksym Demydenko',
         place : 'Kyiv, Ukraine',
         speakerPos: [
             {
-                position: '',
+                position: 'Blockchain expert',
                 company: 'Codemotion',
                 
             },
@@ -388,8 +388,7 @@ export const MainSpeakersRu = [
         rept: [
             {
                 title: 'Using Blockchain in Node.js project: JavaScript Ninja’s experience',
-                description: "The report will be devoted to real cases of using blockchain technology in the implementation of the project on Node.js.
-Possible architectural approaches, use-cases and business processes covered by this technology will be highlighted. My task as a speaker is to share experience and show the way of thinking when building systems using distributed registry technology."
+                description: "The report will be devoted to real cases of using blockchain technology in the implementation of the project on Node.js. Possible architectural approaches, use-cases and business processes covered by this technology will be highlighted. My task as a speaker is to share experience and show the way of thinking when building systems using distributed registry technology."
             },
         ],
         aboutSpeaker:
@@ -405,6 +404,6 @@ Possible architectural approaches, use-cases and business processes covered by t
                 fatype: 'facebook'
             }
         ]
-    },*/
+    },
   ]
 ;

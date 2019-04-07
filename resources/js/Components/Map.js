@@ -32,8 +32,8 @@ export class Map {
         lat : 50.3808611,
         lng : 30.451856,
         infoWindow : this.renderInfoWindowHTML({
-          title : 'Business-center Solnechnyiy',
-          content : '<p><span>Address: </span>5, Sonyachna St.</p>'
+          title : 'Favor Park Hotel',
+          content : '<p><span>Address: </span>6 Marshal Konev St.</p>'
         })
       },
       /*{
@@ -51,8 +51,8 @@ export class Map {
         lat : 50.3808611,
         lng : 30.451856,
         infoWindow : this.renderInfoWindowHTML({
-          title : 'Бизнес-центр Солнечный',
-          content : '<p><span>Адрес: </span>Солнечная, 5</p>'
+          title : 'Favor Park Hotel',
+          content : '<p><span>Адрес: </span>Маршала Конева 6</p>'
         })
       },
       /*{

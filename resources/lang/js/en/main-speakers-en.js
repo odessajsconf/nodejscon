@@ -328,8 +328,8 @@ export const MainSpeakersEn = [
                 }
             ]
         },
-        /*{
-            image: '../public/img/speakers/andrew-mikhailov.jpg',
+        {
+            image: '../public/img/speakers/andrew-mikhailov.jpeg',
             name: 'Andrew Mikhailov',
             place : 'Kharkiv, Ukraine',
             speakerPos: [
@@ -367,7 +367,7 @@ export const MainSpeakersEn = [
                     fatype: 'linkedin'
                 }
             ]
-        },*/
+        },
         {
             image: '../public/img/speakers/maksym-demydenko-min.jpg',
             name: 'Maksym Demydenko',
@@ -397,6 +397,46 @@ export const MainSpeakersEn = [
                 {
                     link: 'https://www.facebook.com/max.demidenko',
                     fatype: 'facebook'
+                }
+            ]
+        },
+        {
+            image: 'public/img/speakers/alexander-khokhlov.jpg',
+            name: 'Alexander Khokhlov',
+            place : 'Kharkiv, Ukraine',
+            speakerPos: [
+                {
+                    position: 'Co-Founder',
+                    company: 'Nots.io',
+                    
+                },
+            ],
+            
+            rept: [
+                {
+                    title: 'ClojureScript journey: From little script, to CLI program, to AWS Lambda function.',
+                    description: "In this talk, I’d like to show that engineer, in order to make progress, should develop its own “outside the box” thinking. Experienced programmer regardless of the language ought to look at things from various standpoints outside the commonly used paradigm. This allows her to choose the proper strategy which fits the task, customer’s requirements, saves time and money. Having our product as an example, I’d like to show new language and new methods, which are not that frequently used in the mainstream. I believe this will broaden the horizon of the conference audience."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/nots_io',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://www.facebook.com/notsio/',
+                    fatype: 'facebook'
+                },
+                {
+                    link: 'https://github.com/notsio/',
+                    fatype: 'github'
+                },
+                {
+                    link: 'https://blog.nots.io',
+                    fatype: 'link'
                 }
             ]
         },

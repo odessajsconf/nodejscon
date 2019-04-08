@@ -51,5 +51,56 @@ export const WorkshopRu = [
             fatype : 'link'
         },
     ]
-  }
+  },
+  {
+    image : 'public/img/speakers/nick-lototskiy-alt.jpg',
+    name : 'Николай Лотоцкий',
+    speakerPos: [
+        {
+            position : 'DevOps Lead',
+            company : 'Namecheap',
+        },
+    ],
+    
+    place : 'Харьков, Украина',
+    rept : [
+        {
+            title : 'Workshop: RxJS - что я делаю не так?',
+            description :
+            '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                '<p class="m-t-0">Unfortunately, observables are terra incognita for most people with I faced on. I try to explain how to make it simple and use them on projects</p>' +
+                '<p class="m-t-0">1. RxJS Reactive programming.</p>' +
+                '<p class="m-t-0">2. Async and observables.</p>' +
+                '<p class="m-t-0">3. Creating. 101 way of creates an observable.</p>' +
+                '<p class="m-t-0">4. Error handling. Why I do it everywhere? What I do wrong? Retry - killer feature.</p>' +
+                '<p class="m-t-0">5. Functional staff. Map. Filter. Reduce. Accumulator.</p>' +
+                '<p class="m-t-0">6. Buffers - Why I miss this?</p>' +
+                '<p class="m-t-0">7. Cold and hot observables. Hot, Hotter, The Hottest.</p>' +
+                '<p class="m-t-0">8. Common Mistakes</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li>I have no idea how to create them</li>\n' +
+                '  <li>Observable hell</li>\n' +
+                '  <li>Global variables</li>\n' +
+                '  <li>Errors everywhere</li>\n' +
+                '</ul>' +
+                '<p class="m-b-5">9. Questions and conclusions.</p>' +
+            '<p class="m-t-0">https://nodeflow-advanced.dev-pro.net/</p>' +
+            '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+            '<p class="m-t-0">UI developers who want to understand the nature of observables, angular developers must have it, backend developers who use feathers and want to solve complex asynchronous cases.</p>' +
+            '<p class="text-bold m-b-5">ABOUT THE TRAINER</p>' +
+            '<p class="m-t-0">Nick Lototskiy. More than 15 years in software development. Nick went through all steps in his IT carrier. Now He DevOps Lead at Namecheap.com. Author of more than 10 courses about JS, Node, Python, Devops practices and other languages.</p>'
+                
+        }
+    ],
+    aboutSpeaker :
+        'Nick Lototskiy. More than 15 years in software development. Nick went through all steps in his IT carrier. Now He DevOps Lead at Namecheap.com. Author of more than 10 courses about JS, Node, Python, Devops practices and other languages.',
+    title : 'RxJS - что я делаю не так?',
+    socialsRendered : '',
+    socials : [
+        {
+            link : 'https://github.com/maltez',
+            fatype : 'github'
+        },
+    ]
+}
 ];

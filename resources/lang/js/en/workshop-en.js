@@ -102,5 +102,202 @@ export const WorkshopEn = [
                 fatype : 'github'
             },
         ]
-    }
+    },
+    {
+        image : '../public/img/speakers/viacheslav-panevskyi.jpg',
+        name : 'Viacheslav Panevskyi',
+        speakerPos: [
+            {
+                position : 'Tech Lead Node.js',
+                company : 'Yalantis',
+            },
+        ],
+        
+        place : 'Kharkiv, Ukraine',
+        rept : [
+            {
+                title : 'Workshop: Node.js streams - the strategy of use',
+                description :
+                '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                '<p class="m-t-0">As part of the workshop, we will implement a small project that will determine the context for using streams, we will see the advantage of using them. Consider the difficulty in applying this approach and highlight the use cases and patterns.</p>' +
+                '<p class="text-bold m-b-5">SKILLS & EQUIPMENT REQUIRED FOR THE WORKSHOP</p>' +
+                '<p class="m-t-0">You should come to the workshop if you want to better understand the streams (or get to know them). To participate you need to have experience working with Node.js. Requires a laptop with Node.js, Docker and your favorite IDE installed. </p>' +
+                '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+                '<p class="m-t-0">The workshop will be useful for all developers, streams are tightly integrated into node.js and existing frameworks. Before the workshop it will be good to get acquainted with the articles about the use of streams and take a look at the existing stream API. </p>' +
+                '<p class="text-bold m-b-5">ABOUT THE TRAINER</p>' +
+                '<p class="m-t-0">I have been in the industry for almost 10 years, currently occupying the position of Tech Lead in the direction of Node.js. Therefore, one of my areas of responsibility is to ensure that the applications are efficient and extensible. Stream in these matters great help. I have various hobbies: freediving, snowboarding, yachting and woodcarving.</p>'
+                    
+            }
+        ],
+        aboutSpeaker :
+            'I have been in the industry for almost 10 years, currently occupying the position of Tech Lead in the direction of Node.js. Therefore, one of my areas of responsibility is to ensure that the applications are efficient and extensible. Stream in these matters great help. I have various hobbies: freediving, snowboarding, yachting and woodcarving.',
+        title : 'Node.js streams - the strategy of use',
+        socialsRendered : '',
+        socials : [
+            {
+                link : 'https://www.linkedin.com/in/viacheslav-panevskyi-05029346/',
+                fatype : 'linkedin'
+            },
+        ]
+    },
+    {
+        image : '../public/img/speakers/tanya-butenko.png',
+        name : 'Tanya Butenko',
+        speakerPos: [
+            {
+                position: 'Software engineer',
+                company: 'Hireup'
+                
+            },
+            {
+                position: 'Founder and CEO',
+                company: 'Muses Code JS Inc'
+            },
+        ],
+        
+        place : 'Sydney, Australia',
+        rept : [
+            {
+                title : 'Workshop: Lift me up. Mentorship 101',
+                description :
+                '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                '<p class="m-t-0">Mentorship, coaching, sponsorship - it looks like we hear these words more and more in IT communities, at working place and on events. So what is a mentorship and how to be good at it? Often when we start mentor/mentee interaction we might notice that these "simple" soft skills are not so simple and not so soft. This talk will give you great insight on mentor\'s etiquette and how to gain most being a mentor. It also gives a great understanding of mentor-mentee relations to the mentee.</p>' +
+                '<p class="text-bold m-b-5">In-depth</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li> what is mentorship, coaching, sponsorship and what\'s the difference </li>\n' +
+                '  <li> why do we need mentorship</li>\n' +
+                '  <li> why you should mentor and what you will gain from it</li>\n' +
+                '  <li> what you should do and never do as a mentore</li>\n' +
+                '  <li> how to find and approach a mentor for yourself</li>\n' +
+                '  <li> what you should do and never do as a mentee</li>\n' +
+                '  <li> everything is shown with real life examples and explanations</li>\n' +
+                '</ul>' +
+                '<p class="text-bold m-b-5">LENGTH</p>' +
+                '<p class="m-t-0">1 hour (with close audience involvement and Q/A)</p>' +
+                '<p class="text-bold m-b-5">WHO SHOULD ATTEND</p>' +
+                '<p class="m-t-0">anyone who is interested in any side of mentorship/coaching</p>'+
+                '<p class="text-bold m-b-5">ADDITIONAL INFO</p>' +
+                '<p class="m-t-0">partially this talk was made for the last 3 years for mentors of Muses Code JS, it was also partially presented on Girls Geek Dinner in Sydney and communicated on many panels around Sydney</p>' +
+                '<p class="text-bold m-b-5">WHY AM I QUALIFIED TO TALK ABOUT IT?</p>' +
+                '<p class="m-t-0">Coming up with teacher\'s background and degree, being very interested in psychology, running and mentoring on more than 100 coding workshops, starting a new career in web-development from scratch, mentoring and coaching a handful of junior devs puts me in a unique position to be able to talk about good and bad mentorship practices. Having a big experience of being a mentee and having different mentors gave me an even deeper understanding of how to make mentor/mentee relations successful.</p>'
+                    
+            }
+        ],
+        aboutSpeaker :
+            'Coming up with teacher\'s background and degree, being very interested in psychology, running and mentoring on more than 100 coding workshops, starting a new career in web-development from scratch, mentoring and coaching a handful of junior devs puts me in a unique position to be able to talk about good and bad mentorship practices. Having a big experience of being a mentee and having different mentors gave me an even deeper understanding of how to make mentor/mentee relations successful.',
+        title : 'Lift me up. Mentorship 101',
+        socialsRendered : '',
+        socials : [
+            {
+                link: 'https://twitter.com/ButenkoMe',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/ButenkoT',
+                fatype: 'github'
+            },
+            {
+                link: 'https://musescodejs.org',
+                fatype: 'link'
+            }
+        ]
+    },
+    /*{
+        image : '../public/img/speakers/jamie_maria.jpeg',
+        name : 'Jamie Maria Schouren',
+        speakerPos: [
+            {
+                position: 'Co-Founder',
+                company: 'DEITY BV',
+                
+            }
+        ],
+        
+        place : 'Eindhoven, The Netherlands',
+        rept : [
+            {
+                title : 'Workshop: Adding PWA features to your web application on Node.js',
+                description :
+                '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                '<p class="m-t-0">Learn how to build from scratch or add to the existing Node web-application PWA (Progressive Web Apps) features like Offline mode and Caching capabilities via ServiceWorkers. This will be a practical workshop where you will be able to build a tiny web-application using Node.js with PWA capabilities </p>' +
+                '<p class="text-bold m-b-5">By the end you will know</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li> How to build a simple web-application using Node.js that is able to "work" offline and show a user-friendly notification </li>\n' +
+                '  <li> How to cache your web-app assets to be able to use them while working offline (like styles and JS files)</li>\n' +
+                '  <li> How to befriend with Google Search Engine and Lighthouse</li>\n' +
+                '</ul>' +
+                '<p class="text-bold m-b-5">WHY YOU SHOULD COME TO THIS WORKSHOP</p>' +
+                '<p class="m-t-0">Modern web technologies are constantly evolving, so in order to be among the best - your application must be able to handle all possible scenarios, even when a visitor goes offline. Search engines love when your application cares about its visitors. </p>' +
+                '<p class="text-bold m-b-5">SKILLS & EQUIPMENT REQUIRED FOR THE WORKSHOP</p>' +
+                '<p class="m-t-0">Since this is going to be a practical workshop, it\'s desired to have a laptop with you. You will be able to follow with the presenter through the code and try to build your own application. Node.js and npm must be installed on your laptop as we will be installing some external packages required for building such web-applications. </p>'+
+                '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+                '<p class="m-t-0">This workshop will require a minimal JavaScript experience, some basic experience with working with node.js web-server applications and knowledge of how node/npm work.</p>' +
+                '<p class="text-bold m-b-5">THE SPEAKERS ARE</p>' +
+                '<div class="flex">'+
+                '<div class="speakers-modal_img">'+
+                '   <img src="../public/img/speakers/alex-bordun.jpg" alt="Alex Bordun">'+
+                '</div>'+
+                '<div class ="smm-container">'+
+                '<a href="https://github.com/Borales" target="_blank" title="github">' +
+                '   <i class="fa fa-github" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://twitter.com/borales" target="_blank" title="twitter">' +
+                '   <i class="fa fa-twitter" aria-hidden="true"></i>' +
+                '</a>'+
+                '</div>'+
+                '</div>'+
+                '<p class="m-t-0 speaker-name">Oleksandr Bordun</p>' +
+                '<p class="m-t-0 speaker-name">Lead NodeJS / ReactJS developer DEITY</p>' +
+                '<p class="m-t-0">Alex Bordun is passionate about his work, modern web technologies and tech events. Alex started off as a PHP developer but he soon transitioned to the JavaScript development because of its modern approach, eco-system and flexibility. He gets his kick out of solving complicated tasks. He likes to travel and used to play a lot of paintball…but lately he’s been working on a few small ‘pet’ projects in his spare time…so basically…he loves to code…24-7.</p>' +
+
+                '<div class="flex">'+
+                '<div class="speakers-modal_img">'+
+                '   <img src="../public/img/speakers/jamie_maria.jpeg" alt="Jamie Maria Schouren">'+
+                '</div>'+
+                '<div class ="smm-container">'+
+                '<a href="https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/" target="_blank" title="linkedin">' +
+                '   <i class="fa fa-linkedin" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://twitter.com/JamieMariaS" target="_blank" title="twitter">' +
+                '   <i class="fa fa-twitter" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://github.com/deity-io/falcon" target="_blank" title="github">' +
+                '   <i class="fa fa-github" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://www.instagram.com/deity_pwa/" target="_blank" title="instagram">' +
+                '   <i class="fa fa-instagram" aria-hidden="true"></i>' +
+                '</a>'+
+                '</div>'+
+                '</div>'+
+                '<p class="m-t-0 speaker-name">Jamie Maria Schouren</p>' +
+                '<p class="m-t-0 speaker-name">Co-founder and director DEITY</p>' +
+                '<p class="m-t-0">Jamie Maria is addicted to e-commerce, in love with code and her mind bound to business. Driven by the urge for innovation she fights with the aim to improve the online world around her. Starting as a native app developer who jumped into e-commerce, she co-founded DEITY, with which she is on a mission to spark an online revolution to evolve web technologies to the use of PWA solutions. You can find her working in the heat of the moment or in the middle of the night, while transforming chaos into gold. One of her passions is to empower women and girls to never stop chasing their dreams.</p>'
+                
+                
+                    
+            }
+        ],
+        aboutSpeaker :
+            '',
+        title : 'Adding PWA features to your web application on Node.js',
+        socialsRendered : '',
+        socials : [
+            {
+                link: 'https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/',
+                fatype: 'linkedin'
+            },
+            {
+                link: 'https://twitter.com/JamieMariaS',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/deity-io/falcon',
+                fatype: 'github'
+            },
+            {
+                link: 'https://www.instagram.com/deity_pwa/',
+                fatype: 'instagram'
+            },
+        ]
+    }*/
 ];

@@ -64,7 +64,7 @@ export const MainSpeakersRu = [
       ]
     },
     {
-        image: 'public/img/speakers/jamie_maria.jpg',
+        image: 'public/img/speakers/jamie_maria.jpeg',
         name: 'Jamie Maria Schouren',
         place : 'Eindhoven, The Netherlands',
         speakerPos: [
@@ -140,7 +140,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/viktor-turskyi.jpg',
         name: 'Виктор Турский',
-        place : 'Украина, Киев',
+        place : 'Киев, Украина',
         speakerPos: [
             {
                 position: 'CEO and Solution architect',
@@ -171,7 +171,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/alexandra-kalinina.png',
         name: 'Александра Калинина',
-        place : 'Украина, Харьков',
+        place : 'Харьков, Украина',
         speakerPos: [
             {
                 position: 'Fullstack JS developer',
@@ -206,7 +206,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/Vitalii-Ratyshnyi.png',
         name: 'Виталий Ратушный',
-        place : 'Украина, Киев',
+        place : 'Киев, Украина',
         speakerPos: [
             {
                 position: 'Software Engineer',
@@ -241,7 +241,7 @@ export const MainSpeakersRu = [
     {
         image: 'public/img/speakers/vitalii-hurin.jpg',
         name: 'Виталий Гурин',
-        place : 'Украина, Черкассы',
+        place : 'Черкассы, Украина',
         speakerPos: [
             {
                 position: 'Team Lead & Backend Developer',
@@ -335,8 +335,8 @@ export const MainSpeakersRu = [
     },
     {
         image: 'public/img/speakers/andrew-mikhailov.jpeg',
-        name: 'Andrew Mikhailov',
-        place : 'Kharkiv, Ukraine',
+        name: 'Андрей Михайлов',
+        place : 'Харьков, Украина',
         speakerPos: [
             {
                 position: 'CTO',
@@ -376,7 +376,7 @@ export const MainSpeakersRu = [
     {
         image: '../public/img/speakers/maksym-demydenko-min.jpg',
         name: 'Maksym Demydenko',
-        place : 'Kyiv, Ukraine',
+        place : 'Киев, Украина',
         speakerPos: [
             {
                 position: 'Blockchain expert',
@@ -407,8 +407,8 @@ export const MainSpeakersRu = [
     },
     {
         image: '../public/img/speakers/alexander-khokhlov.jpg',
-        name: 'Alexander Khokhlov',
-        place : 'Kharkiv, Ukraine',
+        name: 'Александр Хохлов',
+        place : 'Харьков, Украина',
         speakerPos: [
             {
                 position: 'Co-Founder',
@@ -442,6 +442,34 @@ export const MainSpeakersRu = [
             {
                 link: 'https://blog.nots.io',
                 fatype: 'link'
+            }
+        ]
+    },
+    {
+        image: '../public/img/speakers/viacheslav-panevskyi.jpg',
+        name: 'Вячеслав Паневский',
+        place : 'Харьков, Украина',
+        speakerPos: [
+            {
+                position: 'Tech Lead Node.js',
+                company: 'Yalantis',
+                
+            },
+        ],
+        
+        rept: [
+            {
+                title: 'Node.js and Serverless',
+                description: "The term Serverless may seem rather incomprehensible, but we will try to figure out why this approach has appeared and also discuss its use cases. Consider the use of Node.js in Serverless and its advantages and disadvantages. I also propose to discuss the Serverless approach in the context of its application for microservice architecture."
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link: 'https://www.linkedin.com/in/viacheslav-panevskyi-05029346/',
+                fatype: 'linkedin'
             }
         ]
     },

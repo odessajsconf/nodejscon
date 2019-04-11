@@ -1,5 +1,16 @@
 .remodal {
   border: 3px solid @color_green;
+
+  .speaker-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .flex{
+    margin-bottom: 0;
+    div{
+      margin-bottom: 0;
+    }
+  }
 }
 
 .remodal-close,
@@ -16,7 +27,44 @@
   color: #fff;
   background-color: @color_green;
   border: none;
+  &:hover {
+    background-color: darken(@color_green, 3%);
+  }
 
+}
+
+.smm-container{
+  padding-top: 10px;
+  padding-left: 25px;
+  a{
+    text-decoration: none;
+  }
+  i{
+    font-size: 25px;
+    color: @color_green;
+    padding-right: 15px;
+
+  }
+  i:hover{
+    color: darken(@color_green, 3%);
+  }
+}
+
+
+.remodal-buy{
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  color: #fff;
+  background-color: @color_green;
+  border: none;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: darken(@color_green, 3%);
+  }
 }
 
 .remodal-prev {}

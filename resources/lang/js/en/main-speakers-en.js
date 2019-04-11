@@ -62,7 +62,7 @@ export const MainSpeakersEn = [
             ]
         },
         {
-            image: '../public/img/speakers/jamie_maria.jpg',
+            image: '../public/img/speakers/jamie_maria.jpeg',
             name: 'Jamie Maria Schouren',
             place : 'Eindhoven, The Netherlands',
             speakerPos: [
@@ -401,7 +401,7 @@ export const MainSpeakersEn = [
             ]
         },
         {
-            image: 'public/img/speakers/alexander-khokhlov.jpg',
+            image: '../public/img/speakers/alexander-khokhlov.jpg',
             name: 'Alexander Khokhlov',
             place : 'Kharkiv, Ukraine',
             speakerPos: [
@@ -437,6 +437,34 @@ export const MainSpeakersEn = [
                 {
                     link: 'https://blog.nots.io',
                     fatype: 'link'
+                }
+            ]
+        },
+        {
+            image: '../public/img/speakers/viacheslav-panevskyi.jpg',
+            name: 'Viacheslav Panevskyi',
+            place : 'Kharkiv, Ukraine',
+            speakerPos: [
+                {
+                    position: 'Tech Lead Node.js',
+                    company: 'Yalantis',
+                    
+                },
+            ],
+            
+            rept: [
+                {
+                    title: 'Node.js and Serverless',
+                    description: "The term Serverless may seem rather incomprehensible, but we will try to figure out why this approach has appeared and also discuss its use cases. Consider the use of Node.js in Serverless and its advantages and disadvantages. I also propose to discuss the Serverless approach in the context of its application for microservice architecture."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://www.linkedin.com/in/viacheslav-panevskyi-05029346/',
+                    fatype: 'linkedin'
                 }
             ]
         },

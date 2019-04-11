@@ -102,5 +102,160 @@ export const WorkshopRu = [
             fatype : 'github'
         },
     ]
-}
+    },
+    {
+        image : 'public/img/speakers/viacheslav-panevskyi.jpg',
+        name : 'Вячеслав Паневский',
+        speakerPos: [
+            {
+                position : 'Tech Lead Node.js',
+                company : 'Yalantis',
+            },
+        ],
+        
+        place : 'Харьков, Украина',
+        rept : [
+            {
+                title : 'Воркшоп: Node.js streams - стратегия использования',
+                description :
+                '<p class="text-bold m-b-5">Описание</p>' +
+                '<p class="m-t-0">В рамках воркшопа мы реализуем небольшой проект, который будет определять контекст использования стримов, увидим преимущество их использования. Рассмотрим сложности в применении данного подхода и выделим кейсы использования и паттерны применения. </p>' +
+                '<p class="text-bold m-b-5">Целевая аудитория. Навыки и оборудование необходимые для участия в воркшопе.</p>' +
+                '<p class="m-t-0">На воркшоп стоит прийти, если хочешь лучше разобраться со стримами (или узнать их). Для участия нужно иметь опыт работы с Node.js, Express\Koa. Необходим ноутбук с установленным Node.js, Docker и вашей любимой IDE. </p>' +
+                '<p class="m-t-0">Воркшоп будет полезен для всех разработчиков, стримы плотно интегрированы в node.js и существующие фреймворки. Перед воркшопом хорошо будет ознакомиться со статьями про использование стримов и их бегло глянуть существующий API</p>' +
+                '<p class="text-bold m-b-5">О тренере</p>' +
+                '<p class="m-t-0">Я в индустрии уже почти 10 лет, в данный момент занимаю должность Tech Lead по направлению Node.js. Поэтому одна из моих зон ответственности - следить за тем, чтобы приложения были эффективными и расширяемыми. Стримы в этих вопросах здорово помогают. Вот мои любимые хобби: фридайвинг, сноубординг, яхтинг и резьба по дереву.</p>'
+                    
+            }
+        ],
+        aboutSpeaker :
+            'Я в индустрии уже почти 10 лет, в данный момент занимаю должность Tech Lead по направлению Node.js. Поэтому одна из моих зон ответственности - следить за тем, чтобы приложения были эффективными и расширяемыми. Стримы в этих вопросах здорово помогают. Вот мои любимые хобби: фридайвинг, сноубординг, яхтинг и резьба по дереву.',
+        title : 'Node.js streams - стратегия использования',
+        socialsRendered : '',
+        socials : [
+            {
+                link : 'https://www.linkedin.com/in/viacheslav-panevskyi-05029346/',
+                fatype : 'linkedin'
+            },
+        ]
+    },
+    {
+        image : '../public/img/speakers/tanya-butenko.png',
+        name : 'Tanya Butenko',
+        speakerPos: [
+            {
+                position: 'Software engineer',
+                company: 'Hireup'
+                
+            },
+            {
+                position: 'Founder and CEO',
+                company: 'Muses Code JS Inc'
+            },
+        ],
+        
+        place : 'Sydney, Australia',
+        rept : [
+            {
+                title : 'Workshop: Lift me up. Mentorship 101',
+                description :
+                '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                '<p class="m-t-0">Mentorship, coaching, sponsorship - it looks like we hear these words more and more in IT communities, at working place and on events. So what is a mentorship and how to be good at it? Often when we start mentor/mentee interaction we might notice that these "simple" soft skills are not so simple and not so soft. This talk will give you great insight on mentor\'s etiquette and how to gain most being a mentor. It also gives a great understanding of mentor-mentee relations to the mentee.</p>' +
+                '<p class="text-bold m-b-5">In-depth</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li> what is mentorship, coaching, sponsorship and what\'s the difference </li>\n' +
+                '  <li> why do we need mentorship</li>\n' +
+                '  <li> why you should mentor and what you will gain from it</li>\n' +
+                '  <li> what you should do and never do as a mentore</li>\n' +
+                '  <li> how to find and approach a mentor for yourself</li>\n' +
+                '  <li> what you should do and never do as a mentee</li>\n' +
+                '  <li> everything is shown with real life examples and explanations</li>\n' +
+                '</ul>' +
+                '<p class="text-bold m-b-5">LENGTH</p>' +
+                '<p class="m-t-0">1 hour (with close audience involvement and Q/A)</p>' +
+                '<p class="text-bold m-b-5">WHO SHOULD ATTEND</p>' +
+                '<p class="m-t-0">anyone who is interested in any side of mentorship/coaching</p>'+
+                '<p class="text-bold m-b-5">ADDITIONAL INFO</p>' +
+                '<p class="m-t-0">partially this talk was made for the last 3 years for mentors of Muses Code JS, it was also partially presented on Girls Geek Dinner in Sydney and communicated on many panels around Sydney</p>' +
+                '<p class="text-bold m-b-5">WHY AM I QUALIFIED TO TALK ABOUT IT?</p>' +
+                '<p class="m-t-0">Coming up with teacher\'s background and degree, being very interested in psychology, running and mentoring on more than 100 coding workshops, starting a new career in web-development from scratch, mentoring and coaching a handful of junior devs puts me in a unique position to be able to talk about good and bad mentorship practices. Having a big experience of being a mentee and having different mentors gave me an even deeper understanding of how to make mentor/mentee relations successful.</p>'
+                    
+            }
+        ],
+        aboutSpeaker :
+            'Coming up with teacher\'s background and degree, being very interested in psychology, running and mentoring on more than 100 coding workshops, starting a new career in web-development from scratch, mentoring and coaching a handful of junior devs puts me in a unique position to be able to talk about good and bad mentorship practices. Having a big experience of being a mentee and having different mentors gave me an even deeper understanding of how to make mentor/mentee relations successful.',
+        title : 'Lift me up. Mentorship 101',
+        socialsRendered : '',
+        socials : [
+            {
+                link: 'https://twitter.com/ButenkoMe',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/ButenkoT',
+                fatype: 'github'
+            },
+            {
+                link: 'https://musescodejs.org',
+                fatype: 'link'
+            }
+        ]
+    },
+    /*{
+        image : 'public/img/speakers/jamie_maria.jpeg',
+        name : 'Jamie Maria Schouren & Oleksandr Bordun',
+        speakerPos: [
+            {
+                position: 'Co-Founder',
+                company: 'DEITY BV',
+                
+            }
+        ],
+        
+        place : 'Eindhoven, The Netherlands',
+        rept : [
+            {
+                title : 'Workshop: Добавление возможностей PWA к Вашему веб-приложению на Node.js',
+                description :
+                '<p class="text-bold m-b-5">ОПИСАНИЕ</p>' +
+                '<p class="m-t-0">Научиться как создать с нуля либо же добавить к уже существующемому веб-приложению Node.js возможности PWA (Прогресивные Веб Приложения), такие как режим Offline и Кеширование с помощью ServiceWorkers. Это будет практический воркшоп, во время которого Вы будете способно создать небольшое веб-приложение с помощью Node.js и возможностями PWA. </p>' +
+                '<p class="text-bold m-b-5">К концу воркшопа Вы будете знать:</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li> Как построить простое веб-приложение, используя Node.js, которое способно "работать" offline и отобразить более дружелюбное уведоление для посетителя </li>\n' +
+                '  <li> Как закешировать файлы Вашего веб-приложения, что бы быть способным использовать их во время работы в режиме offline (например стили и файлы JS)</li>\n' +
+                '  <li> Как подружиться с Google Search Engine и Lighthouse</li>\n' +
+                '</ul>' +
+                '<p class="text-bold m-b-5">ПОЧЕМУ СТОИТ ПОСЕТИТЬ ДАННЫЙ ВОРКШОП</p>' +
+                '<p class="m-t-0">Современные веб технологии развиваются постоянно, и что бы быть среди лучших - Ваше приложение должно быть способным обслуживать все возможные сценарии, даже когда посетитель переходит в режим offline. Поисковые системы любят когда Ваше приложение заботится о своих посетителях. </p>' +
+                '<p class="text-bold m-b-5">НЕОБХОДИМЫЕ НАВЫКИ И ОБОРУДОВАНИЕ</p>' +
+                '<p class="m-t-0">Так как этот воркшоп будет практическим, желательно иметь при себе ноутбук. Вы будете способны следовать за докладчиком и его кодом для построение своего личного веб-приложения. Node.js и npm должны быть установлены на Вашем ноутбуке, так как нам потребуются некоторые сторонние модули для создания веб-приложения. </p>'+
+                '<p class="text-bold m-b-5">ЦЕЛЕВАЯ АУДИТОРИЯ</p>' +
+                '<p class="m-t-0">Для воркшопа необходимо иметь базовые знания JavaScript, работа с веб-серверами node.js web-server и также знания работы с node/npm.</p>'
+                
+                    
+            }
+        ],
+        aboutSpeaker :
+            '',
+        title : 'Adding PWA features to your web application on Node.js',
+        socialsRendered : '',
+        socials : [
+            {
+                link: 'https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/',
+                fatype: 'linkedin'
+            },
+            {
+                link: 'https://twitter.com/JamieMariaS',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/deity-io/falcon',
+                fatype: 'github'
+            },
+            {
+                link: 'https://www.instagram.com/deity_pwa/',
+                fatype: 'instagram'
+            },
+        ]
+    }*/
 ];

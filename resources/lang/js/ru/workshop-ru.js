@@ -65,7 +65,7 @@ export const WorkshopRu = [
     place : 'Харьков, Украина',
     rept : [
         {
-            title : 'Workshop: RxJS - что я делаю не так?',
+            title : 'Workshop: RxJS - What I doing wrong?',
             description :
             '<p class="text-bold m-b-5">DESCRIPTION</p>' +
                 '<p class="m-t-0">Unfortunately, observables are terra incognita for most people with I faced on. I try to explain how to make it simple and use them on projects</p>' +

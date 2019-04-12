@@ -388,7 +388,7 @@
           display: flex;
           justify-content: flex-start;
           align-items: flex-end;
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
           padding-right: 20px;
           max-width: 100%;
           
@@ -403,7 +403,20 @@
             margin-top: 15px;
           }
 
+          .price__sub-note {
+            width: 100%;
+            font-family: 'Gilroy', "stolzl", sans-serif;
+            .font-size(22);
+            font-weight: 900;
+            color: @color_gray;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+
           .price__note{
+            .font-size(18);
             max-width: 120px;
             margin: 0;
             margin-bottom: 10px;

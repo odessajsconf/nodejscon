@@ -221,11 +221,11 @@
                     <p>Kyiv</p>
                 </div>
                 <div class="btn_container">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMBr0yFs9zRt5T6GoM7MRYS5XF481aGND2pCh9DUs03FTD3w/viewform"
-                       class="heading_btn">
-                        <img src="https://via.placeholder.com/1x1" data-src="public/img/header/talk-button.png"
-                             alt="submit a talk">
-                    </a>
+                    <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMBr0yFs9zRt5T6GoM7MRYS5XF481aGND2pCh9DUs03FTD3w/viewform"-->
+                       <!--class="heading_btn">-->
+                        <!--<img src="https://via.placeholder.com/1x1" data-src="public/img/header/talk-button.png"-->
+                             <!--alt="submit a talk">-->
+                    <!--</a>-->
                     <a href="public/docs/Presentation_EN_2019.pdf" class="heading_btn">
                         <img src="https://via.placeholder.com/1x1" data-src="public/img/header/sponsors-button.png"
                              alt="become a sponsor">
@@ -555,6 +555,7 @@
                                 <p class="price__note h4">Price is valid until April 20</p>
                                 <p class="price__value">1950</p>
                                 <p class="price__currency">UAH</p>
+                                <div class="price__sub-note">from April 21 - 2600 UAH</div>
                                 <!--<p class="price__ask">${{ index.ask_promo }}$</p>-->
                             </div>
                             <a href="https://nodejsconf2019.ticketforevent.com/" class="heading_btn">
@@ -699,8 +700,11 @@
 
         <section id="workshop" class="speakers flex f-d-column j-c-space-between">
             <div class="container">
-                <div class="h2">
+                <div class="h2 m-b-30">
                     ${{ index.workshop_head }}$
+                </div>
+                <div class="h3">
+                    ${{ index.heading-workshop_date }}$
                 </div>
                 <!--<div class="h4 m-t-40 text-center">
                     ${{ index.workshop_description }}$
@@ -714,8 +718,11 @@
 
         <section id="speakers" class="speakers flex f-d-column j-c-space-between">
             <div class="container">
-                <div class="h2">
+                <div class="h2 m-b-30">
                     ${{ index.speakers_head }}$
+                </div>
+                <div class="h3">
+                    ${{ index.heading-speakers_date }}$
                 </div>
                 <!--<div class="h3 m-t-40 text-center">
                     ${{ index.speakers_preparty_head }}$
@@ -814,34 +821,37 @@
                     ${{ index.sponsors_head }}$
                 </div>
 
-                <div class="m-t-80 h4 text-center sponsors-text">
-                    <p>
-                        ${{ index.sponsors_txt_1 }}$
-                    </p>
-                    <br>
-                </div>
-                <div class="m-t-50 h4 text-center sponsors-text">
-                    <p>
-                        ${{ index.sponsors_txt_2 }}$
-                    </p>
-                    <p>
-                        ${{ index.sponsors_txt_4 }}$ -
-                        <a class="text-bold link white-space-nw" href="mailto:nodejs.uaconf@gmail.com">nodejs.uaconf@gmail.com</a>
-                    </p>
-                    <p>
-                        ${{ index.sponsors_txt_5 }}$ -
-                        <a class="text-bold link white-space-nw" href="tg://resolve?domain=Cherni44ka">@Cherni44ka</a> /
-                        ${{ index.sponsors_julia }}$
-                    </p>
-
-                    <div class="text-center m-t-50">
-                        <a href="public/docs/Presentation_EN_2019.pdf"
-                           target="_blank" class="btn">
-                            ${{ index.sponsors_program }}$
-                            <!--"sponsors_program": "Download sponsorship proposal",-->
-                            <!--"sponsors_program": "Скачать партнерскую программу",-->
-                        </a>
+                <div class="sponsors-text-wrapper">
+                    <div class="m-t-50 h4 text-center sponsors-text">
+                        <p>
+                            ${{ index.sponsors_txt_1 }}$
+                        </p>
+                        <br>
                     </div>
+                    <div class="m-t-50 h4 text-center sponsors-text">
+                        <p>
+                            ${{ index.sponsors_txt_2 }}$
+                        </p>
+                        <p>
+                            ${{ index.sponsors_txt_4 }}$ -
+                            <a class="text-bold link white-space-nw" href="mailto:nodejs.uaconf@gmail.com">nodejs.uaconf@gmail.com</a>
+                        </p>
+                        <p>
+                            ${{ index.sponsors_txt_5 }}$ -
+                            <a class="text-bold link white-space-nw" href="tg://resolve?domain=Cherni44ka">@Cherni44ka</a> /
+                            ${{ index.sponsors_julia }}$
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="text-center m-t-50">
+                    <a href="public/docs/Presentation_EN_2019.pdf"
+                       target="_blank" class="btn">
+                        ${{ index.sponsors_program }}$
+                        <!--"sponsors_program": "Download sponsorship proposal",-->
+                        <!--"sponsors_program": "Скачать партнерскую программу",-->
+                    </a>
                 </div>
 
                 <!-- Sponsors -->

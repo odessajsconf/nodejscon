@@ -1,7 +1,8 @@
 export const WorkshopEn = [
     {
-        image : '../public/img/speakers/asimhussain.png',
+        //image : '../public/img/speakers/asimhussain.png',
         name : 'Asim Hussain',
+        workshop_status: 1,
         speakerPos: [
             {
                 position : 'Cloud Developer Advocate',
@@ -35,7 +36,7 @@ export const WorkshopEn = [
         ],
         aboutSpeaker :
             'Taught by Asim Hussain, co-organiser of the AI JavaScript London Meetup, co-creator of https://aijs.rocks and member of the W3C WebMachineLearning Community Group Asim has been teaching JavaScript for many years and is the author of the book Angular: From Theory to Practice.',
-        title : 'Introduction to Machine Learning with TensorFlow.js',
+        title : 'Workshop: Introduction to Machine Learning with TensorFlow.js',
         socialsRendered : '',
         socials : [
             {
@@ -53,8 +54,9 @@ export const WorkshopEn = [
         ]
     },
     {
-        image : '../public/img/speakers/nick-lototskiy-alt.jpg',
+        //image : '../public/img/speakers/nick-lototskiy-alt.jpg',
         name : 'Nick Lototskiy',
+        workshop_status: 1,
         speakerPos: [
             {
                 position : 'DevOps Lead',
@@ -94,7 +96,7 @@ export const WorkshopEn = [
         ],
         aboutSpeaker :
             'Nick Lototskiy. More than 15 years in software development. Nick went through all steps in his IT carrier. Now He DevOps Lead at Namecheap.com. Author of more than 10 courses about JS, Node, Python, Devops practices and other languages.',
-        title : 'RxJS - What I doing wrong?',
+        title : 'Workshop: RxJS - What I doing wrong?',
         socialsRendered : '',
         socials : [
             {
@@ -104,8 +106,9 @@ export const WorkshopEn = [
         ]
     },
     {
-        image : '../public/img/speakers/viacheslav-panevskyi.jpg',
+        //image : '../public/img/speakers/viacheslav-panevskyi.jpg',
         name : 'Viacheslav Panevskyi',
+        workshop_status: 1,
         speakerPos: [
             {
                 position : 'Tech Lead Node.js',
@@ -131,7 +134,7 @@ export const WorkshopEn = [
         ],
         aboutSpeaker :
             'I have been in the industry for almost 10 years, currently occupying the position of Tech Lead in the direction of Node.js. Therefore, one of my areas of responsibility is to ensure that the applications are efficient and extensible. Stream in these matters great help. I have various hobbies: freediving, snowboarding, yachting and woodcarving.',
-        title : 'Node.js streams - the strategy of use',
+        title : 'Workshop: Node.js streams - the strategy of use',
         socialsRendered : '',
         socials : [
             {

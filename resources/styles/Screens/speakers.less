@@ -32,6 +32,11 @@
   min-width: 280px;
   cursor: pointer;
   transition: .2s;
+  &:last-child{
+    hr{
+      display: none;
+    }
+  }
   &:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
   }
@@ -44,6 +49,11 @@
     width: 100%;
     margin: 0 auto;
   }
+}
+.workshop-name{
+  color: @color_green;
+  .font-size(26);
+  font-weight: 700;
 }
 
 .speaker-name {

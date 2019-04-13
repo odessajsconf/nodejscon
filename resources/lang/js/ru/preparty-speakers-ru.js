@@ -73,7 +73,7 @@ export const PrepartySpeakersRu = [
         place : 'Sydney, Australia',
         rept : [
             {
-                title : 'Lift me up. Mentorship 101 <br> Duration - 1 hours ',
+                title : 'Lift me up. Mentorship 101 <br> <p class="duration">Duration - 1 hour </p> ',
                 description :
                     '<p class="text-bold m-b-5">DESCRIPTION</p>' +
                     '<p class="m-t-0">Mentorship, coaching, sponsorship - it looks like we hear these words more and more in IT communities, at working place and on events. So what is a mentorship and how to be good at it? Often when we start mentor/mentee interaction we might notice that these "simple" soft skills are not so simple and not so soft. This talk will give you great insight on mentor\'s etiquette and how to gain most being a mentor. It also gives a great understanding of mentor-mentee relations to the mentee.</p>' +
@@ -98,7 +98,7 @@ export const PrepartySpeakersRu = [
         ],
         aboutSpeaker :
             'Coming up with teacher\'s background and degree, being very interested in psychology, running and mentoring on more than 100 coding workshops, starting a new career in web-development from scratch, mentoring and coaching a handful of junior devs puts me in a unique position to be able to talk about good and bad mentorship practices. Having a big experience of being a mentee and having different mentors gave me an even deeper understanding of how to make mentor/mentee relations successful.',
-        title : 'Lift me up. Mentorship 101',
+        //title : 'Lift me up. Mentorship 101',
         socialsRendered : '',
         socials : [
             {

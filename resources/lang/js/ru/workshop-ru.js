@@ -1,7 +1,9 @@
 export const WorkshopRu = [
   {
-    image : 'public/img/speakers/asimhussain.png',
+    //image : 'public/img/speakers/asimhussain.png',
+    image : '',
     name : 'Asim Hussain',
+    workshop_status: 1,
     speakerPos: [
       {
         position : 'Cloud Developer Advocate',
@@ -35,7 +37,7 @@ export const WorkshopRu = [
     ],
     aboutSpeaker :
     'Taught by Asim Hussain, co-organiser of the AI JavaScript London Meetup, co-creator of https://aijs.rocks and member of the W3C WebMachineLearning Community Group Asim has been teaching JavaScript for many years and is the author of the book Angular: From Theory to Practice.',
-    title : 'Introduction to Machine Learning with TensorFlow.js',
+    title : 'Воркшоп: Introduction to Machine Learning with TensorFlow.js',
     socialsRendered : '',
     socials : [
         {
@@ -53,8 +55,10 @@ export const WorkshopRu = [
     ]
   },
   {
-    image : 'public/img/speakers/nick-lototskiy-alt.jpg',
+    //image : 'public/img/speakers/nick-lototskiy-alt.jpg',
+    image : '',
     name : 'Николай Лотоцкий',
+    workshop_status: 1,
     speakerPos: [
         {
             position : 'DevOps Lead',
@@ -94,7 +98,7 @@ export const WorkshopRu = [
     ],
     aboutSpeaker :
         'Nick Lototskiy. More than 15 years in software development. Nick went through all steps in his IT carrier. Now He DevOps Lead at Namecheap.com. Author of more than 10 courses about JS, Node, Python, Devops practices and other languages.',
-    title : 'RxJS - что я делаю не так?',
+    title : 'Воркшоп:  RxJS - что я делаю не так?',
     socialsRendered : '',
     socials : [
         {
@@ -104,8 +108,10 @@ export const WorkshopRu = [
     ]
     },
     {
-        image : 'public/img/speakers/viacheslav-panevskyi.jpg',
+        //image : 'public/img/speakers/viacheslav-panevskyi.jpg',
+        //image : '',
         name : 'Вячеслав Паневский',
+        workshop_status: 1,
         speakerPos: [
             {
                 position : 'Tech Lead Node.js',
@@ -130,7 +136,7 @@ export const WorkshopRu = [
         ],
         aboutSpeaker :
             'Я в индустрии уже почти 10 лет, в данный момент занимаю должность Tech Lead по направлению Node.js. Поэтому одна из моих зон ответственности - следить за тем, чтобы приложения были эффективными и расширяемыми. Стримы в этих вопросах здорово помогают. Вот мои любимые хобби: фридайвинг, сноубординг, яхтинг и резьба по дереву.',
-        title : 'Node.js streams - стратегия использования',
+        title : 'Воркшоп: Node.js streams - стратегия использования',
         socialsRendered : '',
         socials : [
             {

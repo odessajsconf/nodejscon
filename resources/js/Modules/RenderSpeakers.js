@@ -36,23 +36,31 @@ export class RenderSpeakers {
     let speakerItem =
       '<div class="speaker-item">' +
       `<div data-remodal-target="${this.options.modal}" data-item-index="__ReplaceWithIndex">` +
-      '<div class="speaker-img">' +
+      '{{if image}}'+
+      '<div class="speaker-img">' +      
       '<img src="${image}" alt="${name}">' +
       '</div>' +
+      '{{/if}}'+
+      '<div class="workshop-name">${title}</div>' +
       '<div class="speaker-name">${name}</div>' +
       '<div class="speaker-position">' +
       '{{each speakerPos }} {{html $value.position}} {{if company}} @ {{html $value.company}} {{/if}} <br> </br> {{/each}}' +
-     // '{{if company}}' +
-     // '@${company}' +
-     // '{{/if}}' +
       '</div>' +
       '<div class="speaker-place">${place}</div>' +
-      '<div class="speaker-report">' +
+      '<div class="speaker-report">' +      
+      '{{if workshop_status}}'+
+      '' +
+      '{{else}}'+
       '{{each rept }} {{html $value.title}} {{if $value.title}}</br> </br>{{/if}}{{/each}}' +
+      '{{/if}}'+
       '</div>' +
       '</div>' +
       '<div class="speaker-socials">{{html socialsRendered}}</div>' +
+      '{{if workshop_status}}'+
+      '<hr></hr>' +
+      '{{/if}}'+
       '</div>';
+      
 
     $.template('speakerTemplate', speakerItem);
 

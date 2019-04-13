@@ -234,6 +234,10 @@
                         <img src="https://via.placeholder.com/1x1" data-src="public/img/header/buy-button.png"
                              alt="Buy Ticket">
                     </a>
+                    <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="heading_btn">
+                        <img src="https://via.placeholder.com/1x1" data-src="public/img/header/volunteer_click.png"
+                             alt="Become volunteer">
+                    </a>
                 </div>
             </div>
         </section>
@@ -555,7 +559,7 @@
                                 <p class="price__note h4">Price is valid until April 20</p>
                                 <p class="price__value">1950</p>
                                 <p class="price__currency">UAH</p>
-                                <div class="price__sub-note">from April 21 - 2600 UAH</div>
+                                <div class="price__sub-note">from April 21 - <strong>2600 UAH</strong></div>
                                 <!--<p class="price__ask">${{ index.ask_promo }}$</p>-->
                             </div>
                             <a href="https://nodejsconf2019.ticketforevent.com/" class="heading_btn">
@@ -845,6 +849,11 @@
                     </div>
                 </div>
 
+                <div class="sponsor-img" data-remodal-target="sponsor-remodal">
+                    <img src="https://via.placeholder.com/1x1" data-src="public/img/sponsors/sponsors-proposal.jpg"
+                                 alt="sponsor-proposa">
+                </div>
+
                 <div class="text-center m-t-50">
                     <a href="public/docs/Presentation_EN_2019.pdf"
                        target="_blank" class="btn">
@@ -882,7 +891,15 @@
                                  alt="zone3000">
                         </a>
                     </div>
-                    <h3 class="text-center m-b-30">Media Partners</h3>
+                    <h3 class="text-center m-b-30">${{ index.sponsors_conference_partner }}$</h3>
+                    <div class="sponsors-media-list">
+                        <a href="https://www.vectra.ai/" class="sponsors-media-item"
+                        target="_blank">
+                         <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/vectra.png"
+                              alt="vectra">
+                        </a>
+                    </div>
+                    <h3 class="text-center m-b-30">${{ index.sponsors_media_partner }}$</h3>
                     <div class="sponsors-media-list">
                         <a href="https://frontconf.com/" class="sponsors-media-item"
                            target="_blank">
@@ -929,6 +946,7 @@
                          <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/lanars.png"
                               alt="lanars">
                         </a>
+                        
                     </div>
                         
                 </div>
@@ -965,7 +983,8 @@
                 <h3 class="adress_text text-center m-b-30">${{ index.location_address }}$</h3>
                 <h4 class="hotel_promo h4 text-center">${{ index.location_promo }}$</h4>
                 <a class="hotel_mail text-center m-b-30" href="mailto:reservation@favorparkhotel.com">
-                    <h4>reservation@favorparkhotel.com</h4>
+                    <h4><strong>reservation@favorparkhotel.com</strong></h4>
+                    
                 </a>
             </div>
 
@@ -1199,6 +1218,11 @@
 
 
 <!-- Modals -->
+<div class="remodal" data-remodal-id="sponsor-remodal" id="sponsor-modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <img src="public/img/sponsors/sponsors-proposal.jpg" alt="Photo" class="sponsor-remodal__img">
+</div>
+
 
 <div class="remodal speakers-modal" data-remodal-id="preparty-speakers-modal" id="preparty-speakers-modal">
     <button data-remodal-action="close" class="remodal-close"></button>

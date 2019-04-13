@@ -74,7 +74,7 @@ export const PrepartySpeakersEn = [
         place : 'Sydney, Australia',
         rept : [
             {
-                title : 'Lift me up. Mentorship 101 <br> Duration - 1 hours ',
+                title : 'Lift me up. Mentorship 101 <br> <p class="duration">Duration - 1 hour </p> ',
                 description :
                     '<p class="text-bold m-b-5">DESCRIPTION</p>' +
                     '<p class="m-t-0">Mentorship, coaching, sponsorship - it looks like we hear these words more and more in IT communities, at working place and on events. So what is a mentorship and how to be good at it? Often when we start mentor/mentee interaction we might notice that these "simple" soft skills are not so simple and not so soft. This talk will give you great insight on mentor\'s etiquette and how to gain most being a mentor. It also gives a great understanding of mentor-mentee relations to the mentee.</p>' +

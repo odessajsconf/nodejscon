@@ -76,8 +76,8 @@ export const MainSpeakersRu = [
         ], 
         rept: [
             {
-                title: '',
-                description: ""
+                title: 'Black Clouds and Silver Linings in Node.js Security',
+                description: "Remember eslint-scope and event-stream incidents? As an energetic member of the Node.js Foundation's Security Working Group, Liran will provide a 360 perspective of some black clouds of security horror stories in the JavaScript & Node.js ecosystem and educate on mitigating and building secure applications. We will deep-dive into practical Node.js vulnerabilities and how to protect against them, and cover some of OWASP Top 10. Liran will also introduce initiatives the Node.js Security WG have been undertaking to secure the ecosystem and recent security updates in npm."
             },
         ],
         aboutSpeaker:

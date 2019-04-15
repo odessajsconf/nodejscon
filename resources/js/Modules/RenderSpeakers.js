@@ -94,7 +94,7 @@ export class RenderSpeakers {
 
   loadSpeakerModal($speakerInfoBlock) {
     let $modalBody = this.$popupElem,
-      $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img img'),
+      $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img'),
       $modalNameElement = $modalBody.find('.speaker-name'),
       $modalPlaceElement = $modalBody.find('.speaker-place'),
       $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
@@ -127,7 +127,10 @@ export class RenderSpeakers {
           `;
       });
 
-      speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
+      let speakerImg ='';
+      speakerImg += '<img src="'+ speakerAvatar + '" alt="' + speakerName + '">';
+
+      speakerAvatar && $modalSpeakerAvatar.html(speakerImg);
       speakerName && $modalNameElement.text(speakerName);
       $modalSpeakerPosition.text(speakerPosition);
       $modalSpeakerCompany.text(speakerCompany ? `${speakerCompany}` : '');

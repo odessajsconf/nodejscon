@@ -74,8 +74,8 @@ export const MainSpeakersEn = [
 
             rept: [
                 {
-                    title: '',
-                    description: ""
+                    title: 'The search for App-iness : Progressive Web Apps',
+                    description: "Progressive Web Apps combine the best of the web and the best of apps. They load quickly, even on flaky networks, have an icon on the home screen, can re-engage with users by sending push notifications, and load as top-level, full screen experiences. In this talk Jamie Maria Schouren explains the what, why, and how of Progressive Web Apps, her own quest in search for \"app-iness\" and with code examples and real life use cases, shows why PWA’s are the future of the web."
                 },
             ],
             aboutSpeaker:

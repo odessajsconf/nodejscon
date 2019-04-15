@@ -143,18 +143,19 @@ export const WorkshopEn = [
             },
         ]
     },
-    /*{
-        image : '../public/img/speakers/jamie_maria.jpeg',
-        name : 'Jamie Maria Schouren',
+    {
+        //image : '../public/img/speakers/jamie_maria.jpeg',
+        name : 'Jamie Maria Schouren & Oleksandr Bordun',
+        workshop_status: 1,
         speakerPos: [
             {
-                position: 'Co-Founder',
-                company: 'DEITY BV',
+                //position: 'Co-Founder',
+                //company: 'DEITY BV',
                 
             }
         ],
         
-        place : 'Eindhoven, The Netherlands',
+        //place : 'Eindhoven, The Netherlands',
         rept : [
             {
                 title : 'Workshop: Adding PWA features to your web application on Node.js',
@@ -220,10 +221,10 @@ export const WorkshopEn = [
         ],
         aboutSpeaker :
             '',
-        title : 'Adding PWA features to your web application on Node.js',
+        title : 'Workshop: Adding PWA features to your web application on Node.js',
         socialsRendered : '',
         socials : [
-            {
+            /*{
                 link: 'https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/',
                 fatype: 'linkedin'
             },
@@ -238,7 +239,7 @@ export const WorkshopEn = [
             {
                 link: 'https://www.instagram.com/deity_pwa/',
                 fatype: 'instagram'
-            },
+            },*/
         ]
-    }*/
+    }
 ];

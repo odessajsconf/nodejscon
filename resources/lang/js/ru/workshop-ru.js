@@ -145,18 +145,19 @@ export const WorkshopRu = [
             },
         ]
     },
-    /*{
-        image : 'public/img/speakers/jamie_maria.jpeg',
+    {
+        //image : 'public/img/speakers/jamie_maria.jpeg',
         name : 'Jamie Maria Schouren & Oleksandr Bordun',
+        workshop_status: 1,
         speakerPos: [
-            {
+            /*{
                 position: 'Co-Founder',
                 company: 'DEITY BV',
                 
-            }
+            }*/
         ],
         
-        place : 'Eindhoven, The Netherlands',
+        //place : 'Eindhoven, The Netherlands',
         rept : [
             {
                 title : 'Workshop: Добавление возможностей PWA к Вашему веб-приложению на Node.js',
@@ -174,17 +175,58 @@ export const WorkshopRu = [
                 '<p class="text-bold m-b-5">НЕОБХОДИМЫЕ НАВЫКИ И ОБОРУДОВАНИЕ</p>' +
                 '<p class="m-t-0">Так как этот воркшоп будет практическим, желательно иметь при себе ноутбук. Вы будете способны следовать за докладчиком и его кодом для построение своего личного веб-приложения. Node.js и npm должны быть установлены на Вашем ноутбуке, так как нам потребуются некоторые сторонние модули для создания веб-приложения. </p>'+
                 '<p class="text-bold m-b-5">ЦЕЛЕВАЯ АУДИТОРИЯ</p>' +
-                '<p class="m-t-0">Для воркшопа необходимо иметь базовые знания JavaScript, работа с веб-серверами node.js web-server и также знания работы с node/npm.</p>'
+                '<p class="m-t-0">Для воркшопа необходимо иметь базовые знания JavaScript, работа с веб-серверами node.js web-server и также знания работы с node/npm.</p>' +
+                '<p class="text-bold m-b-5">СПИКЕРЫ</p>' +
+                '<div class="flex">'+
+                '<div class="speakers-modal_img">'+
+                '   <img src="../public/img/speakers/alex-bordun.jpg" alt="Alex Bordun">'+
+                '</div>'+
+                '<div class ="smm-container">'+
+                '<a href="https://github.com/Borales" target="_blank" title="github">' +
+                '   <i class="fa fa-github" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://twitter.com/borales" target="_blank" title="twitter">' +
+                '   <i class="fa fa-twitter" aria-hidden="true"></i>' +
+                '</a>'+
+                '</div>'+
+                '</div>'+
+                '<p class="m-t-0 speaker-name">Oleksandr Bordun</p>' +
+                '<p class="m-t-0 speaker-name">Lead NodeJS / ReactJS developer DEITY</p>' +
+                
+
+                '<div class="flex">'+
+                '<div class="speakers-modal_img">'+
+                '   <img src="../public/img/speakers/jamie_maria.jpeg" alt="Jamie Maria Schouren">'+
+                '</div>'+
+                '<div class ="smm-container">'+
+                '<a href="https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/" target="_blank" title="linkedin">' +
+                '   <i class="fa fa-linkedin" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://twitter.com/JamieMariaS" target="_blank" title="twitter">' +
+                '   <i class="fa fa-twitter" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://github.com/deity-io/falcon" target="_blank" title="github">' +
+                '   <i class="fa fa-github" aria-hidden="true"></i>' +
+                '</a>'+
+                '<a href="https://www.instagram.com/deity_pwa/" target="_blank" title="instagram">' +
+                '   <i class="fa fa-instagram" aria-hidden="true"></i>' +
+                '</a>'+
+                '</div>'+
+                '</div>'+
+                '<p class="m-t-0 speaker-name">Jamie Maria Schouren</p>' +
+                '<p class="m-t-0 speaker-name">Co-founder and director DEITY</p>'
+                
+                
                 
                     
             }
         ],
         aboutSpeaker :
             '',
-        title : 'Adding PWA features to your web application on Node.js',
+        title : 'Воркшоп: Adding PWA features to your web application on Node.js',
         socialsRendered : '',
         socials : [
-            {
+           /* {
                 link: 'https://www.linkedin.com/in/jamie-maria-schouren-%E2%9C%85-80583145/',
                 fatype: 'linkedin'
             },
@@ -199,7 +241,7 @@ export const WorkshopRu = [
             {
                 link: 'https://www.instagram.com/deity_pwa/',
                 fatype: 'instagram'
-            },
+            },*/
         ]
-    }*/
+    }
 ];

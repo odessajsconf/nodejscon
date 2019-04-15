@@ -36,7 +36,7 @@ export const MainSpeakersEn = [
                     company: 'Microsoft',
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'The Future of Machine Learning & JavaScript',
@@ -71,7 +71,7 @@ export const MainSpeakersEn = [
                     company: 'DEITY BV',
                 },
             ],
-            
+
             rept: [
                 {
                     title: '',
@@ -110,7 +110,7 @@ export const MainSpeakersEn = [
                     company: 'Snyk.io',
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'Black Clouds and Silver Linings in Node.js Security',
@@ -145,7 +145,7 @@ export const MainSpeakersEn = [
                     company: 'WebbyLab',
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'The working architecture of NodeJs applications',
@@ -176,7 +176,7 @@ export const MainSpeakersEn = [
                     company: 'Valor Software',
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'You don\'t need Lodash, do you?',
@@ -211,7 +211,7 @@ export const MainSpeakersEn = [
                     company: 'Devunet',
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'Definition of Done: Deadline driven development',
@@ -245,7 +245,7 @@ export const MainSpeakersEn = [
                     position: 'Team Lead & Backend Developer',
                     company: 'Master of Code Global',
                 },
-            ],            
+            ],
             rept: [
                 {
                     title: 'Peak loads in chat bot projects. History of struggle',
@@ -273,10 +273,10 @@ export const MainSpeakersEn = [
                 {
                     position: 'Cloud Architect',
                     company: 'Vectra AI',
-                    
+
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'It’s about time to embrace Streams',
@@ -297,7 +297,7 @@ export const MainSpeakersEn = [
                 {
                     position: 'Software engineer',
                     company: 'Hireup'
-                    
+
                 },
                 {
                     position: 'Founder and CEO',
@@ -336,10 +336,10 @@ export const MainSpeakersEn = [
                 {
                     position: 'CTO',
                     company: 'Zfort Group',
-                    
+
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'Deploying enterprise HyperLedger block-chains',
@@ -376,13 +376,13 @@ export const MainSpeakersEn = [
                 {
                     position: 'Blockchain expert',
                     company: 'Codemotion',
-                    
+
                 },
             ],
-            
+
             rept: [
                 {
-                    title: 'Using Blockchain in Node.js project: JavaScript Ninja’s experience', 
+                    title: 'Using Blockchain in Node.js project: JavaScript Ninja’s experience',
                     description: "The report will be devoted to real cases of using blockchain technology in the implementation of the project on Node.js. Possible architectural approaches, use-cases and business processes covered by this technology will be highlighted. My task as a speaker is to share experience and show the way of thinking when building systems using distributed registry technology."
                 },
             ],
@@ -408,10 +408,10 @@ export const MainSpeakersEn = [
                 {
                     position: 'Co-Founder',
                     company: 'Nots.io',
-                    
+
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'ClojureScript journey: From little script, to CLI program, to AWS Lambda function.',
@@ -448,10 +448,10 @@ export const MainSpeakersEn = [
                 {
                     position: 'Tech Lead Node.js',
                     company: 'Yalantis',
-                    
+
                 },
             ],
-            
+
             rept: [
                 {
                     title: 'Node.js and Serverless',
@@ -465,6 +465,42 @@ export const MainSpeakersEn = [
                 {
                     link: 'https://www.linkedin.com/in/viacheslav-panevskyi-05029346/',
                     fatype: 'linkedin'
+                }
+            ]
+        },
+        {
+            image: '../public/img/speakers/BoryaMogila.png',
+            name: 'Borys Mohyla',
+            place : 'Vinnytsia, Ukraine',
+            speakerPos: [
+                {
+                    position: 'Senior Full-stack JS developer',
+                    company: 'IG "RIA"',
+
+                },
+            ],
+
+            rept: [
+                {
+                    title: 'Parallel calls in node.js',
+                    description: "Nowadays our applications have many parts that interact with each other. I'll tell you how our team optimizes this interaction by doing parallel calls."
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://www.linkedin.com/in/%D0%B1%D0%BE%D1%80%D0%B8%D1%81-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0-06b6b212a/',
+                    fatype: 'linkedin'
+                },
+                {
+                    link: 'https://github.com/BoryaMogila',
+                    fatype: 'github'
+                },
+                {
+                    link: 'https://boryamogila.github.io/',
+                    fatype: 'link'
                 }
             ]
         },

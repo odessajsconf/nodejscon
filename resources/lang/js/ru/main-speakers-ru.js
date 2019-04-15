@@ -473,5 +473,41 @@ export const MainSpeakersRu = [
             }
         ]
     },
+    {
+        image: '../public/img/speakers/BoryaMogila.png',
+        name: 'Борис Могила',
+        place : 'Винница, Украина',
+        speakerPos: [
+            {
+                position: 'Senior Full-stack JS developer',
+                company: 'IG "RIA"',
+
+            },
+        ],
+
+        rept: [
+            {
+                title: 'Parallel calls in node.js',
+                description: "Nowadays our applications have many parts that interact with each other. I'll tell you how our team optimizes this interaction by doing parallel calls."
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link: 'https://www.linkedin.com/in/%D0%B1%D0%BE%D1%80%D0%B8%D1%81-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0-06b6b212a/',
+                fatype: 'linkedin'
+            },
+            {
+                link: 'https://github.com/BoryaMogila',
+                fatype: 'github'
+            },
+            {
+                link: 'https://boryamogila.github.io/',
+                fatype: 'link'
+            }
+        ]
+    },
   ]
 ;

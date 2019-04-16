@@ -111,5 +111,7 @@
   "location_address": "Киев, ул. Маршала Конева 6",
   "poup_previous": "Назад",
   "poup_next": "Далее",
-  "poup_buy": "Купить билет"
+  "poup_buy": "Купить билет",
+  "hotels_head": "ИНФО",
+  "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019"
 }

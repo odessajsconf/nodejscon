@@ -49,6 +49,35 @@
   }
 }
 
+#hotels{
+  .hotels-ps{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .hotels-list{
+    justify-content: center;
+    &__item{
+      width: 25%;
+      min-width: 275px;
+      
+
+      &__avatar{
+        width: 100%;
+        img{
+          max-width: 100%;
+        }
+      }
+      &__discount{
+        color: #8a8a8a;
+      }
+      &__mail{
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
 
   .location-img-container {
@@ -57,6 +86,16 @@
       width: 100%;
       max-width: 100% !important;
       img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media @mobile {
+  #hotels{
+    .hotels-list{
+      &__item{
         width: 100%;
       }
     }

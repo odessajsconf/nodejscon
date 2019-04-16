@@ -27,7 +27,7 @@ export class RenderSchedule {
 
     let scheduleRow = '<div class="schedule-item">' +
       '                <div class="schedule-time">${ time }</div>' +
-      '                <div class="schedule-icon ${ icon }"></div>' +
+      '               <div class="schedule-icon ${ icon }">{{if icon == "beer"}}<i class="fa fa-beer"></i>{{/if}}</div>' +
       '                    {{html scheduleRendered}}' +
       '              </div>';
     $.template('scheduleRow', scheduleRow);

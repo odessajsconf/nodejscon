@@ -111,5 +111,7 @@
   "location_address": "Kyiv, 6 Marshal Konev St.",
   "poup_previous": "Previous",
   "poup_next": "Next",
-  "poup_buy": "Buy ticket"
+  "poup_buy": "Buy ticket",
+  "hotels_head": "ИНФО",
+  "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019"
 }

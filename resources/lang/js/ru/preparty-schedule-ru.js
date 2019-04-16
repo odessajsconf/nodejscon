@@ -1,5 +1,5 @@
 export const PrepartyScheduleRu = [
-  {
+  /*{
     time:'18:00 - 18:20',
     icon:'profile',
     scheduleRendered: '',
@@ -52,5 +52,5 @@ export const PrepartyScheduleRu = [
       {author: 'Дмитрий Каневский', title: 'Жесткая правда о развитии мягких навыков'},
       // {author: '', title: ''}
     ]
-  }
+  }*/
 ];

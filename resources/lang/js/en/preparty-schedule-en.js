@@ -1,5 +1,5 @@
 export const PrepartyScheduleEn = [
-  {
+  /*{
     time:'18:00 - 18:20',
     icon:'profile',
     scheduleRendered: '',
@@ -52,5 +52,5 @@ export const PrepartyScheduleEn = [
       {author: 'Dima Kanevsky', title: 'Hard truth about developing soft skills'},
       // {author: '', title: ''}
     ]
-  }
+  }*/
 ];

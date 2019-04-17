@@ -505,5 +505,33 @@ export const MainSpeakersEn = [
                 }
             ]
         },
+        {
+            image: '../public/img/speakers/nick-lototskiy-alt.jpg',
+            name: 'Nick Lototskiy',
+            place : 'Kharkiv, Ukraine',
+            speakerPos: [
+                {
+                    position : 'DevOps Lead',
+                    company : 'Namecheap',
+    
+                },
+            ],
+    
+            rept: [
+                {
+                    title: 'Разворачиваем структуру Node.js на AWS',
+                    description: "Многие девелоперы предполагают что их участие в жизни продукта кончается на команде git push. Часто никто из разработчиков и не задумывается где и как будет хоститься его приложение. Одному из выборов платформы размещения а также ее особенностям будет посвящен данный доклад. Будут рассмотрены все сервисы которые важны для инфраструктуры Node.js приложения такие как EC2, ECS, ELB, Route53 и другие, а также будут рассмотрены проблемы масштабируемости Node.js приложений"
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link : 'https://github.com/maltez',
+                    fatype : 'github'
+                },
+            ]
+        },
     ]
 ;

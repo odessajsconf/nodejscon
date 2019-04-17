@@ -233,7 +233,13 @@
                         <img src="https://via.placeholder.com/1x1" data-src="public/img/header/sponsors-button.png"
                              alt="become a sponsor">
                     </a>
-                    <a href="https://nodejsconf2019.ticketforevent.com/" class="heading_btn">
+
+                    <!-- Button for popup "Tickets for event"  -->
+                    <!--<a  class="heading_btn" data-remodal-target="tickets-remodal">
+                        <img src="https://via.placeholder.com/1x1" data-src="public/img/header/buy-button.png"
+                             alt="Buy Ticket">
+                    </a>-->
+                    <a href="https://nodejsconf2019.ticketforevent.com/" class="heading_btn" >
                         <img src="https://via.placeholder.com/1x1" data-src="public/img/header/buy-button.png"
                              alt="Buy Ticket">
                     </a>
@@ -677,6 +683,7 @@
                         <p class="ticket-content__workshop">Viacheslav Panevskyi<br>Workshop: Node.js streams - the strategy of use</p>
                         <p class="ticket-content__workshop">Tanya Butenko<br>Workshop: Lift me up. Mentorship 101</p>
                         <p class="ticket-content__workshop">Jamie Maria Schouren & Oleksandr Bordun<br>Workshop: Adding PWA features to your web application on Node.js</p>
+                        <p class="ticket-content__workshop">Liran Tal<br>Workshop:  Live Hack - Exploiting and fixing common vulnerabilities in your Node.js web application</p>
                         <div class="ticket-content__footer">
                             <div class="ticket-content__price">
                                 <!--<p class="price__value">1600</p>-->
@@ -1261,6 +1268,13 @@
 <div class="remodal" data-remodal-id="sponsor-remodal" id="sponsor-modal">
     <button data-remodal-action="close" class="remodal-close"></button>
     <img src="public/img/sponsors/sponsors-proposal.jpg" alt="Photo" class="sponsor-remodal__img">
+</div>
+
+<div class="remodal" data-remodal-id="tickets-remodal" id="tickets-modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div id="tfe-embed-97061-en" class="tfe-embed-wrapper"></div>
+    <script type="text/javascript" src="https://nodejsconf2019.ticketforevent.com/en/widget/?h=0&s=0&bt=3"></script>
+    <script type="text/javascript" src="https://buy.ticketforevent.com/js/embreg.js?v=0.95"></script>
 </div>
 
 

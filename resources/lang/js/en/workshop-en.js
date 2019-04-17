@@ -241,5 +241,72 @@ export const WorkshopEn = [
                 fatype: 'instagram'
             },*/
         ]
-    }
+    },
+    {
+        name : 'Liran Tal',
+        workshop_status: 1,
+        speakerPos: [
+            {
+                position: 'Developer Advocate',
+                company: 'Snyk.io',
+            },
+        ],
+        
+        place : 'Tel Aviv, Israel',
+        rept : [
+            {
+                title : 'Workshop: Live Hack - Exploiting and fixing common vulnerabilities in your Node.js web application',
+                description :
+                '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                '<p class="m-t-0">This workshop will lead you through installing and exploiting a number of intentionally vulnerable applications. The applications will use real world packages with know vulnerabilities, including:</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li>Directory traversal</li>\n' +
+                '  <li>Regular expression denial of service (ReDoS)</li>\n' +
+                '  <li>Cross site scripting (XSS)</li>\n' +
+                '  <li>Remote code execution (RCE)</li>\n' +
+                '  <li>Arbitrary file overwrite (Zip Slip)</li>\n' +
+                '</ul>' +
+                '<pclass="m-t-0">These exploits exist in a number of applications, most of which you will need to install either locally or on a cloud instance. The instructions below will walk you through the local installations, but you are more than welcome to try them out on remote cloud instances also. For each vulnerability section in this workshop, you’ll be given information about the vulnerability as well as the package it exists in. You are encouraged to attempt to hack the application by trial and error without reading any hints at first. Try to think how you can trick the application sanitization and get into the mind of a hacker. The hints are there for when you get stuck so read them in order as and when you need a helping hand. If you can complete the hack without hints, that’s great! However it can be good to read the hints afterwards to make sure you broke in the same way we did! Plus there could be little tips in there to learn from also. </p>' +
+                '<p class="text-bold m-b-5">DURATION AND WORKSHOP DETAILS</p>' +
+                '<p class="m-t-0">The workshop is set for 2 hours and will include an introduction to application security vulnerabilities but will mostly concentrate on self-paced work through a workshop step-by-step guide.</p>' +
+                '<p class="text-bold m-b-5">Goals:</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li>Understand vulnerabilities, how to find, assess and fix these vulnerabilities and how to use open source developer-friendly security tools like Snyk to be on top of security concerns.</li>\n' +
+                '  <li>Familiarize yourself with basic application security vulnerabilities that are well known in Node.js and JavaScript projects.</li>\n' +
+                '</ul>' +
+                '<p class="text-bold m-b-5">Requirements:</p>' +
+                '<ul class="m-t-0">\n' +
+                '  <li>A proper terminal (linux based) - pick your favourite</li>\n' +
+                '  <li>cUrl - download and install a binary for your OS</li>\n' +
+                '  <li>Httpie - (brew install httpie)</li>\n' +
+                '  <li>Npm - (brew install node)</li>\n' +
+                '  <li>Git</li>\n' +
+                '  <li>Mongod - (brew install mongodb) or alternatively docker to be able to pull and run a MongoDB instance</li>\n' +
+                '</ul>' +
+                '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+                '<p class="m-t-0">Junior, to Senior Node.js and JavaScript developers who have no background in application security and would like to expand on their understanding of real-life security vulnerabilities in popular packages on npm and how they can impact their applications.</p>' +
+                '<p class="text-bold m-b-5">ABOUT THE TRAINER</p>' +
+                '<p class="m-t-0">Liran Tal is a Developer Advocate at Snyk and a member of the Node.js Security working group. He is a JSHeroes ambassador, passionate about building communities and the open source movement and greatly enjoys pizza, wine, web technologies, and CLIs. Liran is also the author of Essential Node.js Security, a core contributor to OWASP NodeGoat project and loves to dabble about code, testing, and software philosophy.</p>'
+                    
+            }
+        ],
+        aboutSpeaker :
+            'Liran Tal is a Developer Advocate at Snyk and a member of the Node.js Security working group. He is a JSHeroes ambassador, passionate about building communities and the open source movement and greatly enjoys pizza, wine, web technologies, and CLIs. Liran is also the author of Essential Node.js Security, a core contributor to OWASP NodeGoat project and loves to dabble about code, testing, and software philosophy.',
+        title : 'Workshop: Live Hack - Exploiting and fixing common vulnerabilities in your Node.js web application',
+        socialsRendered : '',
+        socials : [
+            {
+                link: 'https://twitter.com/liran_tal',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/lirantal',
+                fatype: 'github'
+            },
+            {
+                link: 'https://medium.com/@liran.tal',
+                fatype: 'link'
+            },
+        ]
+    },
 ];

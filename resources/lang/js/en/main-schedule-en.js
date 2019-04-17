@@ -104,7 +104,7 @@ export const MainScheduleEn = [
     scheduleRendered : '',
     talks : [
       {author : 'Viktor Turskyi', title : 'The working architecture of NodeJs applications [Ru]'},
-      {author : 'Maksym Demydenk', title : 'Using Blockchain in Node.js project: JavaScript Ninja’s experience [Ru]'}
+      {author : 'Maksym Demydenko', title : 'Using Blockchain in Node.js project: JavaScript Ninja’s experience [Ru]'}
     ]
   },
   {
@@ -139,7 +139,7 @@ export const MainScheduleEn = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : 'Jamie Maria', title : 'The search for App-iness : Progressive Web Apps  [En]'},
+      {author : 'Jamie Maria Schouren', title : 'The search for App-iness : Progressive Web Apps  [En]'},
       {author : 'Vitalii Hurin', title : 'Peak loads in chat bot projects. History of struggle [Ua]'}
     ]
   },

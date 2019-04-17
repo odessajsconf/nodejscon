@@ -207,6 +207,7 @@ export const MainSpeakersRu = [
         image: 'public/img/speakers/Vitalii-Ratyshnyi.png',
         name: 'Виталий Ратушный',
         place : 'Киев, Украина',
+        addInfo : 'Lightning Talk',
         speakerPos: [
             {
                 position: 'Software Engineer',

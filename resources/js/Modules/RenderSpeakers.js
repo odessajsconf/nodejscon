@@ -53,6 +53,7 @@ export class RenderSpeakers {
       '{{else}}'+
       '{{each rept }} {{html $value.title}} {{if $value.title}}</br> </br>{{/if}}{{/each}}' +
       '{{/if}}'+
+      '<div class="speaker-report__additional">${addInfo}</div>'+
       '</div>' +
       '</div>' +
       '<div class="speaker-socials">{{html socialsRendered}}</div>' +

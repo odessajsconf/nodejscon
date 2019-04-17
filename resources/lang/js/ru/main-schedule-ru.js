@@ -157,7 +157,7 @@ export const MainScheduleRu = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : 'Vitalii Ratyshnyi', title : 'Definition of Done: Deadline driven development [Ua]'},
+      {author : 'Vitalii Ratyshnyi', title : 'Definition of Done: Deadline driven development [Ua]', desc : 'Lightning Talk'},
       {author : '', title : ''}
     ]
   },

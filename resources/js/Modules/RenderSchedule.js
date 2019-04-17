@@ -34,6 +34,9 @@ export class RenderSchedule {
 
     let scheduleItem = '<div class="schedule-text flex-item-1">' +
       '                  {{html title}}' +
+      '                  <div class="schedule-description">' +
+      '                    ${desc}' +
+      '                  </div>' +
       '                  <div class="schedule-author">' +
       '                    ${author}' +
       '                  </div>' +

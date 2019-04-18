@@ -65,6 +65,8 @@
   "workshop_description": "* для участников конференции посещение мастер класса бесплатное",
   "schedule_head": "Расписание",
   "schedule_txt": "Программа конференции будет доступна за 2 недели до мероприятия",
+  "shedule_stage_a": "Зал A",
+  "shedule_stage_b": "Зал B",
   "shedule_description": "18 мая, ул. Маршала Конева 6",
   "shedule_pre-party_description": "Одесский офис компании Lohika, адрес:  ул.Бунина, 1",
   "afterparty_head": "After-party",
@@ -113,5 +115,7 @@
   "poup_next": "Далее",
   "poup_buy": "Купить билет",
   "hotels_head": "ИНФО",
-  "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019"
+  "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019",
+  "tickets_workshop_title" : "Workshop",
+  "tickets_workshop_desc" : "Билеты на воркшопы приобретайте отдельно от билета на конференцию"
 }

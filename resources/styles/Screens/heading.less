@@ -45,12 +45,23 @@
     .heading_btn{
       cursor: pointer;
       margin-right: 38px;
+      height: 80px;
       &:last-child{
         margin-right: 0px;
       }
       img{
-        height: 80px;
+        max-height: 100%;
         width: auto;
+      }
+    }
+    .buy-button{
+      width: 220px;
+      height: 80px;
+      background-image: url(../../public/img/header/buy-button.png);
+      background-size: contain; 
+      background-repeat: no-repeat;
+      &:hover{
+        background-image: url(../../public/img/header/buy-button-hover.png);
       }
     }
   }

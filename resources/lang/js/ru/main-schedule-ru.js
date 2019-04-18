@@ -4,7 +4,7 @@ export const MainScheduleRu = [
     icon : 'cup',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Registration and morning coffee'},
+      {author : '', title : 'Регистрация'},
       {author : '', title : ''}
     ]
   },
@@ -13,7 +13,7 @@ export const MainScheduleRu = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : ' ', title : 'Conference Opening'},
+      {author : ' ', title : 'Открытие конференции'},
       {author : '', title : ''}
     ]
   },
@@ -23,7 +23,7 @@ export const MainScheduleRu = [
     scheduleRendered : '',
     talks : [
       {author : 'Tanya Butenko', title : 'Muses Code JS or How Communities Change People  [En]'},
-      {author : 'Borys Mohyla', title : 'Parallel calls in node.js  [Ua]'}
+      {author : 'Борис Могила', title : 'Parallel calls in node.js  [Ua]'}
     ]
   },
   {
@@ -31,7 +31,7 @@ export const MainScheduleRu = [
     icon : 'clock',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Break'},
+      {author : '', title : 'Перерыв'},
       {author : '', title : ''}
     ]
   },
@@ -41,7 +41,7 @@ export const MainScheduleRu = [
     scheduleRendered : '',
     talks : [
       {author : 'Asim Hussain', title : 'The Future of Machine Learning & JavaScript  [En]'},
-      {author : 'Andrew Mikhailov', title : 'Deploying enterprise HyperLedger block-chains [Ru]'}
+      {author : 'Андрей Михайлов', title : 'Deploying enterprise HyperLedger block-chains [Ru]'}
     ]
   },
   {
@@ -49,7 +49,7 @@ export const MainScheduleRu = [
     icon : 'clock',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Break'},
+      {author : '', title : 'Перерыв'},
       {author : '', title : ''}
     ]
   },
@@ -59,7 +59,7 @@ export const MainScheduleRu = [
     scheduleRendered : '',
     talks : [
       {author : 'Liran Tal', title : 'Black Clouds and Silver Linings in Node.js Security [En]'},
-      {author : 'Nick Lototskiy', title : 'Разворачиваем структуру Node.js на AWS [Ru]'}
+      {author : 'Николай Лотоцкий', title : 'Разворачиваем структуру Node.js на AWS [Ru]'}
     ]
   },
   {
@@ -67,7 +67,7 @@ export const MainScheduleRu = [
     icon : 'plate',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Lunch (part I)'},
+      {author : '', title : 'Обед (часть 1)'},
       {author : '', title : ''}
     ]
   },
@@ -76,7 +76,7 @@ export const MainScheduleRu = [
     icon : 'plate',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Lunch (part II)'},
+      {author : '', title : 'Обед (часть 2)'},
       {author : '', title : ''}
     ]
   },
@@ -86,7 +86,7 @@ export const MainScheduleRu = [
     scheduleRendered : '',
     talks : [
       {author : 'Luciano Mammino', title : 'It’s about time to embrace Streams [En]'},
-      {author : 'Alexandra Kalinina', title : 'You don\'t need Lodash, do you? [Ru]'}
+      {author : 'Александра Калинина', title : 'You don\'t need Lodash, do you? [Ru]'}
     ]
   },
   {
@@ -94,7 +94,7 @@ export const MainScheduleRu = [
     icon : 'clock',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Break'},
+      {author : '', title : 'Перерыв'},
       {author : '', title : ''}
     ]
   },
@@ -103,7 +103,7 @@ export const MainScheduleRu = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : 'Viktor Turskyi', title : 'The working architecture of NodeJs applications [Ru]'},
+      {author : 'Виктор Турский', title : 'The working architecture of NodeJs applications [Ru]'},
       {author : 'Maksym Demydenko', title : 'Using Blockchain in Node.js project: JavaScript Ninja’s experience [Ru]'}
     ]
   },
@@ -112,7 +112,7 @@ export const MainScheduleRu = [
     icon : 'clock',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Break'},
+      {author : '', title : 'Перерыв'},
       {author : '', title : ''}
     ]
   },
@@ -121,8 +121,8 @@ export const MainScheduleRu = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : 'Viacheslav Panevskyi', title : 'Node.js and Serverless [Ru]'},
-      {author : 'Alexander Khokhlov', title : 'ClojureScript journey: From little script, to CLI program, to AWS Lambda function [Ru]'}
+      {author : 'Вячеслав Паневский', title : 'Node.js and Serverless [Ru]'},
+      {author : 'Александр Хохлов', title : 'ClojureScript journey: From little script, to CLI program, to AWS Lambda function [Ru]'}
     ]
   },
   {
@@ -130,7 +130,7 @@ export const MainScheduleRu = [
     icon : 'cup',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Coffe break'},
+      {author : '', title : 'Кофе-брейк'},
       {author : '', title : ''}
     ]
   },
@@ -140,7 +140,7 @@ export const MainScheduleRu = [
     scheduleRendered : '',
     talks : [
       {author : 'Jamie Maria Schouren', title : 'The search for App-iness : Progressive Web Apps  [En]'},
-      {author : 'Vitalii Hurin', title : 'Peak loads in chat bot projects. History of struggle [Ua]'}
+      {author : 'Виталий Гурин', title : 'Пікові навантаження в чат-бот проектах. Історія боротьби [Ua]'}
     ]
   },
   {
@@ -148,7 +148,7 @@ export const MainScheduleRu = [
     icon : 'clock',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Break'},
+      {author : '', title : 'Перерыв'},
       {author : '', title : ''}
     ]
   },
@@ -157,7 +157,7 @@ export const MainScheduleRu = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : 'Vitalii Ratyshnyi', title : 'Definition of Done: Deadline driven development [Ua]', desc : 'Lightning Talk'},
+      {author : 'Виталий Ратушный', title : 'Definition of Done: Deadline driven development [Ua]', desc : 'Lightning Talk'},
       {author : '', title : ''}
     ]
   },

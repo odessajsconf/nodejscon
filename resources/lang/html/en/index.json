@@ -65,6 +65,8 @@
   "workshop_description": "*taking part in workshops is free for the conference’s participants",
   "schedule_head": "Schedule",
   "schedule_txt": "The conference program will be available two weeks before the event",
+  "shedule_stage_a": "Stage A",
+  "shedule_stage_b": "Stage B",
   "shedule_description": "18 may, 6 Marshal Konev St.",
   "shedule_pre-party_description": "Lohika, Bunina st, 1",
   "afterparty_head": "After-party",
@@ -113,5 +115,7 @@
   "poup_next": "Next",
   "poup_buy": "Buy ticket",
   "hotels_head": "ИНФО",
-  "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019"
+  "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019",
+  "tickets_workshop_title" : "Workshop",
+  "tickets_workshop_desc" : "Tickets for workshops are sold separately from conference ticket"
 }

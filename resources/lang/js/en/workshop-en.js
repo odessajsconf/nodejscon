@@ -277,11 +277,11 @@ export const WorkshopEn = [
                 '<p class="text-bold m-b-5">Requirements:</p>' +
                 '<ul class="m-t-0">\n' +
                 '  <li>A proper terminal (linux based) - pick your favourite</li>\n' +
-                '  <li>cUrl - download and install a binary for your OS</li>\n' +
-                '  <li>Httpie - (brew install httpie)</li>\n' +
-                '  <li>Npm - (brew install node)</li>\n' +
-                '  <li>Git</li>\n' +
-                '  <li>Mongod - (brew install mongodb) or alternatively docker to be able to pull and run a MongoDB instance</li>\n' +
+                '  <li><a href ="https://curl.haxx.se/download.html" target="_blank">cUrl</a> - download and install a binary for your OS</li>\n' +
+                '  <li><a href ="https://httpie.org/" target="_blank">Httpie</a> - (brew install httpie)</li>\n' +
+                '  <li><a href ="https://nodejs.org/en/" target="_blank">Npm</a> - (brew install node)</li>\n' +
+                '  <li><a href ="https://git-scm.com/downloads" target="_blank">Git</a></li>\n' +
+                '  <li><a href ="https://docs.mongodb.com/manual/installation/" target="_blank">Mongod</a> - (brew install mongodb) or alternatively docker to be able to pull and run a MongoDB instance</li>\n' +
                 '</ul>' +
                 '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
                 '<p class="m-t-0">Junior, to Senior Node.js and JavaScript developers who have no background in application security and would like to expand on their understanding of real-life security vulnerabilities in popular packages on npm and how they can impact their applications.</p>' +
@@ -307,6 +307,58 @@ export const WorkshopEn = [
                 link: 'https://medium.com/@liran.tal',
                 fatype: 'link'
             },
+        ]
+    },
+    {
+        name : 'Tanya Butenko',
+        workshop_status: 1,
+        speakerPos: [
+            {
+                position: 'Software engineer',
+                company: 'Hireup'
+                
+            },
+            {
+                position: 'Founder and CEO',
+                company: 'Muses Code JS Inc'
+            },
+        ],
+        
+        place : 'Sydney, Australia',
+        rept : [
+            {
+                title : 'Workshop: Introduction to Node.js',
+                description :
+                '<p class="text-bold m-b-5">ОПИСАНИЕ</p>' +
+                '<p class="m-t-0">Вы любите капкейки и кодить? Тогда приходите на наш ознакомительный воркшоп по Node.js. Имея базовые знания о JavaScript вы научитесь создавать простое веб-приложение, которое вы в тот же день сможете показать своим друзьям и близким. Мы ознакомим вас с базовыми концептами, применяя их практически для нашего мини-сайта, где вы сможете хранить рецепты своих любимых капкейков (или пиццы, борща и тд)</p>' +
+                '<p class="text-bold m-b-5">К концу воркшопа Вы будете знать:</p>' +
+                '<p class="m-t-0">Как построить простое веб-приложение, используя Node.js и Express.js. Ознакомитесь с  middleware, static assets, routing, templates, deployment и hosting.</p>' +
+                '<p class="text-bold m-b-5">НЕОБХОДИМЫЕ НАВЫКИ И ОБОРУДОВАНИЕ</p>' +
+                '<p class="m-t-0">Так как этот воркшоп будет практическим, необходимо иметь при себе ноутбук и базовое понимание JavaScript. Текстовый редактор на ваш выбор (Atom, Sublime Text, VSCode, WebStorm etc) и веб браузер (Google Chrome, Opera, Firefox etc). Весь воркшоп прописан и будет сопровождаться пояснениями в процессе - так что не стоит волноваться что вы можете отставать или работать медленее/быстрее чес остальные. Если у вас уже установлен Node.js and npm отлично, если же нет - установите заранее, но не волнуйтесь если что-то не работает, мы выделим немного времени для этого в начале воркшопа. </p>' +
+                '<p class="text-bold m-b-5">ЦЕЛЕВАЯ АУДИТОРИЯ</p>' +
+                '<p class="m-t-0">Все кому интересно ознакомиться с Node.js и создать небольшой проект с нуля.</p>' +
+                '<p class="text-bold m-b-5">ДЛИТЕЛЬНОСТЬ:</p>' +
+                '<p class="m-t-0">~ 4 часа</p>'
+                    
+            }
+        ],
+        aboutSpeaker :
+            '',
+        title : 'Воркшоп: Introduction to Node.js',
+        socialsRendered : '',
+        socials : [
+            {
+                link: 'https://twitter.com/ButenkoMe',
+                fatype: 'twitter'
+            },
+            {
+                link: 'https://github.com/ButenkoT',
+                fatype: 'github'
+            },
+            {
+                link: 'https://musescodejs.org',
+                fatype: 'link'
+            }
         ]
     },
 ];

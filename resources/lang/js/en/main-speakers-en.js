@@ -533,5 +533,53 @@ export const MainSpeakersEn = [
                 },
             ]
         },
+        {
+            image: '../public/img/speakers/alex-bordun.jpg',
+            name: 'Oleksandr Bordun',
+            place : '',
+            addInfo : 'Workshop',
+            speakerPos: [
+                {
+                    position: 'Lead NodeJS',
+                    company: 'DEITY',
+                    
+                },
+            ],
+            
+            rept: [
+                {
+                    title: 'Adding PWA features to your web application on Node.js',
+                    description: 
+                    '<p class="text-bold m-b-5">DESCRIPTION</p>' +
+                    '<p class="m-t-0">Learn how to build from scratch or add to the existing Node web-application PWA (Progressive Web Apps) features like Offline mode and Caching capabilities via ServiceWorkers. This will be a practical workshop where you will be able to build a tiny web-application using Node.js with PWA capabilities </p>' +
+                    '<p class="text-bold m-b-5">By the end you will know</p>' +
+                    '<ul class="m-t-0">\n' +
+                    '  <li> How to build a simple web-application using Node.js that is able to "work" offline and show a user-friendly notification </li>\n' +
+                    '  <li> How to cache your web-app assets to be able to use them while working offline (like styles and JS files)</li>\n' +
+                    '  <li> How to befriend with Google Search Engine and Lighthouse</li>\n' +
+                    '</ul>' +
+                    '<p class="text-bold m-b-5">WHY YOU SHOULD COME TO THIS WORKSHOP</p>' +
+                    '<p class="m-t-0">Modern web technologies are constantly evolving, so in order to be among the best - your application must be able to handle all possible scenarios, even when a visitor goes offline. Search engines love when your application cares about its visitors. </p>' +
+                    '<p class="text-bold m-b-5">SKILLS & EQUIPMENT REQUIRED FOR THE WORKSHOP</p>' +
+                    '<p class="m-t-0">Since this is going to be a practical workshop, it\'s desired to have a laptop with you. You will be able to follow with the presenter through the code and try to build your own application. Node.js and npm must be installed on your laptop as we will be installing some external packages required for building such web-applications. </p>'+
+                    '<p class="text-bold m-b-5">TARGET AUDIENCE</p>' +
+                    '<p class="m-t-0">This workshop will require a minimal JavaScript experience, some basic experience with working with node.js web-server applications and knowledge of how node/npm work.</p>'
+                },
+            ],
+            aboutSpeaker:
+                '',
+            socialsRendered: '',
+            socials: [
+                {
+                    link: 'https://twitter.com/borales',
+                    fatype: 'twitter'
+                },
+                {
+                    link: 'https://github.com/Borales',
+                    fatype: 'github'
+                },
+            ]
+        },
+        
     ]
 ;

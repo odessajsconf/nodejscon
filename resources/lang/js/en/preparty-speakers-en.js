@@ -115,5 +115,34 @@ export const PrepartySpeakersEn = [
                 fatype: 'link'
             }
         ]
-    }
+    },
+    {
+        image: '../public/img/speakers/pavlo-galushko.jpeg',
+        name: 'Pavlo Galushko',
+        place : '',
+        speakerPos: [
+            {
+                position: 'AIOps, Senior Software Developer',
+                company: 'Namecheap. Inc',
+                
+            },
+        ],
+        
+        rept: [
+            {
+                title: '',
+                description: 
+                '',
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link: 'https://www.linkedin.com/in/galushkopavlo',
+                fatype: 'linkedin'
+            },
+        ]
+    },
 ];

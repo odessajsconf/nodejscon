@@ -1,6 +1,7 @@
 let gulp = require('gulp'),
   concat = require('gulp-concat'),
   cssmin = require('gulp-minify-css'),
+  del = require('del'),
   rename = require('gulp-rename'),
   less = require('gulp-less'),
   copy = require('gulp-contrib-copy'),
@@ -54,6 +55,10 @@ gulp.task('docs', function () {
   return gulp.src(path.docs)
     .pipe(copy())
     .pipe(gulp.dest(PUBLIC_DIR + '/docs'));
+});
+
+gulp.task('clean', function () {
+  return del(PUBLIC_DIR)
 });
 
 gulp.task('img', function () {
@@ -152,8 +157,8 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (callback) {
-  runSequence('script', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', 'browser-sync', 'watch', callback)});
+  runSequence('clean', 'script', 'less', 'fonts', 'docs', 'img', 'hash','localize-default', 'browser-sync', 'watch', callback)});
 
 
 gulp.task('prod', function (callback) {
-  runSequence('script-min', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', callback)});
+  runSequence('script-min', 'less', 'fonts', 'docs', 'img', 'hash','localize-default', callback)});

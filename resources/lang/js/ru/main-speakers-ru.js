@@ -296,7 +296,7 @@ export const MainSpeakersRu = [
     },
     {
         image: 'public/img/speakers/tanya-butenko.png',
-        name: 'Tanya Butenko',
+        name: 'Татьяна Бутенко',
         place : 'Sydney, Australia',
         speakerPos: [
             {

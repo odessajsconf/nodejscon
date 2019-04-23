@@ -1,6 +1,6 @@
 export const PrepartyScheduleEn = [
   {
-    time:'18:00 - 18:20',
+    time:'18:00 - 18:30',
     icon:'profile',
     scheduleRendered: '',
     talks: [
@@ -9,48 +9,58 @@ export const PrepartyScheduleEn = [
     ]
   },
   {
-    time:'18:20 - 18:55',
+    time:'18:30 - 19:10',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Ksenia Redunova', title: 'Presentation Karaoke'},
+      {author: 'Yaroslav Golovach', title: 'It`s not about coding'},
       // {author: '', title: ''}
     ]
   },
   {
-    time:'19:00 - 19:40',
-    icon:'sheet',
+    time:'19:10 - 19:30',
+    icon:'beer',
     scheduleRendered: '',
     talks: [
-      {author: 'Dmitry Mindra', title: 'Management 101'},
+      {author: '', title: 'Pizza 🍕 and beer 🍻 break'},
       // {author: '', title: ''}
     ]
   },
   {
-    time:'19:40 - 20:00',
+    time:'19:30 - 20:10',
+    icon:'sheet',
+    scheduleRendered: '',
+    talks: [
+      {author: 'Tanya Butenko', title: 'Lift me up. Mentorship 101'},
+      // {author: '', title: ''}
+    ]
+  },
+  {
+    time:'20:10 - 20:20',
     icon:'cup',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Pizza-break'},
+      {author: '', title: 'Break'},
       // {author: '', title: ''}
     ]
   },
   {
-    time:'20:00 - 20:30',
+    time:'20:20 - 21:00',
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Eugen Gavrilenko', title: 'The learning how to learn'},
+      {author: 'Pavlo Galushko', title: 'Принимают за hard skills, увольняют из-за soft skills.'},
       // {author: '', title: ''}
     ]
   },
   {
-    time:'20:30 - 21:00',
-    icon:'sheet',
+    time:'21:00',
+    icon:'profile',
     scheduleRendered: '',
     talks: [
-      {author: 'Dima Kanevsky', title: 'Hard truth about developing soft skills'},
+      {author: '', title: 'Q&A session'},
       // {author: '', title: ''}
     ]
-  }
+  },
+  
 ];

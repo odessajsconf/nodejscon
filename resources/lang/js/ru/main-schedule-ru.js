@@ -22,7 +22,7 @@ export const MainScheduleRu = [
     icon : 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : 'Tanya Butenko', title : 'Muses Code JS or How Communities Change People  [En]'},
+      {author : 'Татьяна Бутенко', title : 'Muses Code JS or How Communities Change People  [En]'},
       {author : 'Борис Могила', title : 'Parallel calls in node.js  [Ua]'}
     ]
   },

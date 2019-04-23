@@ -23,7 +23,7 @@ export const PrepartySpeakersRu = [
   },*/
     {
         image : 'public/img/speakers/yaroslavgolovach.png',
-        name : 'Yaroslav Golovach',
+        name : 'Ярослав Головач',
         speakerPos: [
           {
             position : 'Co-Founder, CEO and CTO',
@@ -57,7 +57,7 @@ export const PrepartySpeakersRu = [
     },
     {
         image : '../public/img/speakers/tanya-butenko.png',
-        name : 'Tanya Butenko',
+        name : 'Татьяна Бутенко',
         speakerPos: [
             {
                 position: 'Software engineer',

@@ -585,6 +585,125 @@ export const MainSpeakersRu = [
             },
         ]
     },
+    {
+        image: '../public/img/speakers/andrii-shumada.jpg',
+        name: 'Андрей Шумада',
+        place : 'Киев, Украина',
+        addInfo : 'Discussion Pannel',
+        speakerPos: [
+            {
+                position : 'Team Lead',
+                company : 'Everad',
+
+            },
+        ],
+
+        rept: [
+            {
+                title: '',
+                description: ""
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link : 'https://twitter.com/eagleeye_s',
+                fatype : 'twitter'
+            },
+            {
+                link : 'https://www.linkedin.com/in/andriishumada',
+                fatype : 'linkedin'
+            },
+            {
+                link : 'https://github.com/eagleeye',
+                fatype : 'github'
+            },
+            {
+                link : 'https://stackoverflow.com/users/933190/eagleeye',
+                fatype : 'stack-overflow'
+            },
+            {
+                link : 'https://eagleeye.github.io',
+                fatype : 'link'
+            },
+        ]
+    },
+    {
+        image: '../public/img/speakers/elena-sharovar.png',
+        name: 'Елена Шаровар',
+        place : 'Киев, Украина',
+        addInfo : 'Discussion Pannel',
+        speakerPos: [
+            {
+                position : 'Senior Node.js developer',
+                company : 'Waverley Software',
+
+            },
+        ],
+
+        rept: [
+            {
+                title: '',
+                description: ""
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link : 'https://twitter.com/ellenaua',
+                fatype : 'twitter'
+            },
+            {
+                link : 'https://www.linkedin.com/in/elenasharovar/',
+                fatype : 'linkedin'
+            }
+        ]
+    },
+    {
+        image: '../public/img/speakers/roman-sachenko.png',
+        name: 'Роман Саченко',
+        place : 'Харьков, Украина',
+        addInfo : 'Discussion Pannel',
+        speakerPos: [
+            {
+                position : 'Software Engineer',
+                company : 'DA-14 Corp.',
+
+            },
+        ],
+
+        rept: [
+            {
+                title: '',
+                description: ""
+            },
+        ],
+        aboutSpeaker:
+            '',
+        socialsRendered: '',
+        socials: [
+            {
+                link : 'https://twitter.com/rsachenko',
+                fatype : 'twitter'
+            },
+            {
+                link : 'https://www.linkedin.com/in/rsachenko/',
+                fatype : 'linkedin'
+            },
+            {
+                link : 'https://github.com/roman-sachenko',
+                fatype : 'github'
+            },
+            {
+                link : 'https://stackoverflow.com/users/5132363/roman-sachenko',
+                fatype : 'stack-overflow'
+            }
+        ]
+    },
     
   ]
 ;

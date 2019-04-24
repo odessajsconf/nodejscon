@@ -130,9 +130,9 @@ export const PrepartySpeakersEn = [
         
         rept: [
             {
-                title: '',
+                title: 'Hire For Hard Skills, Fire For Soft Skills   ',
                 description: 
-                '',
+                'Why is it Important to Develop Soft Skills? A short story about obvious things that stops your successful career',
             },
         ],
         aboutSpeaker:

@@ -567,8 +567,16 @@
                         </ul>
                         <div class="ticket-content__footer">
                             <div class="ticket-content__price">
-                                <p class="price__value">2600</p>
-                                <p class="price__currency">UAH</p>
+                                <div class="price">
+                                    <p class="price__value">2600</p>
+                                    <p class="price__currency">UAH</p>
+                                </div>
+                                
+                                <div class="notes">
+                                    <p class="price__sub-note">Price is valid until May 12</p>
+                                    <p class="price__sub-note">from May 13 - <strong>3000 UAH</strong></p>
+                                </div>
+                                
                                 
                             </div>
                             <a href="https://nodejsconf2019.ticketforevent.com/" class="heading_btn">
@@ -712,11 +720,27 @@
         <section id="pre-party" class="pre-party">
             <div class="container">
                 <div class="h2">
-                    ${{ index.speakers_preparty_head }}$
+                            ${{ index.speakers_preparty_head }}$
                 </div>
-                <br><br>
-                <div class="h3">${{ index.speakers_preparty_theme }}$</div>
-                <p>${{ index.speakers_preparty_desc }}$</p>
+                <div class="text-container">
+                        
+                            <br><br>
+                            <div class="h3">${{ index.speakers_preparty_theme }}$</div>
+            
+                            <div class="h4 m-t-20 text-bold green"><strong>г.Киев, ул. Лейпцигская, 15a. Офис компании </strong><a href="https://codemotion.ninja/"><strong>Codemotion</strong></a></div>
+            
+                            
+                            
+            
+                            <p>${{ index.speakers_preparty_desc }}$</p>
+
+                            <div class="btn-container flex m-t-30">
+                                    <div class="btn">${{ index.preparty_reg_button }}$</div>
+                            </div>
+            
+                            <div class="h5 m-t-20">*Для участников конференции NodeUkraine участие в пре-пати бесплатное по предварительной регистрации</div>
+                </div>
+                
 
                 <div class="flex j-c-space-around speakers-list" id="preparty-speakers-list"></div>
             </div>
@@ -734,10 +758,8 @@
                 </div>
                 
               </div>
-              <div class="container m-t-30">
-                  <div class="btn-container flex ">
-                    <div class="btn">${{ index.preparty_reg_button }}$</div>
-                  </div>
+              <div class="container ">
+                  
               </div>
 
         </section>

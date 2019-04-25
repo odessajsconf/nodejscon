@@ -584,7 +584,7 @@ export const MainSpeakersEn = [
         image: '../public/img/speakers/andrii-shumada.jpg',
         name: 'Andrii Shumada',
         place : 'Kyiv, Ukraine',
-        addInfo : 'Discussion Pannel',
+        addInfo : 'Pannel Discussion',
         speakerPos: [
             {
                 position : 'Team Lead',
@@ -629,7 +629,7 @@ export const MainSpeakersEn = [
         image: '../public/img/speakers/elena-sharovar.png',
         name: 'Elena Sharovar',
         place : 'Kyiv, Ukraine',
-        addInfo : 'Discussion Pannel',
+        addInfo : 'Pannel Discussion',
         speakerPos: [
             {
                 position : 'Senior Node.js developer',
@@ -662,7 +662,7 @@ export const MainSpeakersEn = [
         image: '../public/img/speakers/roman-sachenko.png',
         name: 'Roman Sachenko',
         place : 'Ukraine, Kharkiv',
-        addInfo : 'Discussion Pannel',
+        addInfo : 'Pannel Discussion',
         speakerPos: [
             {
                 position : 'Software Engineer',

@@ -57,7 +57,7 @@ export const ProgramCommitteeEn = [
     },
     {
         image : '../public/img/p-c/eldar.jpeg',
-        name : 'Dzhafarov Eldar',
+        name : 'Eldar Dzhafarov',
         speakerPos: [
             {
                 position : 'CTO',

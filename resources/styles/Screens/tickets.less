@@ -414,6 +414,9 @@
               color: @color_green;
               margin: 4px 0 0  0;
             }
+            @media @mobileMd{
+
+            }
           }
           
 
@@ -437,6 +440,13 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            
+          }
+          @media @mobileMd{
+            .price__sub-note{
+              display: flex;
+              flex-direction: column;
+            }
           }
 
           .price__note{

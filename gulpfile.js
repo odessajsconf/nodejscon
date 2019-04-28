@@ -43,6 +43,7 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         }
     });
+    browserSync.watch(`**/*.*`).on('change', browserSync.reload);
 });
 
 gulp.task('fonts', function () {

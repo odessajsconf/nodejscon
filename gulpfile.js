@@ -155,6 +155,7 @@ gulp.task('watch', function () {
   gulp.watch('resources/styles/**/*.less', ['less']);
   gulp.watch('resources/html/index.html', ['localize-default']);
   gulp.watch('resources/lang/**/*.json', ['localize-default']);
+  gulp.watch('resources/img/**', ['img']);
 });
 
 gulp.task('default', function (callback) {

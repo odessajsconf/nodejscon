@@ -147,7 +147,7 @@ export const WorkshopRu = [
     },
     {
         //image : 'public/img/speakers/jamie_maria.jpeg',
-        name : 'Jamie Maria Schouren & Oleksandr Bordun',
+        name : 'Oleksandr Bordun & Jamie Maria Schouren',
         workshop_status: 1,
         speakerPos: [
             /*{

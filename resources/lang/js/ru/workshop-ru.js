@@ -69,7 +69,7 @@ export const WorkshopRu = [
     place : 'Харьков, Украина',
     rept : [
         {
-            title : 'Workshop: RxJS - What I doing wrong?',
+            title : 'Workshop: RxJS - What am I doing wrong?',
             description :
             '<p class="text-bold m-b-5">DESCRIPTION</p>' +
                 '<p class="m-t-0">Unfortunately, observables are terra incognita for most people with I faced on. I try to explain how to make it simple and use them on projects</p>' +
@@ -157,7 +157,7 @@ export const WorkshopRu = [
             }*/
         ],
         
-        //place : 'Eindhoven, The Netherlands',
+        place : 'Cracow, Poland & Eindhoven, The Netherlands',
         rept : [
             {
                 title : 'Workshop: Добавление возможностей PWA к Вашему веб-приложению на Node.js',

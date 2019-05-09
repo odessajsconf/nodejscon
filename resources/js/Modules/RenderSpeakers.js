@@ -98,6 +98,7 @@ export class RenderSpeakers {
       $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img'),
       $modalNameElement = $modalBody.find('.speaker-name'),
       $modalPlaceElement = $modalBody.find('.speaker-place'),
+      $modalTimeElement = $modalBody.find('.speaker-time'),
       $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
       $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
       $modalReportsContainer = $modalBody.find('.speakers-modal_content'),
@@ -116,6 +117,7 @@ export class RenderSpeakers {
         speakerPosition = speakerData.position,
         speakerCompany = speakerData.company,
         speakerPlace = speakerData.place,
+        speakerTime = speakerData.time,
         speakerSocials = speakerData.socialsRendered,
         reports = speakerData.rept,
         reportsContent = '',
@@ -136,6 +138,7 @@ export class RenderSpeakers {
       $modalSpeakerPosition.text(speakerPosition);
       $modalSpeakerCompany.text(speakerCompany ? `${speakerCompany}` : '');
       speakerPlace && $modalPlaceElement.text(speakerPlace);
+      speakerTime && $modalTimeElement.text(speakerTime);
 
       reportsContent && $modalReportsContainer.html(reportsContent);
 

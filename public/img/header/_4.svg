@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366.84 4.25"><g data-name="Слой 2"><path d="M167.71 2.12H2.12m362.59 0H199.12" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.25" data-name="Слой 1"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366.84 4.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4.25px;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 7_4</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <line class="cls-1" x1="167.71" y1="2.12" x2="2.12" y2="2.12"/>
+      <line class="cls-1" x1="364.71" y1="2.12" x2="199.12" y2="2.12"/>
+    </g>
+  </g>
+</svg>

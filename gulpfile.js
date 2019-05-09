@@ -64,7 +64,7 @@ gulp.task('clean', function () {
 
 gulp.task('img', function () {
   return gulp.src(path.img)
-    .pipe(imagemin())
+    //.pipe(imagemin())
     .pipe(gulp.dest(PUBLIC_DIR + '/img'));
 });
 

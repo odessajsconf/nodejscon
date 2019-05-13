@@ -29,6 +29,7 @@
   "heading_share": "SHARE THE CONFERENCE MATERIALS :)",
   "heading_video": "Join the live broadcast of ",
   "about_head": "About",
+  "about_desc": "The second All-Ukrainian Node.js  conference will be held in Kiev on May 17th-18th, 2019. Our goal is to organize a platform for communication Node.js professionals from all over the world. <br></br>Professional presentations, charismatic speakers, interesting topics for discussion — all of these await you at the conference.",
   "about_txt_1": "It’s going to be the event in Kyiv that will be focused on Node.JS technologies.",
   "about_txt_2": "It’s going to be a single-day, two-track conference that will provide web developers of various levels with an opportunity to get in-depth knowledge about Node.JS and offer them great networking possibilities.",
   "about_txt_3": "We are focusing on forming and supporting Ukrainian Node.JS community.",
@@ -118,6 +119,7 @@
   "poup_buy": "Buy ticket",
   "hotels_head": "ИНФО",
   "hotels_description": "Спасибо отелям, которые поддерживают Node Ukraine 2019",
+  "hotels_note": "Используйте промо-код <span class='bold'>'Я еду на Node Ukraine'</span>, чтобы забронировать номер в отеле со скидкой",
   "tickets_workshop_title" : "Workshop",
   "tickets_workshop_desc" : "Tickets for workshops are sold separately from conference ticket"
 }

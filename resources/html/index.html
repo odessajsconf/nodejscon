@@ -296,13 +296,7 @@
                             Kyiv
                         </p>-->
                             <div class="about_text">
-                                <div class="h4">Вторая всеукраинская конференция посвященная Node.js пройдет в Киеве
-                                    17-18 мая 2019 года.
-                                    Наша цель - организовать площадку для развития и общения самых активных Node.js
-                                    профессионалов Украины и других стран.</div>
-                                <br>
-                                <div class="h4">Вас ждут - экспертные презентации, профессиональные и харизматичные
-                                    спикеры, множество тем для дискуссий.</div>
+                                <div class="h4">${{ index.about_desc }}$</div>
                             </div>
 
                         </div>
@@ -751,8 +745,7 @@
                                 class="btn btn-link">${{ index.preparty_reg_button }}$</a>
                         </div>
 
-                        <div class="h5 m-t-20">*Для участников конференции NodeUkraine участие в пре-пати бесплатное по
-                            предварительной регистрации</div>
+                        <div class="h5 m-t-20">${{ index.speakers_preparty_reg_note }}$</div>
                     </div>
 
 
@@ -970,7 +963,8 @@
                         <h3 class="text-center m-b-30">${{ index.sponsors_conference_partner }}$</h3>
                         <div class="sponsors-media-list">
                             <a href="https://frans.ua/ru" class="sponsors-media-item" target="_blank">
-                                <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/fransua.jpg" alt="fransua">
+                                <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/fransua.jpg"
+                                    alt="fransua">
                             </a>
 
                             <a href="https://www.vectra.ai/" class="sponsors-media-item" target="_blank">
@@ -1091,8 +1085,12 @@
                             </a>
 
                             <a href="https://incode-group.com/" class="sponsors-media-item" target="_blank">
-                                <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/incode-group.png"
-                                    alt="incode-group">
+                                <img src="https://via.placeholder.com/1x1"
+                                    data-src="public/img/partners/incode-group.png" alt="incode-group">
+                            </a>
+
+                            <a href="https://phpfriends.club/" class="sponsors-media-item" target="_blank">
+                                <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/php.jpg" alt="php and friends">
                             </a>
 
                         </div>
@@ -1177,6 +1175,38 @@
               <img class="speakers-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/speakers_bg.svg"
                    alt="opera">
             </div>-->
+            </section>
+
+            <section id='hotels'>
+                <div class="container">
+                    <!--<a class="epts-cb" target="_blank" href="https://nodejsconf2019.ticketforevent.com/ru/">Купить билет</a><style type="text/css">.epts-cb{font-family:Arial !important; display:inline-block !important; zoom:1 !important; border-radius:5px !important; border-style:solid !important; border-width:1px !important; text-decoration:none !important; font-weight:bold !important; line-height:1 !important;color:#f8f8f8 !important; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8) inset; text-shadow:0 -1px 0 rgba(0,0,0,.2) !important; text-decoration:none; background-color:#80a048 !important; border-color:#4DA90F !important; background-clip: padding !important; background-image: linear-gradient(to bottom, #93ED43, #80a048) !important;font-size: 16px !important; padding: 13px 20px !important;} .epts-cb:hover, .epts-cb:focus{border-color:#4DA90F !important; color:#fff !important; background-color:#709038 !important; box-shadow: 0 0 0 1px #fff inset, 0 0 0 2px rgba(100, 200, 50, 0.3);}</style>-->
+
+
+                    <div class="h2">
+                        ${{ index.hotels_head }}$
+                    </div>
+                    <div class="h3 hotels__description">
+                        ${{ index.hotels_description }}$
+                    </div>
+
+                    <p class=" h4 m-t-30"> ${{ index.hotels_note }}$ 
+                        <a href="mailto:admin_lavilia@ukr.net"
+                                class="hotels-list__item__mail">admin_lavilia@ukr.net</a>
+                    </p>
+
+                    <div class="hotels-list flex m-t-30">
+                        <div class="hotels-list__item">
+                            <a href="http://lavilia.com" class="hotels-list__item__avatar">
+                                <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/lavilla.png"
+                                    alt="Lavilla">
+                            </a>
+
+
+                            <p class="hotels-list__item__discount">Скидка на проживание в отеле “Lavilla” - 10%</p>
+
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--<section class="program-committee">-->
@@ -1278,36 +1308,7 @@
                 </div>
             </section>
 
-            <section id='hotels'>
-                <div class="container">
-                    <!--<a class="epts-cb" target="_blank" href="https://nodejsconf2019.ticketforevent.com/ru/">Купить билет</a><style type="text/css">.epts-cb{font-family:Arial !important; display:inline-block !important; zoom:1 !important; border-radius:5px !important; border-style:solid !important; border-width:1px !important; text-decoration:none !important; font-weight:bold !important; line-height:1 !important;color:#f8f8f8 !important; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8) inset; text-shadow:0 -1px 0 rgba(0,0,0,.2) !important; text-decoration:none; background-color:#80a048 !important; border-color:#4DA90F !important; background-clip: padding !important; background-image: linear-gradient(to bottom, #93ED43, #80a048) !important;font-size: 16px !important; padding: 13px 20px !important;} .epts-cb:hover, .epts-cb:focus{border-color:#4DA90F !important; color:#fff !important; background-color:#709038 !important; box-shadow: 0 0 0 1px #fff inset, 0 0 0 2px rgba(100, 200, 50, 0.3);}</style>-->
 
-
-                    <div class="h2">
-                        ${{ index.hotels_head }}$
-                    </div>
-                    <div class="h3">
-                        ${{ index.hotels_description }}$
-                    </div>
-
-                    <div class="hotels-list flex m-t-30">
-                        <div class="hotels-list__item">
-                            <a href="http://lavilia.com" class="hotels-list__item__avatar">
-                                <img src="https://via.placeholder.com/1x1" data-src="public/img/partners/lavilla.png"
-                                    alt="Lavilla">
-                            </a>
-
-
-                            <p class="hotels-list__item__discount">Скидка на проживание в отеле “Lavilla” - 10%</p>
-                            <a href="mailto:admin_lavilia@ukr.net"
-                                class="hotels-list__item__mail">admin_lavilia@ukr.net</a>
-                        </div>
-                    </div>
-
-                    <div class="h4 hotels-ps">Участники конференции смогут получить скидку на проживание в отелях,
-                        назвав промо-код "Я еду на Node Ukraine"</div>
-                </div>
-            </section>
 
             <section id="history">
                 <div class="container">

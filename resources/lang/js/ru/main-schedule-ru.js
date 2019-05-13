@@ -1,10 +1,10 @@
 export const MainScheduleRu = [
   {
     time : '8.30-9.30',
-    icon : 'cup',
+    icon: 'sheet',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Регистрация'},
+      { author: '', title: 'Регистрация <i class="fas fa-mug-hot"></i> <i class="fas fa-cookie-bite"></i>'},
       {author : '', title : ''}
     ]
   },

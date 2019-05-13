@@ -4,7 +4,7 @@ export const MainScheduleEn = [
     icon : 'cup',
     scheduleRendered : '',
     talks : [
-      {author : '', title : 'Registration and morning coffee'},
+      { author: '', title: 'Registration and morning coffee <i class="fas fa-mug-hot"></i> <i class="fas fa-cookie-bite"></i>'},
       {author : '', title : ''}
     ]
   },

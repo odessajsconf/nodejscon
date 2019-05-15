@@ -3,7 +3,8 @@ export const WorkshopRu = [
     //image : 'public/img/speakers/asimhussain.png',
     image : '',
     name : 'Asim Hussain',
-    time: "17th of May, 10:00 - 16:00",
+    time: '17th of May, 10:00 - 16:00 '+
+            '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
     workshop_status: 1,
     speakerPos: [
       {
@@ -59,7 +60,8 @@ export const WorkshopRu = [
     //image : 'public/img/speakers/nick-lototskiy-alt.jpg',
     image : '',
     name : 'Николай Лотоцкий',
-    time: "17th of May, 15:00 - 18:00",
+      time: "17th of May, 15:00 - 18:00" +
+          '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
     workshop_status: 1,
     speakerPos: [
         {
@@ -113,7 +115,8 @@ export const WorkshopRu = [
         //image : 'public/img/speakers/viacheslav-panevskyi.jpg',
         //image : '',
         name : 'Вячеслав Паневский',
-        time: "19th of May, 10:00 - 13:00",
+        time: "19th of May, 10:00 - 13:00" +
+            '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
         workshop_status: 1,
         speakerPos: [
             {
@@ -151,7 +154,8 @@ export const WorkshopRu = [
     {
         //image : 'public/img/speakers/jamie_maria.jpeg',
         name : 'Oleksandr Bordun & Jamie Maria Schouren',
-        time: "19th of May, 10:00 - 12:00",
+        time: "19th of May, 10:00 - 12:00" +
+            '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
         workshop_status: 1,
         speakerPos: [
             /*{
@@ -250,7 +254,8 @@ export const WorkshopRu = [
     },
     {
         name : 'Liran Tal',
-        time: "17th of May, 15:00 - 17:00",
+        time: "17th of May, 15:00 - 17:00" +
+            '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
         workshop_status: 1,
         speakerPos: [
             {
@@ -318,7 +323,8 @@ export const WorkshopRu = [
     },
     {
         name : 'Tanya Butenko',
-        time: "19th of May, 10:00 - 14:00",
+        time: "19th of May, 10:00 - 14:00" +
+            '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
         workshop_status: 1,
         speakerPos: [
             {

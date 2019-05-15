@@ -138,7 +138,7 @@ export class RenderSpeakers {
       $modalSpeakerPosition.text(speakerPosition);
       $modalSpeakerCompany.text(speakerCompany ? `${speakerCompany}` : '');
       speakerPlace && $modalPlaceElement.text(speakerPlace);
-      speakerTime && $modalTimeElement.text(speakerTime);
+      speakerTime && $modalTimeElement.html(speakerTime);
 
       reportsContent && $modalReportsContainer.html(reportsContent);
 

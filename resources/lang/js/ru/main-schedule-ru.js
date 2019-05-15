@@ -165,7 +165,7 @@ export const MainScheduleRu = [
         ]
     },
     {
-        time: '17:30-17:50',
+        time: '17:30-17:35',
         icon: 'clock',
         scheduleRendered: '',
         talks: [
@@ -174,7 +174,7 @@ export const MainScheduleRu = [
         ]
     },
     {
-        time: '17:50-18:50',
+        time: '17:35-18:30',
         icon: 'sheet',
         scheduleRendered: '',
         talks: [

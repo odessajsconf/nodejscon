@@ -171,7 +171,7 @@ export const MainScheduleEn = [
         ]
     },
     {
-        time: '17:30-17:50',
+        time: '17:30-17:35',
         icon: 'people',
         scheduleRendered: '',
         talks: [
@@ -180,7 +180,7 @@ export const MainScheduleEn = [
         ]
     },
     {
-        time: '17:50-18:30',
+        time: '17:35-18:30',
         icon: 'sheet',
         scheduleRendered: '',
         talks: [

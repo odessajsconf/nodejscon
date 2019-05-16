@@ -65,7 +65,7 @@ export const MainScheduleEn = [
         scheduleRendered: '',
         talks: [
             {author: 'Liran Tal', title: 'Black Clouds and Silver Linings in Node.js Security [En]', lvl: 'All'},
-            {author: 'Nick Lototskiy', title: 'Разворачиваем структуру Node.js на AWS [Ru]', lvl: 'Mid+'}
+            { author: 'Nick Lototskiy', title: 'Deploying Node.js applications to AWS [Ru]', lvl: 'Mid+'}
         ]
     },
     {
@@ -175,7 +175,7 @@ export const MainScheduleEn = [
         icon: 'people',
         scheduleRendered: '',
         talks: [
-            {author: '', title: 'Sponsors\' Raffle Prizes '},
+            { author: '', title: 'Sponsors\' Prizes Raffle '},
             {author: '', title: ''}
         ]
     },

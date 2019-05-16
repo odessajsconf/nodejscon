@@ -40,7 +40,7 @@ export const MainScheduleRu = [
         icon: 'sheet',
         scheduleRendered: '',
         talks: [
-            {author: 'Asim Hussain', title: 'The Future of Machine Learning & JavaScript  [En]'},
+            { author: 'Asim Hussain', title: 'The Future of Machine Learning & JavaScript  [En]', lvl: 'Must see'},
             {author: 'Андрей Михайлов', title: 'Deploying enterprise HyperLedger block-chains [Ru]', lvl: 'Mid+/Sen'}
         ]
     },

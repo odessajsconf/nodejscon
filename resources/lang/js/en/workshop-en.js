@@ -3,8 +3,6 @@ export const WorkshopEn = [
         //image : '../public/img/speakers/asimhussain.png',
         name : 'Asim Hussain',
         workshop_status: 1,
-        time: "17th of May, 10:00 - 16:00" +
-            '<br></br> "Hillel" IT school, 14/1 Mechnikov str., 2nd floor',
         speakerPos: [
             {
                 position : 'Cloud Developer Advocate',
